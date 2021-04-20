@@ -1,0 +1,7 @@
+# Global ignored dir or file
+# /node_modules/* and /bower_components/* ignored by default
+
+# Ignore built files
+
+dist/js/*
+node_modules

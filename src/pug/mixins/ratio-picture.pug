@@ -1,0 +1,4 @@
+mixin setRatioPicture(className,folder,name,ext,width,height)
+    picture(class=`${className}` data-src-w=`${width}` data-src-h=`${height}` )
+        source(srcset=`/dist/webp-img/${folder}/${name}.webp` type="image/webp")
+        img(src=`/dist/min-img/${folder}/${name}.${ext}` alt=`${alt}`)
