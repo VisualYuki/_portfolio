@@ -36,7 +36,9 @@ module.exports = function style() {
          )
          //.pipe(sourcemaps.init())
          .pipe(lessGlob())
-         .pipe(less())
+         .pipe(less({
+				javascriptEnabled: true
+			}))
          //.pipe(gulpif(process.env.NODE_ENV == "production", autoprefixer()))
          //.pipe(autoprefixer())
          .pipe(gulpif(process.env.NODE_ENV == "production", shorthand()))

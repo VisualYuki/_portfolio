@@ -7,21 +7,69 @@ block page-content
          img(src="../min-img/index/intro__background.jpg" alt="")
       .intro__overlay
       .intro__inner
-         .intro__text-wrapper
-            p.intro__hello-text.hide.tran-1  Привет, меня зовут Денис и я
-            .intro__sentence-wrapper.hide.tran-2
-               ul.intro__first-word-wrapper.intro__symbol-wrapper
+         .intro__text-wrapper 
+            p.intro__hello-text  Привет, меня зовут Денис и я
+            .intro__sentence-wrapper
+               ul.intro__symbol-wrapper.intro__first-word-wrapper
                   each letter in ['В','Е','Р','С','Т','А','Л','Ь','Щ','И','К' ]
                      li.intro__letter-inner
-                        .intro__letter-text=letter
+                        span.intro__letter-text=letter
                .intro__letter-inner.intro__divider-letter
-                  .intro__letter-text /
-               ul.intro__second-word-wrapper.intro__symbol-wrapper
+                  .intro__letter-text /  
+               ul.intro__symbol-wrapper.intro__second-word-wrapper
                   each letter in ['F','R','O','N','T','E','N','D' ]
                      li.intro__letter-inner
-                        .intro__letter-text=letter
-               ul.intro__third-word-wrapper.intro__symbol-wrapper
+                        span.intro__letter-text=letter
+               ul.intro__symbol-wrapper.intro__third-word-wrapper
                   each letter in ['Р','А','З','Р','А','Б','О','Т','Ч','И','К']
                      li.intro__letter-inner
-                        .intro__letter-text=letter
-            p.intro__about-text.hide.tran-3 создаю современные сайты.
+                        span.intro__letter-text=letter
+            p.intro__about-text.hide создаю современные сайты.
+   section.about.section-bottom-margin#about
+      .container
+         .about__inner
+            .about__photo-wrapper
+               picture.about__photo-picture
+                  source(srcset="../webp-img/index/my-photo.webp" type="image/webp")
+                  img(src="../min-img/index/my-photo.jpg", alt="")
+            .about__text-wrapper
+               .about__name Мошкин Денис
+               .about__position Верстальщик / Frontend разработчик 
+               .about__about-me 
+                  | Я всей душой полюбил веб разрботку, и не жалею времени на постоянное развитие в этой области. 
+                  <br>
+                  | Развиваюсь в сторону web-приложений (Vue.js, React.js), а также WordPress.
+               ul.about__items
+                  li.about__item
+                     .about__item-title Опыт в веб-разработке
+                     .about__item-text Более 1 года.               
+                  li.about__item
+                     .about__item-title Возраст
+                     .about__item-text 23 года
+                  li.about__item
+                     .about__item-title Почта
+                     .about__item-text 
+                        a.default-link(href="mailto:disant1998@yandex.ru") disant1998@yandex.ru
+                  li.about__item
+                     .about__item-title Телефон
+                     .about__item-text 
+                        a.default-link(href="tel:+89635508754") 89635508754
+                  li.about__item
+                     .about__item-title Телеграмм
+                     .about__item-text @denis_moshkin                           
+                  li.about__item
+                     .about__item-title Образование
+                     .about__item-text "ВятГУ" по направлению "Фундаментальная информатика и информационные технологии" 3 курса.
+                  li.about__item
+                     .about__item-title Медиа
+                     .about__item-text
+                        ul.about__link-items
+                           li.about__link-item
+                              a.about__link-item(href="https://github.com/VisualYuki" target="_blank")
+                                 img.about__link-item-img(src="../svg/github.svg")
+                           li.about__link-item
+                              a.about__link-item(href="https://vk.com/moshkin_denis" target="_blank")
+                                 img.about__link-item-img(src="../svg/vk.svg")
+                  li.about__item
+                     .about__item-title Исходники резюме
+                     a.default-link(href="https://github.com/VisualYuki/portfolio" target="_blank") Ссылка на репозиторий
