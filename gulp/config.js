@@ -1,5 +1,5 @@
 const outDir = "dist";
-const currentPage = [ "src/pug/pages/_index.pug"];
+const currentPage = [ "src/pug/pages/index.pug"];
 
 module.exports =  {
    src: {
