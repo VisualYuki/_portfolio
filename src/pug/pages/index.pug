@@ -1,75 +1,204 @@
 extends ../page-template/template.pug
 
 block page-content
-   section.intro
-      picture.intro__picture-background
-         source(srcset="../webp-img/index/intro__background.webp" type="image/webp")
-         img(src="../min-img/index/intro__background.jpg" alt="")
-      .intro__overlay
-      .intro__inner
-         .intro__text-wrapper
-            p.intro__hello-text  Привет, меня зовут Денис и я
-            .intro__sentence-wrapper
-               ul.intro__symbol-wrapper.intro__first-word-wrapper
-                  each letter in ['В','Е','Р','С','Т','А','Л','Ь','Щ','И','К' ]
-                     li.intro__letter-inner
-                        span.intro__letter-text=letter
-               .intro__letter-inner.intro__divider-letter
-                  .intro__letter-text /
-               ul.intro__symbol-wrapper.intro__second-word-wrapper
-                  each letter in ['F','R','O','N','T','E','N','D' ]
-                     li.intro__letter-inner
-                        span.intro__letter-text=letter
-               ul.intro__symbol-wrapper.intro__third-word-wrapper
-                  each letter in ['Р','А','З','Р','А','Б','О','Т','Ч','И','К']
-                     li.intro__letter-inner
-                        span.intro__letter-text=letter
-            p.intro__about-text.hide создаю современные сайты.
-   section.about.section-bottom-margin#about
-      .container
-         .about__inner
-            .about__photo-wrapper
-               picture.about__photo-picture
-                  source(srcset="../webp-img/index/my-photo.webp" type="image/webp")
-                  img(src="../min-img/index/my-photo.jpg", alt="")
-            .about__text-wrapper
-               .about__name Мошкин Денис
-               .about__position Верстальщик / Frontend разработчик
-               .about__about-me
-                  | Я всей душой полюбил веб разрботку, и не жалею времени на постоянное развитие в этой области.
-                  <br>
-                  | Развиваюсь в сторону web-приложений (Vue.js, React.js), а также WordPress.
-               ul.about__items
-                  li.about__item
-                     .about__item-title Опыт в веб-разработке
-                     .about__item-text 1.5 года
-                  li.about__item
-                     .about__item-title Возраст
-                     .about__item-text 23 года
-                  li.about__item
-                     .about__item-title Почта
-                     .about__item-text
-                        a.default-link(href="mailto:disant1998@yandex.ru") disant1998@yandex.ru
-                  li.about__item
-                     .about__item-title Телефон
-                     .about__item-text
-                        a.default-link(href="tel:+89635508754") 89635508754
-                  li.about__item
-                     .about__item-title Телеграмм
-                     .about__item-text @denis_moshkin
-                  li.about__item
-                     .about__item-title Образование
-                     .about__item-text "ВятГУ" по направлению "Фундаментальная информатика и информационные технологии" 3 курса.
-                  li.about__item
-                     .about__item-title Медиа
-                     .about__item-text
-                        ul.about__link-items
-                           li.about__link-item
-                              a.about__link-item(href="https://github.com/VisualYuki" target="_blank")
-                                 img.about__link-item-img(src="../svg/github.svg")
-                           li.about__link-item
-                              a.about__link-item(href="https://vk.com/moshkin_denis" target="_blank")
-                                 img.about__link-item-img(src="../svg/vk.svg")
-                  li.about__item
-                     .about__item-title Исходники резюме
-                     a.default-link(href="https://github.com/VisualYuki/portfolio" target="_blank") Ссылка на репозиторий
+	section.intro
+		picture.intro__picture-background
+			source(srcset="../webp-img/index/intro__background.webp" type="image/webp")
+			img(src="../min-img/index/intro__background.jpg" alt="")
+		.intro__overlay
+		.intro__inner
+			.intro__text-wrapper
+				p.intro__hello-text  Привет, меня зовут Денис и я
+				.intro__sentence-wrapper
+					ul.intro__symbol-wrapper.intro__first-word-wrapper
+						each letter in ['В','Е','Р','С','Т','А','Л','Ь','Щ','И','К' ]
+							li.intro__letter-inner
+								span.intro__letter-text=letter
+					.intro__letter-inner.intro__divider-letter
+						.intro__letter-text /
+					ul.intro__symbol-wrapper.intro__second-word-wrapper
+						each letter in ['F','R','O','N','T','E','N','D' ]
+							li.intro__letter-inner
+								span.intro__letter-text=letter
+					ul.intro__symbol-wrapper.intro__third-word-wrapper
+						each letter in ['Р','А','З','Р','А','Б','О','Т','Ч','И','К']
+							li.intro__letter-inner
+								span.intro__letter-text=letter
+				p.intro__about-text.hide создаю современные сайты.
+	section.about.section-bottom-margin#about
+		.container
+			.about__inner
+				.about__photo-wrapper
+					picture.about__photo-picture
+						source(srcset="../webp-img/index/my-photo.webp" type="image/webp")
+						img(src="../min-img/index/my-photo.jpg", alt="")
+				.about__text-wrapper
+					.about__name Мошкин Денис
+					.about__position Верстальщик / Frontend разработчик
+					.about__about-me
+						| Я всей душой полюбил веб разрботку, и не жалею времени на постоянное развитие в этой области.
+						<br>
+						| Развиваюсь в сторону web-приложений (Vue.js, React.js), а также WordPress.
+					ul.about__items
+						li.about__item
+							.about__item-title Опыт в веб-разработке
+							.about__item-text 1.5 года
+						li.about__item
+							.about__item-title Возраст
+							.about__item-text 23 года
+						li.about__item
+							.about__item-title Почта
+							.about__item-text
+								a.default-link(href="mailto:disant1998@yandex.ru") disant1998@yandex.ru
+						li.about__item
+							.about__item-title Телефон
+							.about__item-text
+								a.default-link(href="tel:+89635508754") 89635508754
+						li.about__item
+							.about__item-title Телеграмм
+							.about__item-text @denis_moshkin
+						li.about__item
+							.about__item-title Образование
+							.about__item-text "ВятГУ" по направлению "Фундаментальная информатика и информационные технологии" 3 курса.
+						li.about__item
+							.about__item-title Медиа
+							.about__item-text
+								ul.about__link-items
+									li.about__link-item
+										a.about__link-item(href="https://github.com/VisualYuki" target="_blank")
+											img.about__link-item-img(src="../svg/github.svg" alt="")
+									li.about__link-item
+										a.about__link-item(href="https://vk.com/moshkin_denis" target="_blank")
+											img.about__link-item-img(src="../svg/vk.svg" alt="")
+						li.about__item
+							.about__item-title Исходники резюме
+							a.default-link(href="https://github.com/VisualYuki/portfolio" target="_blank") Ссылка на репозиторий
+	section.skills.section-bottom-margin#skill
+		.container
+			h2.section-title Навыки
+			ul.skills__items
+
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/vue-js.svg" alt="")
+						span.item-title-text Vue.js
+					p.item-text Изучил прогрессивный JavaScript-фреймворк. Научился использовать работать с классами, события, директивами, компонентами.
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/wordpress.svg" alt="")
+						span.item-title-text Wordpress
+					p.item-text Изучил CMS систему управления контентом. Научился работать со стандартными классами и методами, владеть бызовыми знаниями в php, работать с админкой и связывать админку с версткой.
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/js.svg" alt="")
+						span.item-title-text Javascript
+					p.item-text Изучил язык программирования - Javascript. Научился использовать функции, классы, встроенные объекты а также работать с DOM моделью сайта.
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/web.svg" alt="")
+						span.item-title-text Верстка
+					p.item-text Изучил верстку страниц сайта по PSD, Figma макету. Научился верстать адаптивно и кроссбраузерно с применением медиа запросов. Использование семантической верстки для улучшения качества кода.
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/ajax.svg" alt="")
+						span.item-title-text AJAX
+					p.item-text Изучил AJAX - асинхронный JavaScript и XML. Научился работать с сервером: отправлять, получать запросы и обрабатывать их на странице.
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/gulp.svg" alt="")
+						span.item-title-text Gulp
+					p.item-text
+						| Изучил таскранер Gulp. Научился использовать плагины для минификации кода и изображений, сборки файлов, постпроцессоры, сервер проекта, а также линтеры для JS, CSS, PUG.
+						a.default-link(href="https://github.com/VisualYuki/Gulp-config" target="blame")  Ссылка на репозиторий с конфигом.
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/optimization.svg" alt="")
+						span.item-title-text Оптимизация сайта
+					p.item-text Изучил методы оптимизации сайта. Научился использовать програссивные форматы изображений (webp), ленивую загрузку фото, минимальную вложенность DOM, минификация кода, а также научился работать с панелью разработчика для отслеживания процесса работы сайта.
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/git.svg" alt="")
+						span.item-title-text Git/Github
+					p.item-text Изучил систему контроля версий. Научился пользоваться git bush для локальной работы с проектом и github для хранния проекта на удаленном сервере, а также коммитить, пушить, мержить, работать с ветками, стэшить и изучил pull request и fetch. Использую gitlab и github
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/webpack.svg" alt="")
+						span.item-title-text Webpack
+					p.item-text
+					| Изучил сборщик проектов webpack
+					//. Научился настраивать конфиг под проекты с фреймворком Vue.js
+					a.default-link(href="https://github.com/VisualYuki/webpack-config" target="blame")  Ссылка на репозиторий с конфигом.
+
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/jquery.svg" alt="")
+						span.item-title-text JQuery
+					p.item-text Изучил библиотеку для js - JQuery. Научился использовать селекторы, события, методы работы с DOM, эффекты и анимацию.
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/html-5.svg" alt="")
+						span.item-title-text HTML5
+					p.item-text Изучил язык гипертекстовой разметки текста - HTML. Научился делать качественную разметку веб-страницы, используя всевозможные тэги и атрибуты.
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/css.svg" alt="")
+						span.item-title-text CSS3
+					p.item-text Изучил таблицу каскадных стилей CSS. Научился использовать grid и flex в зависимости от поставленной задачи, а также всевозможные стили.
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/sass.svg" alt="")
+						span.item-title-text less/sass/scss
+					p.item-text Изучил CSS препроцессоры. Научился использовать переменные, миксины, вложенность, циклы, импорты для ускорения верстки сайта.
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/pug.svg" alt="")
+						span.item-title-text Pug
+					p.item-text Изучил шаблонизатор для html. Научился использовать циклами, переменными, блоками, импортами, инклюдами, миксинами.
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/yandex.svg" alt="")
+						span.item-title-text БЭМ
+					p.item-text Изучил методологию верстки - BAM-naming. Научился стандартному наименованию классов и разделению ответственности между блоками, а также конецпции блок, элемент, модификатор.
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/english-language.svg" alt="")
+						span.item-title-text Английский язык
+					p.item-text Научился читать и понимать английские тексты: чтение документаций к плагинам, редакторам кода, ЯП, а также понимание интерфейса программ. Стараюсь читать все в оригинале.
+
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/email.svg" alt="")
+						span.item-title-text MJML
+					p.item-text Изучил фреймворк для верстки писем. Научился использовать тэгами и стилями.
+					//Понимаю как верстать письма без фреймворков.
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/twig.svg" alt="")
+						span.item-title-text Twig
+					p.item-text
+						|Изучил препроцессор twig. Научился использовать циклы, условия, layout, extends, include, loop.
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/php.svg" alt="")
+						span.item-title-text PHP
+					p.item-text Изучил язык программирования PHP. Научился использовать for, foreach, var, if, echo.
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/sql-server.svg" alt="")
+						span.item-title-text SQL
+					p.item-text Изучил язык структурированых запросов SQL. Знаю на уровне запросов: insert, select, join, update, delete, а также нормальные формы Бойса-Кодда.
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/skills.svg" alt="")
+						span.item-title-text Остальное
+					p.item-text  Open Server, VS CODE, Virtual Box, FTP, SSH, Yandex map api, С#
+				li.skills__item
+					.item-title
+						img.item-icon(src="../svg/linux.svg" alt="")
+						span.item-title-text Linux
+					p.item-text Изучил операционную систему Linux . Научился пользоваться терминалом, настраивать LAMP сервер.
+				//li.skills__item
+					.item-title
+						img.item-icon(src="../svg/schema.svg" alt="")
+						span.item-title-text schema.org
+					p.item-text Изучил . Научился использовать
