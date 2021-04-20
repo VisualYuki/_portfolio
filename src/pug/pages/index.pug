@@ -1,13 +1,13 @@
 extends ../page-template/template.pug
 
-block page-content 
+block page-content
    section.intro
       picture.intro__picture-background
          source(srcset="../webp-img/index/intro__background.webp" type="image/webp")
          img(src="../min-img/index/intro__background.jpg" alt="")
       .intro__overlay
       .intro__inner
-         .intro__text-wrapper 
+         .intro__text-wrapper
             p.intro__hello-text  Привет, меня зовут Денис и я
             .intro__sentence-wrapper
                ul.intro__symbol-wrapper.intro__first-word-wrapper
@@ -15,7 +15,7 @@ block page-content
                      li.intro__letter-inner
                         span.intro__letter-text=letter
                .intro__letter-inner.intro__divider-letter
-                  .intro__letter-text /  
+                  .intro__letter-text /
                ul.intro__symbol-wrapper.intro__second-word-wrapper
                   each letter in ['F','R','O','N','T','E','N','D' ]
                      li.intro__letter-inner
@@ -34,29 +34,29 @@ block page-content
                   img(src="../min-img/index/my-photo.jpg", alt="")
             .about__text-wrapper
                .about__name Мошкин Денис
-               .about__position Верстальщик / Frontend разработчик 
-               .about__about-me 
-                  | Я всей душой полюбил веб разрботку, и не жалею времени на постоянное развитие в этой области. 
+               .about__position Верстальщик / Frontend разработчик
+               .about__about-me
+                  | Я всей душой полюбил веб разрботку, и не жалею времени на постоянное развитие в этой области.
                   <br>
                   | Развиваюсь в сторону web-приложений (Vue.js, React.js), а также WordPress.
                ul.about__items
                   li.about__item
                      .about__item-title Опыт в веб-разработке
-                     .about__item-text Более 1 года.               
+                     .about__item-text 1.5 года
                   li.about__item
                      .about__item-title Возраст
                      .about__item-text 23 года
                   li.about__item
                      .about__item-title Почта
-                     .about__item-text 
+                     .about__item-text
                         a.default-link(href="mailto:disant1998@yandex.ru") disant1998@yandex.ru
                   li.about__item
                      .about__item-title Телефон
-                     .about__item-text 
+                     .about__item-text
                         a.default-link(href="tel:+89635508754") 89635508754
                   li.about__item
                      .about__item-title Телеграмм
-                     .about__item-text @denis_moshkin                           
+                     .about__item-text @denis_moshkin
                   li.about__item
                      .about__item-title Образование
                      .about__item-text "ВятГУ" по направлению "Фундаментальная информатика и информационные технологии" 3 курса.
