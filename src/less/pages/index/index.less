@@ -1,0 +1,120 @@
+.intro {
+	width: 100%;
+	min-height: 100vh;
+	padding: 0 10px;
+	margin-bottom: 40px;
+
+	color: white;
+	text-align: center;
+
+	&__overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+
+		background: url("../min-img/index/intro__overlay.png");
+		background-color: rgba(44, 62, 80, 0.171);
+		background-repeat: repeat;
+	}
+
+	&__picture-background {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+	}
+
+	&__inner {
+		height: 100vh;
+		overflow-x: hidden;
+	}
+
+	&__text-wrapper {
+		height: 100%;
+
+		& > * {
+			.mobile({
+            transform: scale(1);
+         });
+		}
+	}
+
+	&__text-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+	}
+
+	&__hello-text {
+		padding: 15px 0;
+
+		font-size: 20px;
+
+		.mobile({
+         font-size: 18px;
+         margin-bottom: 20px;
+      });
+	}
+
+	&__sentence-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 15px 0;
+
+		font-weight: bold;
+
+		.mobile({
+         margin-bottom: 30px;
+      });
+	}
+
+	&__letter-text {
+		padding: 5px 1px;
+
+		.font-size(35,30,1300,768);
+		color: @yellow !important;
+		text-transform: uppercase;
+	}
+
+	&__letter-inner {
+		cursor: pointer;
+
+		&:hover .intro__letter-text {
+			animation-name: jump-letter;
+			animation-duration: 0.9s;
+			animation-iteration-count: 1;
+		}
+	}
+
+	&__symbol-wrapper {
+		display: flex;
+	}
+
+	&__about-text {
+		.font-size(18,14,1300,768);
+		font-weight: 600;
+
+		text-transform: uppercase;
+		letter-spacing: 5px;
+	}
+
+	&__first-word-wrapper {
+		margin-right: 5px;
+	}
+
+	&__divider-letter {
+		margin-right: 5px;
+	}
+
+	&__second-word-wrapper {
+		margin-right: 15px;
+	}
+}

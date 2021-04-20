@@ -1,4 +1,27 @@
 extends ../page-template/template.pug
 
 block page-content 
-    | 123 121212
+   section.intro
+      picture.intro__picture-background
+         source(srcset="../webp-img/index/intro__background.webp" type="image/webp")
+         img(src="../min-img/index/intro__background.jpg" alt="")
+      .intro__overlay
+      .intro__inner
+         .intro__text-wrapper
+            p.intro__hello-text.hide.tran-1  Привет, меня зовут Денис и я
+            .intro__sentence-wrapper.hide.tran-2
+               ul.intro__first-word-wrapper.intro__symbol-wrapper
+                  each letter in ['В','Е','Р','С','Т','А','Л','Ь','Щ','И','К' ]
+                     li.intro__letter-inner
+                        .intro__letter-text=letter
+               .intro__letter-inner.intro__divider-letter
+                  .intro__letter-text /
+               ul.intro__second-word-wrapper.intro__symbol-wrapper
+                  each letter in ['F','R','O','N','T','E','N','D' ]
+                     li.intro__letter-inner
+                        .intro__letter-text=letter
+               ul.intro__third-word-wrapper.intro__symbol-wrapper
+                  each letter in ['Р','А','З','Р','А','Б','О','Т','Ч','И','К']
+                     li.intro__letter-inner
+                        .intro__letter-text=letter
+            p.intro__about-text.hide.tran-3 создаю современные сайты.

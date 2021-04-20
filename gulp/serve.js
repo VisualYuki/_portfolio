@@ -32,8 +32,8 @@ module.exports = function serve() {
 
    gulp.watch(config.watch.less, style);
    gulp.watch(config.src.js, script);
-   //gulp.watch(config.watch.includePug, include_pug2html);
-   gulp.watch(config.src.pug, pug2html);
+   gulp.watch(config.watch.includePug, include_pug2html);
+   //gulp.watch(config.src.pug, pug2html);
    gulp.watch(config.watch.includeLibs, gulp.series(includeLibs));
    gulp.watch(config.src.includeScripts, gulp.series(includeScripts));
 
