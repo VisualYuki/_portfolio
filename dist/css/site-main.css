@@ -93,7 +93,7 @@ picture img {
   height: 100%;
 }
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: sans-serif;
   font-size: 16px;
   letter-spacing: 0.03em;
 }
@@ -381,12 +381,6 @@ select::-ms-expand {
   margin: 0;
   border: none;
   overflow: hidden;
-}
-@font-face {
-  font-family: 'VALTRA Aveny T';
-  src: local('VALTRA Aveny T'), local('VALTRAAvenyT'), url('/12fonts/VALTRAAvenyT.woff2') format('woff2'), url('/1212fonts/VALTRAAvenyT.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
 }
 /* ---------- MARGIN --------- */
 .mt-32 {
