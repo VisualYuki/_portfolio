@@ -206,7 +206,7 @@ block page-content
 			ul.experience__items
 				li.experience__item.item
 					a.item__picture-link(href="https://palax.info" target="_blank")
-						img.item__picture(src="../svg/palax-logo.svg", alt="" style="background: black; padding: 10px;")
+						img.item__picture.lazyload( data-src="../svg/palax-logo.svg", alt="" style="background: black; padding: 10px;")
 					.item__desc
 						.item__title
 							span.item__position Верстальщик, front-end разработчик
@@ -235,8 +235,8 @@ block page-content
 				li.experience__item.item
 					a.item__picture-link(href="https://rootmedia.ru" target="_blank")
 						picture.item__picture
-							source(srcset="../webp-img/experience/rootmedia-logo.webp" type="image/webp" )
-							img(src="../min-img/experience/rootmedia-logo.png" alt="")
+							source.lazyload(data-srcset="../webp-img/experience/rootmedia-logo.webp" type="image/webp")
+							img.lazyload(data-src="../min-img/experience/rootmedia-logo.png" alt="")
 					.item__desc
 						.item__title
 							span.item__position Верстальщик, front-end разработчик
@@ -269,71 +269,67 @@ block page-content
 				li.portfolio__site-item.item
 					.item__title-wrap
 						a.item__title(href="https://newlk.vdkanal.ru/" target="_blank") Личный кабинет водоканала
-						img.item__logo(src="../min-img/portfolio/vdkanal/logo.png" alt="" style="width: 130px;")
+						img.item__logo(data-src="../min-img/portfolio/vdkanal/logo.png" alt="" style="width: 130px;")
 					ul.item__subitems
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://newlk.vdkanal.ru/login" target="_blank") Регистрация
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/vdkanal/reg.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/vdkanal/reg.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/vdkanal/reg.webp" type="image/webp" class="lazyload")
+								img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/vdkanal/reg.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://newlk.vdkanal.ru/" target="_blank") Главная страница
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/vdkanal/index.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/vdkanal/index.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/vdkanal/index.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/vdkanal/index.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://newlk.vdkanal.ru/indications" target="_blank") Показания
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/vdkanal/indications.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/vdkanal/indications.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/vdkanal/indications.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/vdkanal/indications.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://newlk.vdkanal.ru/statistics" target="_blank") Статистика
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/vdkanal/statistics.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/vdkanal/statistics.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/vdkanal/statistics.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/vdkanal/statistics.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://newlk.vdkanal.ru/profile" target="_blank") Профиль
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/vdkanal/profile.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/vdkanal/profile.png", alt="" class="lazyload")
-
-
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/vdkanal/profile.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/vdkanal/profile.png", alt="" class="lazyload")
 				li.portfolio__site-item.item
 					.item__title-wrap
 						a.item__title(href="https://ym.palax.dev" target="_blank") Япономания
-						img.item__logo(src="../min-img/portfolio/ym/logo.png" alt="" style="height: 40px;")
+						img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../min-img/portfolio/ym/logo.png" alt="" style="height: 40px;")
 					ul.item__subitems
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://ym.palax.dev" target="_blank") Главная страница
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/ym/index.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/ym/index.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/ym/index.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/ym/index.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://ym.palax.dev/kombo" target="_blank") Каталог
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/ym/catalog.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/ym/catalog.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/ym/catalog.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/ym/catalog.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://ym.palax.dev/assorty/set-kupidon/pitstsa-sochnaya-25-sm-aktsiya/pitstsa-lemon-fish" target="_blank") Страница товара
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/ym/product.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/ym/product.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/ym/product.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/ym/product.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://ym.palax.dev/reviews/" target="_blank") Отзывы
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/ym/reviews.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/ym/reviews.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/ym/reviews.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/ym/reviews.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://ym.palax.dev/cart/" target="_blank") Корзина
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/ym/cart.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/ym/cart.png", alt="" class="lazyload")
-
-
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/ym/cart.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/ym/cart.png", alt="" class="lazyload")
 				li.portfolio__site-item.item
 					.item__title-wrap
 						a.item__title(href="http://shizhma-new.shizhma.com/" target="_blank") Шижма (WordPress)
-						img.item__logo(src="../min-img/portfolio/shizhma/logo.png" alt="" style="background: black; padding: 3px; width: 40px")
+						img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../min-img/portfolio/shizhma/logo.png" alt="" style="background: black; padding: 3px; width: 40px")
 					.item__desc
 						ul
 							li Сайт полностью сделан мной (верстка, натяжка, заполнение контентом)
@@ -346,115 +342,115 @@ block page-content
 						li.item__subitem
 							a.item__subitem-title.default-link(href="http://shizhma-new.shizhma.com/" target="_blank") Главная страница
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/shizhma/index.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/shizhma/index.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/shizhma/index.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/shizhma/index.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="http://shizhma-new.shizhma.com/results/" target="_blank") Результаты
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/shizhma/results.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/shizhma/results.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/shizhma/results.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/shizhma/results.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="http://shizhma-new.shizhma.com/contacts/" target="_blank") Контакты
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/shizhma/contacts.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/shizhma/contacts.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/shizhma/contacts.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/shizhma/contacts.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="http://shizhma-new.shizhma.com/players/" target="_blank") Участникам
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/shizhma/living.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/shizhma/living.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/shizhma/living.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/shizhma/living.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="http://shizhma-new.shizhma.com/live/" target="_blank") Live соревнования
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/shizhma/live.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/shizhma/live.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/shizhma/live.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/shizhma/live.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="http://shizhma-new.shizhma.com/лыжный-марафон/" target="_blank") Зимнее событие
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/shizhma/snow-event.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/shizhma/snow-event.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/shizhma/snow-event.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/shizhma/snow-event.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="http://shizhma-new.shizhma.com/кросс-кантри-веломарафон/" target="_blank") Летнее событие
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/shizhma/summer-event.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/shizhma/summer-event.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/shizhma/summer-event.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/shizhma/summer-event.png", alt="" class="lazyload")
 				li.portfolio__site-item.item
 					.item__title-wrap
 						a.item__title(href="https://агросоюз43.рф" target="_blank") Агросоюз
-						img.item__logo(src="../svg/agrosouz-logo.svg" alt="" style="background: black; padding: 3px; width: 80px")
+						img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../svg/agrosouz-logo.svg" alt="" style="background: black; padding: 3px; width: 80px")
 					ul.item__subitems
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://агросоюз43.рф/" target="_blank") Главная страница
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/agro-souz/intro.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/agro-souz/intro.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/agro-souz/intro.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/agro-souz/intro.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://агросоюз43.рф/search" target="_blank") Поиск продукта
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/agro-souz/catalog.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/agro-souz/catalog.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/agro-souz/catalog.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/agro-souz/catalog.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://агросоюз43.рф/catalog/selskokhozjajjstvennye-traktory/selskokhozjajjstvennye-traktory/traktor-ant-4135f" target="_blank") Карточка товара
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/agro-souz/card-project.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/agro-souz/card-project.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/agro-souz/card-project.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/agro-souz/card-project.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://агросоюз43.рф/contacts" target="_blank") Карта
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/agro-souz/map.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/agro-souz/map.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/agro-souz/map.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/agro-souz/map.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://агросоюз43.рф/about" target="_blank") О компании
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/agro-souz/about.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/agro-souz/about.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/agro-souz/about.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/agro-souz/about.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://агросоюз43.рф/catalog" target="_blank") Каталог товаров
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/agro-souz/predcatalog.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/agro-souz/predcatalog.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/agro-souz/predcatalog.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/agro-souz/predcatalog.png", alt="" class="lazyload")
 				li.portfolio__site-item.item
 					.item__title-wrap
 						a.item__title(href="https://studio-comforta.ru" target="_blank") Студия комфорта
-						img.item__logo(src="../svg/studio-comforta-logo.svg" alt="" style="width: 80px")
+						img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../svg/studio-comforta-logo.svg" alt="" style="width: 80px")
 					ul.item__subitems
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://studio-comforta.ru" target="_blank") Главная страница
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/studio-comforta/intro.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/studio-comforta/intro.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/studio-comforta/intro.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/studio-comforta/intro.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://studio-comforta.ru" target="_blank") Главная страница
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/studio-comforta/middle.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/studio-comforta/middle.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/studio-comforta/middle.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/studio-comforta/middle.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://studio-comforta.ru" target="_blank") Форма выбора потолка
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/studio-comforta/form.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/studio-comforta/form.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/studio-comforta/form.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/studio-comforta/form.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://studio-comforta.ru/feedbacks" target="_blank") Отзывы
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/studio-comforta/reviews.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/studio-comforta/reviews.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/studio-comforta/reviews.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/studio-comforta/reviews.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://studio-comforta.ru/contacts" target="_blank") Карта местоположения
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/studio-comforta/map.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/studio-comforta/map.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/studio-comforta/map.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/studio-comforta/map.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://studio-comforta.ru/projects" target="_blank") Проекты
 							picture.item__subitem-picture
-								source(srcset="../webp-img/portfolio/studio-comforta/projects.webp" type="image/webp" class="lazyload")
-								img(src="../min-img/portfolio/studio-comforta/projects.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/studio-comforta/projects.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/studio-comforta/projects.png", alt="" class="lazyload")
 			//-ul.portfolio__items
 			//-	li.portfolio__item
 			//-		p.portfolio__item-title Главная страница
 			//-		a(href="https://studio-comforta.ru")
 			//-			picture.portfolio__item-picture
-			//-				source(data-srcset="../img/studio_intro.webp" type="image/webp" class="lazyload")
-			//-				img(data-src="../min-img/studio_intro.png", alt="" class="lazyload")
+			//-				source(data-srcset="../gifs/preloader.gif" data-srcset="../img/studio_intro.webp" type="image/webp" class="lazyload")
+			//-				img(data-data-src="../min-img/studio_intro.png", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="studio_intro" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -463,8 +459,8 @@ block page-content
 			//-		p.portfolio__item-title Главная страница
 			//-		a(href="https://studio-comforta.ru")
 			//-			picture.portfolio__item-picture
-			//-				source(data-srcset="../img/studio_middle.webp" type="image/webp" class="lazyload")
-			//-				img(data-src="../min-img/studio_middle.png", alt="" class="lazyload")
+			//-				source(data-data-srcset="../img/studio_middle.webp" type="image/webp" class="lazyload")
+			//-				img(data-data-src="../min-img/studio_middle.png", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="studio_middle" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -473,8 +469,8 @@ block page-content
 			//-		p.portfolio__item-title Форма выбора потолка
 			//-		a(href="https://studio-comforta.ru")
 			//-			picture.portfolio__item-picture
-			//-				source(data-srcset="../img/studio_form.webp" type="image/webp" class="lazyload")
-			//-				img(data-src="../min-img/studio_form.png", alt="" class="lazyload")
+			//-				source(data-data-srcset="../img/studio_form.webp" type="image/webp" class="lazyload")
+			//-				img(data-data-src="../min-img/studio_form.png", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="studio_form" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -483,8 +479,8 @@ block page-content
 			//-		p.portfolio__item-title Отзывы
 			//-		a(href="https://studio-comforta.ru/feedbacks")
 			//-			picture.portfolio__item-picture
-			//-				source(data-srcset="../img/studio_reviews.webp" type="image/webp" class="lazyload")
-			//-				img(data-src="../min-img/studio_reviews.png", alt="" class="lazyload")
+			//-				source(data-data-srcset="../img/studio_reviews.webp" type="image/webp" class="lazyload")
+			//-				img(data-data-src="../min-img/studio_reviews.png", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="studio_reviews" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -493,8 +489,8 @@ block page-content
 			//-		p.portfolio__item-title Карта местоположения
 			//-		a(href="https://studio-comforta.ru/contacts")
 			//-			picture.portfolio__item-picture
-			//-				source(data-srcset="../img/studio_map.webp" type="image/webp" class="lazyload")
-			//-				img(data-src="../min-img/studio_map.png", alt="" class="lazyload")
+			//-				source(data-data-srcset="../img/studio_map.webp" type="image/webp" class="lazyload")
+			//-				img(data-data-src="../min-img/studio_map.png", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="studio_map" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -503,35 +499,35 @@ block page-content
 
 
 			//-h3.site-title
-			//-   //img(src="../min-img/logo-shizhma.png" class="site-title__img" alt="", srcset="")
+			//-   //img(data-src="../min-img/logo-shizhma.png" class="site-title__img" alt="", data-srcset="")
 			//-   span Инструмент
 
 			//-ul.portfolio__items
 			//-   li.portfolio__item
 			//-      p.portfolio__item-title Главная страница
 			//-      picture.portfolio__item-picture
-			//-         source(data-srcset="../img/vdk.webp" type="image/webp" class="lazyload")
-			//-         img(data-src="../min-img/vdk.phg", alt="" class="lazyload")
+			//-         source(data-data-srcset="../img/vdk.webp" type="image/webp" class="lazyload")
+			//-         img(data-data-src="../min-img/vdk.phg", alt="" class="lazyload")
 			//-      .portfolio__btn-wrapper
 			//-         .portfolio__btn-inner-wrapper
 			//-            a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="vdk" data-name-ext="png" data-fancybox="") Увеличить фото
 			//-            a.portfolio__btn-link.portfolio__btn(href="https://newlk.vdkanal.ru/" target="blame"  ) Перейти к странице
 			//-h3.site-title
-			//-	//img(src="../min-img/logo-shizhma.png" class="site-title__img" alt="", srcset="")
+			//-	//img(data-src="../min-img/logo-shizhma.png" class="site-title__img" alt="", data-srcset="")
 			//-	span Личный кабинет водоканала
 
 			//-ul.portfolio__items
 			//-	li.portfolio__item
 			//-		p.portfolio__item-title Главная страница
 			//-		picture.portfolio__item-picture
-			//-			source(data-srcset="../img/vdk.webp" type="image/webp" class="lazyload")
-			//-			img(data-src="../min-img/vdk.phg", alt="" class="lazyload")
+			//-			source(data-data-srcset="../img/vdk.webp" type="image/webp" class="lazyload")
+			//-			img(data-data-src="../min-img/vdk.phg", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="vdk" data-name-ext="png" data-fancybox="") Увеличить фото
 			//-				a.portfolio__btn-link.portfolio__btn(href="https://newlk.vdkanal.ru/" target="blame"  ) Перейти к странице
 			//-h3.site-title
-			//-	//img(src="../min-img/logo-shizhma.png" class="site-title__img" alt="", srcset="")
+			//-	//img(data-src="../min-img/logo-shizhma.png" class="site-title__img" alt="", data-srcset="")
 			//-	span Япономания
 			//-ul.portfolio__desc
 			//-	li Просто верстка
@@ -539,8 +535,8 @@ block page-content
 			//-	li.portfolio__item
 			//-		p.portfolio__item-title Главная страница
 			//-		picture.portfolio__item-picture
-			//-			source(data-srcset="../img/ym-index.webp" type="image/webp" class="lazyload")
-			//-			img(data-src="../min-img/ya-index.phg", alt="" class="lazyload")
+			//-			source(data-data-srcset="../img/ym-index.webp" type="image/webp" class="lazyload")
+			//-			img(data-data-src="../min-img/ya-index.phg", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="ym-index" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -548,8 +544,8 @@ block page-content
 			//-	li.portfolio__item
 			//-		p.portfolio__item-title Каталог
 			//-		picture.portfolio__item-picture
-			//-			source(data-srcset="../img/ym-catalog.webp" type="image/webp" class="lazyload")
-			//-			img(data-src="../min-img/ya-catalog.phg", alt="" class="lazyload")
+			//-			source(data-data-srcset="../img/ym-catalog.webp" type="image/webp" class="lazyload")
+			//-			img(data-data-src="../min-img/ya-catalog.phg", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="ym-catalog" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -557,14 +553,14 @@ block page-content
 			//-	li.portfolio__item
 			//-		p.portfolio__item-title Страница товара
 			//-		picture.portfolio__item-picture
-			//-			source(data-srcset="../img/ym-product.webp" type="image/webp" class="lazyload")
-			//-			img(data-src="../min-img/ya-product.phg", alt="" class="lazyload")
+			//-			source(data-data-srcset="../img/ym-product.webp" type="image/webp" class="lazyload")
+			//-			img(data-data-src="../min-img/ya-product.phg", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="ym-product" data-name-ext="png" data-fancybox="") Увеличить фото
 			//-				a.portfolio__btn-link.portfolio__btn(href="https://ym.palax.dev/assorty/set-kupidon/pitstsa-sochnaya-25-sm-aktsiya/pitstsa-lemon-fish" target="blame"  ) Перейти к странице
 			//-h3.site-title
-			//-	//img(src="../min-img/logo-shizhma.png" class="site-title__img" alt="", srcset="")
+			//-	//img(data-src="../min-img/logo-shizhma.png" class="site-title__img" alt="", data-srcset="")
 			//-	span Шижма (WordPress)
 			//-ul.portfolio__desc
 			//-	li Сайт полностью сделан мной (верстка, натяжка, заполнение контентом)
@@ -576,8 +572,8 @@ block page-content
 			//-	li.portfolio__item
 			//-		p.portfolio__item-title Главная страница
 			//-		picture.portfolio__item-picture
-			//-			source(data-srcset="../img/shizhma_index.webp" type="image/webp" class="lazyload")
-			//-			img(data-src="../min-img/shizhma_index.phg", alt="" class="lazyload")
+			//-			source(data-data-srcset="../img/shizhma_index.webp" type="image/webp" class="lazyload")
+			//-			img(data-data-src="../min-img/shizhma_index.phg", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="shizhma_index" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -585,8 +581,8 @@ block page-content
 			//-	li.portfolio__item
 			//-		p.portfolio__item-title Результаты
 			//-		picture.portfolio__item-picture
-			//-			source(data-srcset="../img/shizhma_results.webp" type="image/webp" class="lazyload")
-			//-			img(data-src="../min-img/shizhma_results.png", alt="" class="lazyload")
+			//-			source(data-data-srcset="../img/shizhma_results.webp" type="image/webp" class="lazyload")
+			//-			img(data-data-src="../min-img/shizhma_results.png", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="shizhma_results" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -594,8 +590,8 @@ block page-content
 			//-	li.portfolio__item
 			//-		p.portfolio__item-title Участникам
 			//-		picture.portfolio__item-picture
-			//-			source(data-srcset="../img/shizhma_living.webp" type="image/webp" class="lazyload")
-			//-			img(data-src="../min-img/shizhma_living.png", alt="" class="lazyload")
+			//-			source(data-data-srcset="../img/shizhma_living.webp" type="image/webp" class="lazyload")
+			//-			img(data-data-src="../min-img/shizhma_living.png", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="shizhma_living" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -603,8 +599,8 @@ block page-content
 			//-	li.portfolio__item
 			//-		p.portfolio__item-title Контакты
 			//-		picture.portfolio__item-picture
-			//-			source(data-srcset="../img/shizhma_contacts.webp" type="image/webp" class="lazyload")
-			//-			img(data-src="../min-img/shizhma_contacts.png", alt="" class="lazyload")
+			//-			source(data-data-srcset="../img/shizhma_contacts.webp" type="image/webp" class="lazyload")
+			//-			img(data-data-src="../min-img/shizhma_contacts.png", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="shizhma_contacts" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -613,8 +609,8 @@ block page-content
 			//-		p.portfolio__item-title Live соревнования
 
 			//-		picture.portfolio__item-picture
-			//-			source(data-srcset="../img/shizhma_live.webp" type="image/webp" class="lazyload")
-			//-			img(data-src="../min-img/shizhma_live.png", alt="" class="lazyload")
+			//-			source(data-data-srcset="../img/shizhma_live.webp" type="image/webp" class="lazyload")
+			//-			img(data-data-src="../min-img/shizhma_live.png", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="shizhma_live" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -622,8 +618,8 @@ block page-content
 			//-	li.portfolio__item
 			//-		p.portfolio__item-title Зимнее событие
 			//-		picture.portfolio__item-picture
-			//-			source(data-srcset="../img/shizhma_snow-event.webp" type="image/webp" class="lazyload")
-			//-			img(data-src="../min-img/shizhma_snow-event.png", alt="" class="lazyload")
+			//-			source(data-data-srcset="../img/shizhma_snow-event.webp" type="image/webp" class="lazyload")
+			//-			img(data-data-src="../min-img/shizhma_snow-event.png", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="shizhma_snow-event" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -631,8 +627,8 @@ block page-content
 			//-	li.portfolio__item
 			//-		p.portfolio__item-title Летнее событие
 			//-		picture.portfolio__item-picture
-			//-			source(data-srcset="../img/shizhma_summer-event.webp" type="image/webp" class="lazyload")
-			//-			img(data-src="../min-img/shizhma_summer-event.png", alt="" class="lazyload")
+			//-			source(data-data-srcset="../img/shizhma_summer-event.webp" type="image/webp" class="lazyload")
+			//-			img(data-data-src="../min-img/shizhma_summer-event.png", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="shizhma_summer-event" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -648,8 +644,8 @@ block page-content
 			//-		a.link(href="../projects/english quiz/dist/pages/index.html") Ссылка на квиз
 
 			//-picture.game-img
-			//-	source(data-srcset="../img/english-quiz.webp" type="image/webp" class="lazyload")
-			//-	img(data-src="../min-img/english-quiz.png", alt="" class="lazyload")
+			//-	source(data-data-srcset="../img/english-quiz.webp" type="image/webp" class="lazyload")
+			//-	img(data-data-src="../min-img/english-quiz.png", alt="" class="lazyload")
 			//-h3.site-title
 			//-	span Агросоюз
 			//-ul.portfolio__desc
@@ -660,8 +656,8 @@ block page-content
 			//-		p.portfolio__item-title Главная страница
 			//-		a(href="http://agrosouz.43rm.ru/")
 			//-			picture.portfolio__item-picture
-			//-				source(data-srcset="../img/agrosouz_intro.webp" type="image/webp" class="lazyload" )
-			//-				img(data-src="../min-img/agrosouz_intro.png", alt="" class="lazyload")
+			//-				source(data-data-srcset="../img/agrosouz_intro.webp" type="image/webp" class="lazyload" )
+			//-				img(data-data-src="../min-img/agrosouz_intro.png", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="agrosouz_intro" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -670,8 +666,8 @@ block page-content
 			//-		p.portfolio__item-title Поиск продукта
 			//-		a(href="http://agrosouz.43rm.ru/")
 			//-			picture.portfolio__item-picture
-			//-				source(data-srcset="../img/agrosouz_catalog.webp" type="image/webp" class="lazyload" )
-			//-				img(data-src="../min-img/agrosouz_catalog.png", alt="" class="lazyload")
+			//-				source(data-data-srcset="../img/agrosouz_catalog.webp" type="image/webp" class="lazyload" )
+			//-				img(data-data-src="../min-img/agrosouz_catalog.png", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="agrosouz_catalog" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -680,8 +676,8 @@ block page-content
 			//-		p.portfolio__item-title Карточка проекта
 			//-		a(href="http://agrosouz.43rm.ru/catalog")
 			//-			picture.portfolio__item-picture
-			//-				source(data-srcset="../img/agrosouz_card-project.webp" type="image/webp" class="lazyload")
-			//-				img(data-src="../min-img/agrosouz_card-project.png", alt="" class="lazyload")
+			//-				source(data-data-srcset="../img/agrosouz_card-project.webp" type="image/webp" class="lazyload")
+			//-				img(data-data-src="../min-img/agrosouz_card-project.png", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="agrosouz_card-project" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -690,8 +686,8 @@ block page-content
 			//-		p.portfolio__item-title Карта
 			//-		a(href="http://agrosouz.43rm.ru/contacts")
 			//-			picture.portfolio__item-picture
-			//-				source(data-srcset="../img/agrosouz_map.webp" type="image/webp" class="lazyload")
-			//-				img(data-src="../min-img/agrosouz_map.png", alt="" class="lazyload")
+			//-				source(data-data-srcset="../img/agrosouz_map.webp" type="image/webp" class="lazyload")
+			//-				img(data-data-src="../min-img/agrosouz_map.png", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="agrosouz_map" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -700,8 +696,8 @@ block page-content
 			//-		p.portfolio__item-title О компании
 			//-		a(href="http://agrosouz.43rm.ru/about")
 			//-			picture.portfolio__item-picture
-			//-				source(srcset="" data-srcset="../img/agrosouz_about.webp" type="image/webp" class="lazyload")
-			//-				img(src="" data-src="../min-img/agrosouz_about.png", alt="" class="lazyload")
+			//-				source(data-srcset="" data-data-srcset="../img/agrosouz_about.webp" type="image/webp" class="lazyload")
+			//-				img(data-src="" data-data-src="../min-img/agrosouz_about.png", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="agrosouz_about" data-name-ext="png" data-fancybox="") Увеличить фото
@@ -710,14 +706,14 @@ block page-content
 			//-		p.portfolio__item-title Каталог товаров
 			//-		a(href="http://agrosouz.43rm.ru/catalog")
 			//-			picture.portfolio__item-picture
-			//-				source(data-srcset="../img/agrosouz_predcatalog.webp" type="image/webp" class="lazyload")
-			//-				img(data-src="../min-img/agrosouz_predcatalog.png", alt="" class="lazyload")
+			//-				source(data-data-srcset="../img/agrosouz_predcatalog.webp" type="image/webp" class="lazyload")
+			//-				img(data-data-src="../min-img/agrosouz_predcatalog.png", alt="" class="lazyload")
 			//-		.portfolio__btn-wrapper
 			//-			.portfolio__btn-inner-wrapper
 			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="agrosouz_predcatalog" data-name-ext="png" data-fancybox="") Увеличить фото
 			//-				a.portfolio__btn-link.portfolio__btn(href="http://agrosouz.43rm.ru/catalog" target="blame") Перейти к странице
 			//-h3.site-title
-			//-	img(src="../img/svg/studio-logo.svg" class="site-title__img" alt="", srcset="")
+			//-	img(data-src="../img/svg/studio-logo.svg" class="site-title__img" alt="", data-srcset="")
 			//-	span Студия комфорта
 
 			//-h3.site-title
@@ -730,5 +726,5 @@ block page-content
 			//-	li
 			//-		a.link(href="../projects/-spider-solitaire/index.html" target="_blank") Ссылка на игру
 			//-picture.game-img
-			//-	source(data-srcset="../img/solitiare.webp" type="image/webp" class="lazyload")
-			//-	img(data-src="../min-img/solitiare.png", alt="" class="lazyload")
+			//-	source(data-data-srcset="../img/solitiare.webp" type="image/webp" class="lazyload")
+			//-	img(data-data-src="../min-img/solitiare.png", alt="" class="lazyload")
