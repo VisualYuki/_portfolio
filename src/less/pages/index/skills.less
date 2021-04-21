@@ -4,8 +4,8 @@
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 25px;
 
-		._1024({
-         grid-template-columns: repeat(2, 1fr);
+		.desk_bottom({
+         grid-template-columns: repeat(2, minmax(0,auto));
       });
 	}
 
@@ -24,16 +24,7 @@
 		}
 
 		.item {
-			&-icon {
-				width: 60px;
-				height: 40px;
-				margin-right: 15px;
-
-				object-fit: contain;
-				object-position: center center;
-			}
-
-			&-title {
+			&__title-wrap {
 				left: -40px;
 
 				.flex(flex-start,center);
@@ -59,19 +50,28 @@
 					border-top-color: @blue;
 					border-right-color: @blue;
 				}
-
-				&-text {
-					font-size: 18px;
-					font-weight: bold;
-					text-transform: uppercase;
-					color: #ffffff;
-				}
 			}
-		}
 
-		.item-text {
-			font-size: 15px;
-			line-height: 28px;
+			&__icon {
+				width: 60px;
+				height: 40px;
+				margin-right: 15px;
+
+				object-fit: contain;
+				object-position: center center;
+			}
+
+			&__title {
+				font-size: 18px;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: #ffffff;
+			}
+
+			&__text {
+				font-size: 15px;
+				line-height: 28px;
+			}
 		}
 	}
 }

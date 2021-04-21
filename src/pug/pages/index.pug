@@ -39,236 +39,302 @@ block page-content
 						| Я всей душой полюбил веб разрботку, и не жалею времени на постоянное развитие в этой области.
 						<br>
 						| Развиваюсь в сторону web-приложений (Vue.js, React.js), а также WordPress.
-					ul.about__items
-						li.about__item
-							.about__item-title Опыт в веб-разработке
-							.about__item-text 1.5 года
-						li.about__item
-							.about__item-title Возраст
-							.about__item-text 23 года
-						li.about__item
-							.about__item-title Почта
-							.about__item-text
+					ul.about__text-items
+						li.about__text-item.item
+							p.item__title Опыт в веб-разработке
+							p.item__text 1.5 года
+						li.about__text-item.item
+							p.item__title Возраст
+							p.item__text 23 года
+						li.about__text-item.item
+							p.item__title Почта
+							p.item__text
 								a.default-link(href="mailto:disant1998@yandex.ru") disant1998@yandex.ru
-						li.about__item
-							.about__item-title Телефон
-							.about__item-text
+						li.about__text-item.item
+							p.item__title Телефон
+							p.item__text
 								a.default-link(href="tel:+89635508754") 89635508754
-						li.about__item
-							.about__item-title Телеграмм
-							.about__item-text @denis_moshkin
-						li.about__item
-							.about__item-title Образование
-							.about__item-text "ВятГУ" по направлению "Фундаментальная информатика и информационные технологии" 3 курса.
-						li.about__item
-							.about__item-title Медиа
-							.about__item-text
-								ul.about__link-items
-									li.about__link-item
-										a.about__link-item(href="https://github.com/VisualYuki" target="_blank")
-											img.about__link-item-img(src="../svg/github.svg" alt="")
-									li.about__link-item
-										a.about__link-item(href="https://vk.com/moshkin_denis" target="_blank")
-											img.about__link-item-img(src="../svg/vk.svg" alt="")
-						li.about__item
-							.about__item-title Исходники резюме
+						li.about__text-item.item
+							p.item__title Телеграмм
+							p.item__text @denis_moshkin
+						li.about__text-item.item
+							p.item__title Образование
+							p.item__text "ВятГУ" по направлению "Фундаментальная информатика и информационные технологии" 3 курса.
+						li.about__text-item.item
+							p.item__title Медиа
+							.item__text
+								ul.item__link-items
+									li.item__link-item
+										a.item__link-item(href="https://github.com/VisualYuki" target="_blank")
+											img.item__link-item-img(src="../svg/github.svg" alt="")
+									li.item__link-item
+										a.item__link-item(href="https://vk.com/moshkin_denis" target="_blank")
+											img.item__link-item-img(src="../svg/vk.svg" alt="")
+						li.about__text-item.item
+							.item__title Исходники резюме
 							a.default-link(href="https://github.com/VisualYuki/portfolio" target="_blank") Ссылка на репозиторий
 	section#skill.skills.section-margin
 		.container
 			h2.section-title Навыки
 			ul.skills__items
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/vue-js.svg" alt="")
-						span.item-title-text Vue.js
-					p.item-text Изучил прогрессивный JavaScript-фреймворк. Научился использовать работать с классами, события, директивами, компонентами.
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/wordpress.svg" alt="")
-						span.item-title-text Wordpress
-					p.item-text Изучил CMS систему управления контентом. Научился работать со стандартными классами и методами, владеть бызовыми знаниями в php, работать с админкой и связывать админку с версткой.
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/js.svg" alt="")
-						span.item-title-text Javascript
-					p.item-text Изучил язык программирования - Javascript. Научился использовать функции, классы, встроенные объекты а также работать с DOM моделью сайта.
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/web.svg" alt="")
-						span.item-title-text Верстка
-					p.item-text Изучил верстку страниц сайта по PSD, Figma макету. Научился верстать адаптивно и кроссбраузерно с применением медиа запросов. Использование семантической верстки для улучшения качества кода.
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/ajax.svg" alt="")
-						span.item-title-text AJAX
-					p.item-text Изучил AJAX - асинхронный JavaScript и XML. Научился работать с сервером: отправлять, получать запросы и обрабатывать их на странице.
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/gulp.svg" alt="")
-						span.item-title-text Gulp
-					p.item-text
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/vue-js.svg" alt="")
+						span.item__title Vue.js
+					p.item__text Изучил прогрессивный JavaScript-фреймворк. Научился использовать работать с классами, события, директивами, компонентами.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/wordpress.svg" alt="")
+						span.item__title Wordpress
+					p.item__text Изучил CMS систему управления контентом. Научился работать со стандартными классами и методами, владеть бызовыми знаниями в php, работать с админкой и связывать админку с версткой.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/js.svg" alt="")
+						span.item__title Javascript
+					p.item__text Изучил язык программирования - Javascript. Научился использовать функции, классы, встроенные объекты а также работать с DOM моделью сайта.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/web.svg" alt="")
+						span.item__title Верстка
+					p.item__text Изучил верстку страниц сайта по PSD, Figma макету. Научился верстать адаптивно и кроссбраузерно с применением медиа запросов. Использование семантической верстки для улучшения качества кода.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/ajax.svg" alt="")
+						span.item__title AJAX
+					p.item__text Изучил AJAX - асинхронный JavaScript и XML. Научился работать с сервером: отправлять, получать запросы и обрабатывать их на странице.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/gulp.svg" alt="")
+						span.item__title Gulp
+					p.item__text
 						| Изучил таскранер Gulp. Научился использовать плагины для минификации кода и изображений, сборки файлов, постпроцессоры, сервер проекта, а также линтеры для JS, CSS, PUG.
 						a.default-link(href="https://github.com/VisualYuki/Gulp-config" target="_blank")  Ссылка на репозиторий с конфигом.
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/optimization.svg" alt="")
-						span.item-title-text Оптимизация сайта
-					p.item-text Изучил методы оптимизации сайта. Научился использовать програссивные форматы изображений (webp), ленивую загрузку фото, минимальную вложенность DOM, минификация кода, а также научился работать с панелью разработчика для отслеживания процесса работы сайта.
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/git.svg" alt="")
-						span.item-title-text Git / Github
-					p.item-text Изучил систему контроля версий. Научился пользоваться git bush для локальной работы с проектом и github для хранния проекта на удаленном сервере, а также коммитить, пушить, мержить, работать с ветками, стэшить и изучил pull request и fetch. Использую gitlab и github
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/webpack.svg" alt="")
-						span.item-title-text Webpack
-					p.item-text
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/optimization.svg" alt="")
+						span.item__title Опт-ция сайта
+					p.item__text Изучил методы оптимизации сайта. Научился использовать програссивные форматы изображений (webp), ленивую загрузку фото, минимальную вложенность DOM, минификация кода, а также научился работать с панелью разработчика для отслеживания процесса работы сайта.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/git.svg" alt="")
+						span.item__title Git / Github
+					p.item__text Изучил систему контроля версий. Научился пользоваться git bush для локальной работы с проектом и github для хранния проекта на удаленном сервере, а также коммитить, пушить, мержить, работать с ветками, стэшить и изучил pull request и fetch. Использую gitlab и github
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/webpack.svg" alt="")
+						span.item__title Webpack
+					p.item__text
 					| Изучил сборщик проектов webpack
 					//. Научился настраивать конфиг под проекты с фреймворком Vue.js
 					a.default-link(href="https://github.com/VisualYuki/webpack-config" target="_blank")  Ссылка на репозиторий с конфигом.
 
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/jquery.svg" alt="")
-						span.item-title-text JQuery
-					p.item-text Изучил библиотеку для js - JQuery. Научился использовать селекторы, события, методы работы с DOM, эффекты и анимацию.
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/html-5.svg" alt="")
-						span.item-title-text HTML5
-					p.item-text Изучил язык гипертекстовой разметки текста - HTML. Научился делать качественную разметку веб-страницы, используя всевозможные тэги и атрибуты.
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/css.svg" alt="")
-						span.item-title-text CSS3
-					p.item-text Изучил таблицу каскадных стилей CSS. Научился использовать grid и flex в зависимости от поставленной задачи, а также всевозможные стили.
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/sass.svg" alt="")
-						span.item-title-text less/sass/scss
-					p.item-text Изучил CSS препроцессоры. Научился использовать переменные, миксины, вложенность, циклы, импорты для ускорения верстки сайта.
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/pug.svg" alt="")
-						span.item-title-text Pug
-					p.item-text Изучил шаблонизатор для html. Научился использовать циклами, переменными, блоками, импортами, инклюдами, миксинами.
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/yandex.svg" alt="")
-						span.item-title-text БЭМ
-					p.item-text Изучил методологию верстки - BAM-naming. Научился стандартному наименованию классов и разделению ответственности между блоками, а также конецпции блок, элемент, модификатор.
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/english-language.svg" alt="")
-						span.item-title-text Английский язык
-					p.item-text Научился читать и понимать английские тексты: чтение документаций к плагинам, редакторам кода, ЯП, а также понимание интерфейса программ. Стараюсь читать все в оригинале.
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/email.svg" alt="")
-						span.item-title-text MJML
-					p.item-text Изучил фреймворк для верстки писем. Научился использовать тэгами и стилями.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/jquery.svg" alt="")
+						span.item__title JQuery
+					p.item__text Изучил библиотеку для js - JQuery. Научился использовать селекторы, события, методы работы с DOM, эффекты и анимацию.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/html-5.svg" alt="")
+						span.item__title HTML5
+					p.item__text Изучил язык гипертекстовой разметки текста - HTML. Научился делать качественную разметку веб-страницы, используя всевозможные тэги и атрибуты.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/css.svg" alt="")
+						span.item__title CSS3
+					p.item__text Изучил таблицу каскадных стилей CSS. Научился использовать grid и flex в зависимости от поставленной задачи, а также всевозможные стили.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/sass.svg" alt="")
+						span.item__title less/sass/scss
+					p.item__text Изучил CSS препроцессоры. Научился использовать переменные, миксины, вложенность, циклы, импорты для ускорения верстки сайта.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/pug.svg" alt="")
+						span.item__title Pug
+					p.item__text Изучил шаблонизатор для html. Научился использовать циклами, переменными, блоками, импортами, инклюдами, миксинами.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/yandex.svg" alt="")
+						span.item__title БЭМ
+					p.item__text Изучил методологию верстки - BAM-naming. Научился стандартному наименованию классов и разделению ответственности между блоками, а также конецпции блок, элемент, модификатор.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/english-language.svg" alt="")
+						span.item__title Англ. язык
+					p.item__text Научился читать и понимать английские тексты: чтение документаций к плагинам, редакторам кода, ЯП, а также понимание интерфейса программ. Стараюсь читать все в оригинале.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/email.svg" alt="")
+						span.item__title MJML
+					p.item__text Изучил фреймворк для верстки писем. Научился использовать тэгами и стилями.
 					//Понимаю как верстать письма без фреймворков.
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/twig.svg" alt="")
-						span.item-title-text Twig
-					p.item-text
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/twig.svg" alt="")
+						span.item__title Twig
+					p.item__text
 						|Изучил препроцессор twig. Научился использовать циклы, условия, layout, extends, include, loop.
-				li.skills__item
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/php.svg" alt="")
+						span.item__title PHP
+					p.item__text Изучил язык программирования PHP. Научился использовать for, foreach, var, if, echo.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/sql-server.svg" alt="")
+						span.item__title SQL
+					p.item__text Изучил язык структурированых запросов SQL. Знаю на уровне запросов: insert, select, join, update, delete, а также нормальные формы Бойса-Кодда.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/skills.svg" alt="")
+						span.item__title Остальное
+					p.item__text  Open Server, VS CODE, Virtual Box, FTP, SSH, Yandex map api, С#
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/linux.svg" alt="")
+						span.item__title Linux
+					p.item__text Изучил операционную систему Linux . Научился пользоваться терминалом, настраивать LAMP сервер.
+				//li.skills__item.item
 					.item-title
-						img.item-icon(src="../svg/php.svg" alt="")
-						span.item-title-text PHP
-					p.item-text Изучил язык программирования PHP. Научился использовать for, foreach, var, if, echo.
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/sql-server.svg" alt="")
-						span.item-title-text SQL
-					p.item-text Изучил язык структурированых запросов SQL. Знаю на уровне запросов: insert, select, join, update, delete, а также нормальные формы Бойса-Кодда.
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/skills.svg" alt="")
-						span.item-title-text Остальное
-					p.item-text  Open Server, VS CODE, Virtual Box, FTP, SSH, Yandex map api, С#
-				li.skills__item
-					.item-title
-						img.item-icon(src="../svg/linux.svg" alt="")
-						span.item-title-text Linux
-					p.item-text Изучил операционную систему Linux . Научился пользоваться терминалом, настраивать LAMP сервер.
-				//li.skills__item
-					.item-title
-						img.item-icon(src="../svg/schema.svg" alt="")
-						span.item-title-text schema.org
-					p.item-text Изучил . Научился использовать
+						img.item__icon(src="../svg/schema.svg" alt="")
+						span.item__title schema.org
+					p.item__text Изучил . Научился использовать
 	section#experience.experience.section-margin
 		.container
 			h2.section-title Опыт работы
 			ul.experience__items
-				li.experience__item
-					a.item-picture-link(href="https://palax.info" target="_blank")
-						img.item-picture(src="../svg/palax-logo.svg", alt="" style="background: black; padding: 10px;")
-
-					.item-desc
-						.item-title
-							span.item-position Верстальщик, front-end разработчик
-							a.item-company(href="https://palax.info/" target="_blank") / PALAX
-							p.item-time Время работы: 01.20 - 04.20 (4 месяца)
-						.item-subtitle Рабочие обязанности:
-							ul.subitems
-								li.subitem Верстка лэндингов и многостраничных сайтов.
-								li.subitem Поддержка существующих проектов.
-								li.subitem Создание дополнительных страниц для сущ. сайтов.
-						.item-subtitle Чему научился:
-							ul.subitems
-								li.subitem Самостоятельное решение проблем, так как из front-end разрботчиков я был один.
-						.item-subtitle Что понравилось:
-							ul.subitems
-								li.subitem Наличие общего сервера компании и собственного удаленного рабочего пространства.
-								li.subitem Были интересные и масштабные проекты.
-						.item-subtitle Причина ухода:
-							ul.subitems
-								li.subitem Ушел по собственному желанию.
-								li.subitem Желание развиваться дальше, но проекты оставались простыми для меня.
-								li.subitem Отсутствие других front-end разработчиков, что мешало развиваться и приходилось идти на ощубь (отсутствие code-review).
-								li.subitem Нарушение всяких правил разработки (смена разработчиков на середине создания сайта, выполнение работы неквалифицированными людьми, что приводило к провалу или к низкому качеству проекта)
-								li.subitem Отсутствие документаций к проектам, проекты без git'а по ftp, при условии создания сайта в 2021.
-								li.subitem Неудобная работа в palax.cms, что приводило к тому, что любую задачу нужно было допытывать у менеджера и низкий уровень составления задач ПМ.
-				li.experience__item
-					a.item-picture-link(href="https://rootmedia.ru" target="_blank")
-						picture.item-picture
-							source(data-srcset="../webp-img/experience/rootmedia-logo.webp" type="image/webp" class="lazyload")
+				li.experience__item.item
+					a.item__picture-link(href="https://palax.info" target="_blank")
+						img.item__picture(src="../svg/palax-logo.svg", alt="" style="background: black; padding: 10px;")
+					.item__desc
+						.item__title
+							span.item__position Верстальщик, front-end разработчик
+							a.item__company(href="https://palax.info/" target="_blank") / PALAX
+							p.item__time Время работы: 01.20 - 04.20 (4 месяца)
+						.item__subtitle Рабочие обязанности:
+							ul.item__subitems
+								li.item__subitem Верстка лэндингов и многостраничных сайтов.
+								li.item__subitem Поддержка существующих проектов.
+								li.item__subitem Создание дополнительных страниц для сущ. сайтов.
+						.item__subtitle Чему научился:
+							ul.item__subitems
+								li.item__subitem Самостоятельное решение проблем, так как из front-end разрботчиков я был один.
+						.item__subtitle Что понравилось:
+							ul.item__subitems
+								li.item__subitem Наличие общего сервера компании и собственного удаленного рабочего пространства.
+								li.item__subitem Были интересные и масштабные проекты.
+						.item__subtitle Причина ухода:
+							ul.item__subitems
+								li.item__subitem Ушел по собственному желанию.
+								li.item__subitem Желание развиваться дальше, но проекты оставались простыми для меня.
+								li.item__subitem Отсутствие других front-end разработчиков, что мешало развиваться и приходилось идти на ощубь (отсутствие code-review).
+								li.item__subitem Нарушение всяких правил разработки (смена разработчиков на середине создания сайта, выполнение работы неквалифицированными людьми, что приводило к провалу или к низкому качеству проекта)
+								li.item__subitem Отсутствие документаций к проектам, проекты без git'а по ftp, при условии создания сайта в 2021.
+								li.item__subitem Неудобная работа в palax.cms, что приводило к тому, что любую задачу нужно было допытывать у менеджера и низкий уровень составления задач ПМ.
+				li.experience__item.item
+					a.item__picture-link(href="https://rootmedia.ru" target="_blank")
+						picture.item__picture
+							source(srcset="../webp-img/experience/rootmedia-logo.webp" type="image/webp" )
 							img(src="../min-img/experience/rootmedia-logo.png" alt="")
-					.item-desc
-						.item-title
-							span.item-position Верстальщик, front-end разработчик
-							a.item-company(href="https://rootmedia.ru" target="_blank") / Rootmedia
-							p.item-time Время работы: 02.20 - 10.20 (8 месяцев)
-						.item-subtitle Рабочие обязанности:
-							ul.subitems
-								li.subitem Верстка лэндингов и многостраничных сайтов.
-								li.subitem Поддержка существующих проектов.
-								li.subitem Создание дополнительных страниц для сущ. сайтов.
-								li.subitem Работа с 1C-Bitrix.
-						.item-subtitle Чему научился:
-							ul.subitems
-								li.subitem Качественно и быстро выполнять свою работу.
-								li.subitem Соблюдать правила работы в офисе.
-								li.subitem Обязательная обратная связь с колегами и начальником.
-						.item-subtitle Что понравилось:
-							ul.subitems
-								li.subitem Получил реальный опыт создания сайтов и не один десяток бессоных ночей))
-						.item-subtitle Причина ухода:
-							ul.subitems
-								li.subitem Уволился по взаимному согласию.
-								li.subitem Не устраивали используемые технологии: Linux (когда он совершенно избыточен для меня), bitrix (сама концепция CMS устаревшая и совершенно не логичная), слабый компьютер
-								li.subitem Сам процесс создания сайта не всегда был правильным, что по итогу приводило к неприятных ситуациям.
-								li.subitem По стечению обстоятельств несколько интересных проектов отдали на фриланс, а мне отдали полумертвые проекты, что сильно подтолкнуло меня уйти от туда.
+					.item__desc
+						.item__title
+							span.item__position Верстальщик, front-end разработчик
+							a.item__company(href="https://rootmedia.ru" target="_blank") / Rootmedia
+							p.item__time Время работы: 02.20 - 10.20 (8 месяцев)
+						.item__subtitle Рабочие обязанности:
+							ul.item__subitems
+								li.item__subitem Верстка лэндингов и многостраничных сайтов.
+								li.item__subitem Поддержка существующих проектов.
+								li.item__subitem Создание дополнительных страниц для сущ. сайтов.
+								li.item__subitem Работа с 1C-Bitrix.
+						.item__subtitle Чему научился:
+							ul.item__subitems
+								li.item__subitem Качественно и быстро выполнять свою работу.
+								li.item__subitem Соблюдать правила работы в офисе.
+								li.item__subitem Обязательная обратная связь с колегами и начальником.
+						.item__subtitle Что понравилось:
+							ul.item__subitems
+								li.item__subitem Получил реальный опыт создания сайтов и не один десяток бессоных ночей))
+						.item__subtitle Причина ухода:
+							ul.item__subitems
+								li.item__subitem Уволился по взаимному согласию.
+								li.item__subitem Не устраивали используемые технологии: Linux (когда он совершенно избыточен для меня), bitrix (сама концепция CMS устаревшая и совершенно не логичная), слабый компьютер
+								li.item__subitem Сам процесс создания сайта не всегда был правильным, что по итогу приводило к неприятных ситуациям.
+								li.item__subitem По стечению обстоятельств несколько интересных проектов отдали на фриланс, а мне отдали полумертвые проекты, что сильно подтолкнуло меня уйти от туда.
 	section.portfolio.section-bottom-margin#portfolio
 		.container
 			h2.section-title Портфолио
 			ul.portfolio__site-items
 				li.portfolio__site-item
-					p.item-title Личный кабинет водоканала
+					.item-title-wrap
+						p.item-title Студия комфорта
+						img.item-logo(src="../svg/studio-comforta-logo.svg" alt="")
+					ul.item__subitems
+						li.item__subitem
+							p.item__subitem-title Главная страница
+							.item__subitem-img-wrap
+								picture.item__subitem-picture
+									source(srcset="../webp-img/portfolio/studio-comforta/intro.webp" type="image/webp" class="lazyload")
+									img(src="../min-img/portfolio/studio-comforta/intro.png", alt="" class="lazyload")
+								.item__subitem-btns-wrap
+									.item__subitems-btns-inner
+										a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="studio_intro" data-name-ext="png" data-fancybox="") Увеличить фото
+										a.portfolio__btn-link.portfolio__btn(href="https://studio-comforta.ru" target="blame"  ) Перейти к странице
+			//-ul.portfolio__items
+			//-	li.portfolio__item
+			//-		p.portfolio__item-title Главная страница
+			//-		a(href="https://studio-comforta.ru")
+			//-			picture.portfolio__item-picture
+			//-				source(data-srcset="../img/studio_intro.webp" type="image/webp" class="lazyload")
+			//-				img(data-src="../min-img/studio_intro.png", alt="" class="lazyload")
+			//-		.portfolio__btn-wrapper
+			//-			.portfolio__btn-inner-wrapper
+			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="studio_intro" data-name-ext="png" data-fancybox="") Увеличить фото
+			//-				a.portfolio__btn-link.portfolio__btn(href="https://studio-comforta.ru" target="blame"  ) Перейти к странице
+			//-	li.portfolio__item
+			//-		p.portfolio__item-title Главная страница
+			//-		a(href="https://studio-comforta.ru")
+			//-			picture.portfolio__item-picture
+			//-				source(data-srcset="../img/studio_middle.webp" type="image/webp" class="lazyload")
+			//-				img(data-src="../min-img/studio_middle.png", alt="" class="lazyload")
+			//-		.portfolio__btn-wrapper
+			//-			.portfolio__btn-inner-wrapper
+			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="studio_middle" data-name-ext="png" data-fancybox="") Увеличить фото
+			//-				a.portfolio__btn-link.portfolio__btn(href="https://studio-comforta.ru" target="blame") Перейти к странице
+			//-	li.portfolio__item
+			//-		p.portfolio__item-title Форма выбора потолка
+			//-		a(href="https://studio-comforta.ru")
+			//-			picture.portfolio__item-picture
+			//-				source(data-srcset="../img/studio_form.webp" type="image/webp" class="lazyload")
+			//-				img(data-src="../min-img/studio_form.png", alt="" class="lazyload")
+			//-		.portfolio__btn-wrapper
+			//-			.portfolio__btn-inner-wrapper
+			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="studio_form" data-name-ext="png" data-fancybox="") Увеличить фото
+			//-				a.portfolio__btn-link.portfolio__btn(href="https://studio-comforta.ru" target="blame") Перейти к странице
+			//-	li.portfolio__item
+			//-		p.portfolio__item-title Отзывы
+			//-		a(href="https://studio-comforta.ru/feedbacks")
+			//-			picture.portfolio__item-picture
+			//-				source(data-srcset="../img/studio_reviews.webp" type="image/webp" class="lazyload")
+			//-				img(data-src="../min-img/studio_reviews.png", alt="" class="lazyload")
+			//-		.portfolio__btn-wrapper
+			//-			.portfolio__btn-inner-wrapper
+			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="studio_reviews" data-name-ext="png" data-fancybox="") Увеличить фото
+			//-				a.portfolio__btn-link.portfolio__btn(href="https://studio-comforta.ru/feedbacks" target="blame") Перейти к странице
+			//-	li.portfolio__item
+			//-		p.portfolio__item-title Карта местоположения
+			//-		a(href="https://studio-comforta.ru/contacts")
+			//-			picture.portfolio__item-picture
+			//-				source(data-srcset="../img/studio_map.webp" type="image/webp" class="lazyload")
+			//-				img(data-src="../min-img/studio_map.png", alt="" class="lazyload")
+			//-		.portfolio__btn-wrapper
+			//-			.portfolio__btn-inner-wrapper
+			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="studio_map" data-name-ext="png" data-fancybox="") Увеличить фото
+			//-				a.portfolio__btn-link.portfolio__btn(href="https://studio-comforta.ru/contacts" target="blame"  ) Перейти к странице
+
+
+
 			//-h3.site-title
 			//-   //img(src="../min-img/logo-shizhma.png" class="site-title__img" alt="", srcset="")
 			//-   span Инструмент
@@ -486,57 +552,7 @@ block page-content
 			//-h3.site-title
 			//-	img(src="../img/svg/studio-logo.svg" class="site-title__img" alt="", srcset="")
 			//-	span Студия комфорта
-			//-ul.portfolio__items
-			//-	li.portfolio__item
-			//-		p.portfolio__item-title Главная страница
-			//-		a(href="https://studio-comforta.ru")
-			//-			picture.portfolio__item-picture
-			//-				source(data-srcset="../img/studio_intro.webp" type="image/webp" class="lazyload")
-			//-				img(data-src="../min-img/studio_intro.png", alt="" class="lazyload")
-			//-		.portfolio__btn-wrapper
-			//-			.portfolio__btn-inner-wrapper
-			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="studio_intro" data-name-ext="png" data-fancybox="") Увеличить фото
-			//-				a.portfolio__btn-link.portfolio__btn(href="https://studio-comforta.ru" target="blame"  ) Перейти к странице
-			//-	li.portfolio__item
-			//-		p.portfolio__item-title Главная страница
-			//-		a(href="https://studio-comforta.ru")
-			//-			picture.portfolio__item-picture
-			//-				source(data-srcset="../img/studio_middle.webp" type="image/webp" class="lazyload")
-			//-				img(data-src="../min-img/studio_middle.png", alt="" class="lazyload")
-			//-		.portfolio__btn-wrapper
-			//-			.portfolio__btn-inner-wrapper
-			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="studio_middle" data-name-ext="png" data-fancybox="") Увеличить фото
-			//-				a.portfolio__btn-link.portfolio__btn(href="https://studio-comforta.ru" target="blame") Перейти к странице
-			//-	li.portfolio__item
-			//-		p.portfolio__item-title Форма выбора потолка
-			//-		a(href="https://studio-comforta.ru")
-			//-			picture.portfolio__item-picture
-			//-				source(data-srcset="../img/studio_form.webp" type="image/webp" class="lazyload")
-			//-				img(data-src="../min-img/studio_form.png", alt="" class="lazyload")
-			//-		.portfolio__btn-wrapper
-			//-			.portfolio__btn-inner-wrapper
-			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="studio_form" data-name-ext="png" data-fancybox="") Увеличить фото
-			//-				a.portfolio__btn-link.portfolio__btn(href="https://studio-comforta.ru" target="blame") Перейти к странице
-			//-	li.portfolio__item
-			//-		p.portfolio__item-title Отзывы
-			//-		a(href="https://studio-comforta.ru/feedbacks")
-			//-			picture.portfolio__item-picture
-			//-				source(data-srcset="../img/studio_reviews.webp" type="image/webp" class="lazyload")
-			//-				img(data-src="../min-img/studio_reviews.png", alt="" class="lazyload")
-			//-		.portfolio__btn-wrapper
-			//-			.portfolio__btn-inner-wrapper
-			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="studio_reviews" data-name-ext="png" data-fancybox="") Увеличить фото
-			//-				a.portfolio__btn-link.portfolio__btn(href="https://studio-comforta.ru/feedbacks" target="blame") Перейти к странице
-			//-	li.portfolio__item
-			//-		p.portfolio__item-title Карта местоположения
-			//-		a(href="https://studio-comforta.ru/contacts")
-			//-			picture.portfolio__item-picture
-			//-				source(data-srcset="../img/studio_map.webp" type="image/webp" class="lazyload")
-			//-				img(data-src="../min-img/studio_map.png", alt="" class="lazyload")
-			//-		.portfolio__btn-wrapper
-			//-			.portfolio__btn-inner-wrapper
-			//-				a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="studio_map" data-name-ext="png" data-fancybox="") Увеличить фото
-			//-				a.portfolio__btn-link.portfolio__btn(href="https://studio-comforta.ru/contacts" target="blame"  ) Перейти к странице
+
 			//-h3.site-title
 			//-	span Спайдер солитер
 			//-ul.portfolio__desc
