@@ -6,8 +6,8 @@ let config = require("../config.js");
 
 module.exports = function min_png() {
    return gulp
-      .src(config.src.png)
-      //.pipe(newer(config.out.minImg))
+      .src(config.src.png, { since: gulp.lastRun(min_png) })
+      .pipe(newer(config.out.minImg))
       .pipe(
          gulpPngquant({
             quality: "65-75",

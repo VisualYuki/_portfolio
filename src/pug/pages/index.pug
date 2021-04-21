@@ -231,7 +231,7 @@ block page-content
 								li.item__subitem Отсутствие других front-end разработчиков, что мешало развиваться и приходилось идти на ощубь (отсутствие code-review).
 								li.item__subitem Нарушение всяких правил разработки (смена разработчиков на середине создания сайта, выполнение работы неквалифицированными людьми, что приводило к провалу или к низкому качеству проекта)
 								li.item__subitem Отсутствие документаций к проектам, проекты без git'а по ftp, при условии создания сайта в 2021.
-								li.item__subitem Неудобная работа в palax.cms, что приводило к тому, что любую задачу нужно было допытывать у менеджера и низкий уровень составления задач ПМ.
+								li.item__subitem Неудобная работа в palax.cms, что приводило к тому, что любую задачу нужно было допытывать у менеджера и низкий уровень составления задач ПМ-ми.
 				li.experience__item.item
 					a.item__picture-link(href="https://rootmedia.ru" target="_blank")
 						picture.item__picture
@@ -262,25 +262,192 @@ block page-content
 								li.item__subitem Не устраивали используемые технологии: Linux (когда он совершенно избыточен для меня), bitrix (сама концепция CMS устаревшая и совершенно не логичная), слабый компьютер
 								li.item__subitem Сам процесс создания сайта не всегда был правильным, что по итогу приводило к неприятных ситуациям.
 								li.item__subitem По стечению обстоятельств несколько интересных проектов отдали на фриланс, а мне отдали полумертвые проекты, что сильно подтолкнуло меня уйти от туда.
-	section.portfolio.section-bottom-margin#portfolio
+	section#portfolio.portfolio.section-bottom-margin
 		.container
 			h2.section-title Портфолио
 			ul.portfolio__site-items
-				li.portfolio__site-item
-					.item-title-wrap
-						p.item-title Студия комфорта
-						img.item-logo(src="../svg/studio-comforta-logo.svg" alt="")
+				li.portfolio__site-item.item
+					.item__title-wrap
+						a.item__title(href="https://newlk.vdkanal.ru/" target="_blank") Личный кабинет водоканала
+						img.item__logo(src="../min-img/portfolio/vdkanal/logo.png" alt="" style="width: 130px;")
 					ul.item__subitems
 						li.item__subitem
-							p.item__subitem-title Главная страница
-							.item__subitem-img-wrap
-								picture.item__subitem-picture
-									source(srcset="../webp-img/portfolio/studio-comforta/intro.webp" type="image/webp" class="lazyload")
-									img(src="../min-img/portfolio/studio-comforta/intro.png", alt="" class="lazyload")
-								.item__subitem-btns-wrap
-									.item__subitems-btns-inner
-										a.portfolio__btn-extend.portfolio__btn(class="lazyload" data-href="" data-img-name ="studio_intro" data-name-ext="png" data-fancybox="") Увеличить фото
-										a.portfolio__btn-link.portfolio__btn(href="https://studio-comforta.ru" target="blame"  ) Перейти к странице
+							a.item__subitem-title.default-link(href="https://newlk.vdkanal.ru/login" target="_blank") Регистрация
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/vdkanal/reg.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/vdkanal/reg.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://newlk.vdkanal.ru/" target="_blank") Главная страница
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/vdkanal/index.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/vdkanal/index.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://newlk.vdkanal.ru/indications" target="_blank") Показания
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/vdkanal/indications.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/vdkanal/indications.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://newlk.vdkanal.ru/statistics" target="_blank") Статистика
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/vdkanal/statistics.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/vdkanal/statistics.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://newlk.vdkanal.ru/profile" target="_blank") Профиль
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/vdkanal/profile.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/vdkanal/profile.png", alt="" class="lazyload")
+
+
+				li.portfolio__site-item.item
+					.item__title-wrap
+						a.item__title(href="https://ym.palax.dev" target="_blank") Япономания
+						img.item__logo(src="../min-img/portfolio/ym/logo.png" alt="" style="height: 40px;")
+					ul.item__subitems
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://ym.palax.dev" target="_blank") Главная страница
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/ym/index.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/ym/index.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://ym.palax.dev/kombo" target="_blank") Каталог
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/ym/catalog.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/ym/catalog.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://ym.palax.dev/assorty/set-kupidon/pitstsa-sochnaya-25-sm-aktsiya/pitstsa-lemon-fish" target="_blank") Страница товара
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/ym/product.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/ym/product.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://ym.palax.dev/reviews/" target="_blank") Отзывы
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/ym/reviews.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/ym/reviews.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://ym.palax.dev/cart/" target="_blank") Корзина
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/ym/cart.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/ym/cart.png", alt="" class="lazyload")
+
+
+				li.portfolio__site-item.item
+					.item__title-wrap
+						a.item__title(href="http://shizhma-new.shizhma.com/" target="_blank") Шижма (WordPress)
+						img.item__logo(src="../min-img/portfolio/shizhma/logo.png" alt="" style="background: black; padding: 3px; width: 40px")
+					.item__desc
+						ul
+							li Сайт полностью сделан мной (верстка, натяжка, заполнение контентом)
+							li Весь контент добавляеться через админку WP
+							li Есть обратная форма связи ( на почту)
+							li Страницы событие (летнне, зимнее, осеннее) сделаны в виде шаблона
+							li Live страница поддерживает трансляцию с youtube при указании id канала.
+							li По итогу заказчик сайт забросил, а на боевом лежит версия, которую мне сказали переделать ...
+					ul.item__subitems
+						li.item__subitem
+							a.item__subitem-title.default-link(href="http://shizhma-new.shizhma.com/" target="_blank") Главная страница
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/shizhma/index.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/shizhma/index.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="http://shizhma-new.shizhma.com/results/" target="_blank") Результаты
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/shizhma/results.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/shizhma/results.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="http://shizhma-new.shizhma.com/contacts/" target="_blank") Контакты
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/shizhma/contacts.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/shizhma/contacts.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="http://shizhma-new.shizhma.com/players/" target="_blank") Участникам
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/shizhma/living.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/shizhma/living.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="http://shizhma-new.shizhma.com/live/" target="_blank") Live соревнования
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/shizhma/live.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/shizhma/live.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="http://shizhma-new.shizhma.com/лыжный-марафон/" target="_blank") Зимнее событие
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/shizhma/snow-event.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/shizhma/snow-event.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="http://shizhma-new.shizhma.com/кросс-кантри-веломарафон/" target="_blank") Летнее событие
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/shizhma/summer-event.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/shizhma/summer-event.png", alt="" class="lazyload")
+				li.portfolio__site-item.item
+					.item__title-wrap
+						a.item__title(href="https://агросоюз43.рф" target="_blank") Агросоюз
+						img.item__logo(src="../svg/agrosouz-logo.svg" alt="" style="background: black; padding: 3px; width: 80px")
+					ul.item__subitems
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://агросоюз43.рф/" target="_blank") Главная страница
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/agro-souz/intro.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/agro-souz/intro.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://агросоюз43.рф/search" target="_blank") Поиск продукта
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/agro-souz/catalog.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/agro-souz/catalog.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://агросоюз43.рф/catalog/selskokhozjajjstvennye-traktory/selskokhozjajjstvennye-traktory/traktor-ant-4135f" target="_blank") Карточка товара
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/agro-souz/card-project.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/agro-souz/card-project.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://агросоюз43.рф/contacts" target="_blank") Карта
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/agro-souz/map.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/agro-souz/map.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://агросоюз43.рф/about" target="_blank") О компании
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/agro-souz/about.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/agro-souz/about.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://агросоюз43.рф/catalog" target="_blank") Каталог товаров
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/agro-souz/predcatalog.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/agro-souz/predcatalog.png", alt="" class="lazyload")
+				li.portfolio__site-item.item
+					.item__title-wrap
+						a.item__title(href="https://studio-comforta.ru" target="_blank") Студия комфорта
+						img.item__logo(src="../svg/studio-comforta-logo.svg" alt="" style="width: 80px")
+					ul.item__subitems
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://studio-comforta.ru" target="_blank") Главная страница
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/studio-comforta/intro.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/studio-comforta/intro.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://studio-comforta.ru" target="_blank") Главная страница
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/studio-comforta/middle.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/studio-comforta/middle.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://studio-comforta.ru" target="_blank") Форма выбора потолка
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/studio-comforta/form.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/studio-comforta/form.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://studio-comforta.ru/feedbacks" target="_blank") Отзывы
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/studio-comforta/reviews.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/studio-comforta/reviews.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://studio-comforta.ru/contacts" target="_blank") Карта местоположения
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/studio-comforta/map.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/studio-comforta/map.png", alt="" class="lazyload")
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://studio-comforta.ru/projects" target="_blank") Проекты
+							picture.item__subitem-picture
+								source(srcset="../webp-img/portfolio/studio-comforta/projects.webp" type="image/webp" class="lazyload")
+								img(src="../min-img/portfolio/studio-comforta/projects.png", alt="" class="lazyload")
 			//-ul.portfolio__items
 			//-	li.portfolio__item
 			//-		p.portfolio__item-title Главная страница
