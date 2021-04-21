@@ -25,7 +25,7 @@ block page-content
 							li.intro__letter-inner
 								span.intro__letter-text=letter
 				p.intro__about-text.hide создаю современные сайты.
-	section.about.section-bottom-margin#about
+	section#about.about.section-margin
 		.container
 			.about__inner
 				.about__photo-wrapper
@@ -73,7 +73,7 @@ block page-content
 						li.about__item
 							.about__item-title Исходники резюме
 							a.default-link(href="https://github.com/VisualYuki/portfolio" target="_blank") Ссылка на репозиторий
-	section.skills.section-bottom-margin#skill
+	section#skill.skills.section-margin
 		.container
 			h2.section-title Навыки
 			ul.skills__items
@@ -108,7 +108,7 @@ block page-content
 						span.item-title-text Gulp
 					p.item-text
 						| Изучил таскранер Gulp. Научился использовать плагины для минификации кода и изображений, сборки файлов, постпроцессоры, сервер проекта, а также линтеры для JS, CSS, PUG.
-						a.default-link(href="https://github.com/VisualYuki/Gulp-config" target="blame")  Ссылка на репозиторий с конфигом.
+						a.default-link(href="https://github.com/VisualYuki/Gulp-config" target="_blank")  Ссылка на репозиторий с конфигом.
 				li.skills__item
 					.item-title
 						img.item-icon(src="../svg/optimization.svg" alt="")
@@ -117,7 +117,7 @@ block page-content
 				li.skills__item
 					.item-title
 						img.item-icon(src="../svg/git.svg" alt="")
-						span.item-title-text Git/Github
+						span.item-title-text Git / Github
 					p.item-text Изучил систему контроля версий. Научился пользоваться git bush для локальной работы с проектом и github для хранния проекта на удаленном сервере, а также коммитить, пушить, мержить, работать с ветками, стэшить и изучил pull request и fetch. Использую gitlab и github
 				li.skills__item
 					.item-title
@@ -126,7 +126,7 @@ block page-content
 					p.item-text
 					| Изучил сборщик проектов webpack
 					//. Научился настраивать конфиг под проекты с фреймворком Vue.js
-					a.default-link(href="https://github.com/VisualYuki/webpack-config" target="blame")  Ссылка на репозиторий с конфигом.
+					a.default-link(href="https://github.com/VisualYuki/webpack-config" target="_blank")  Ссылка на репозиторий с конфигом.
 
 				li.skills__item
 					.item-title
@@ -163,7 +163,6 @@ block page-content
 						img.item-icon(src="../svg/english-language.svg" alt="")
 						span.item-title-text Английский язык
 					p.item-text Научился читать и понимать английские тексты: чтение документаций к плагинам, редакторам кода, ЯП, а также понимание интерфейса программ. Стараюсь читать все в оригинале.
-
 				li.skills__item
 					.item-title
 						img.item-icon(src="../svg/email.svg" alt="")
@@ -201,3 +200,65 @@ block page-content
 						img.item-icon(src="../svg/schema.svg" alt="")
 						span.item-title-text schema.org
 					p.item-text Изучил . Научился использовать
+	section#experience.experience.section-margin
+		.container
+			h2.section-title Опыт работы
+			ul.experience__items
+				li.experience__item
+					a.item-picture-link(href="https://palax.info" target="_blank")
+						picture.item-picture(style="background: black; padding: 10px;")
+							img(src="https://palax.info/templates/img/logo_palax.svg", alt="")
+					.item-desc
+						.item-title
+							span.item-position Верстальщик, front-end разработчик
+							a.item-company(href="https://palax.info/" target="_blank") / PALAX
+							p.item-time Время работы: 01.20 - 04.20 (4 месяца)
+						.item-subtitle Рабочие обязанности:
+							ul.subitems
+								li.subitem Верстка лэндингов и многостраничных сайтов.
+								li.subitem Поддержка существующих проектов.
+								li.subitem Создание дополнительных страниц для сущ. сайтов.
+						.item-subtitle Чему научился:
+							ul.subitems
+								li.subitem Самостоятельное решение проблем, так как из front-end разрботчиков я был один.
+						.item-subtitle Что понравилось:
+							ul.subitems
+								li.subitem Наличие общего сервера компании и собственного удаленного рабочего пространства.
+								li.subitem Были интересные и масштабные проекты.
+						.item-subtitle Причина ухода:
+							ul.subitems
+								li.subitem Ушел по собственному желанию.
+								li.subitem Желание развиваться дальше, но проекты оставались простыми для меня.
+								li.subitem Отсутствие других front-end разработчиков, что мешало развиваться и приходилось идти на ощубь (отсутствие code-review).
+								li.subitem Нарушение всяких правил разработки (смена разработчиков на середине создания сайта, выполнение работы неквалифицированными людьми, что приводило к провалу или к низкому качеству проекта)
+								li.subitem Отсутствие документаций к проектам, проекты без git'а по ftp, при условии создания сайта в 2021.
+								li.subitem Неудобная работа в palax.cms, что приводило к тому, что любую задачу нужно было допытывать у менеджера и низкий уровень составления задач ПМ.
+				li.experience__item
+					a.item-picture-link(href="https://rootmedia.ru" target="_blank")
+						picture.item-picture
+							img(src="https://rootmedia.ru/img/rootmedia-logo.png" alt="")
+					.item-desc
+						.item-title
+							span.item-position Верстальщик, front-end разработчик
+							a.item-company(href="https://rootmedia.ru" target="_blank") / Rootmedia
+							p.item-time Время работы: 02.20 - 10.20 (8 месяцев)
+						.item-subtitle Рабочие обязанности:
+							ul.subitems
+								li.subitem Верстка лэндингов и многостраничных сайтов.
+								li.subitem Поддержка существующих проектов.
+								li.subitem Создание дополнительных страниц для сущ. сайтов.
+								li.subitem Работа с 1C-Bitrix.
+						.item-subtitle Чему научился:
+							ul.subitems
+								li.subitem Качественно и быстро выполнять свою работу.
+								li.subitem Соблюдать правила работы в офисе.
+								li.subitem Обязательная обратная связь с колегами и начальником.
+						.item-subtitle Что понравилось:
+							ul.subitems
+								li.subitem Получил реальный опыт создания сайтов и не один десяток бессоных ночей))
+						.item-subtitle Причина ухода:
+							ul.subitems
+								li.subitem Уволился по взаимному согласию.
+								li.subitem Не устраивали используемые технологии: Linux (когда он совершенно избыточен для меня), bitrix (сама концепция CMS устаревшая и совершенно не логичная), слабый компьютер
+								li.subitem Сам процесс создания сайта не всегда был правильным, что по итогу приводило к неприятных ситуациям.
+								li.subitem По стечению обстоятельств несколько интересных проектов отдали на фриланс, а мне отдали полумертвые проекты, что сильно подтолкнуло меня уйти от туда.

@@ -93,7 +93,7 @@ picture img {
   height: 100%;
 }
 body {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
   letter-spacing: 0.03em;
 }
@@ -2035,6 +2035,16 @@ body.compensate-for-scrollbar {
 .triangle-rotate__triangle {
   transition: 0.4s;
 }
+.section-margin {
+  margin-bottom: 50px;
+}
+.section-title {
+  margin-bottom: 25px;
+  font-size: 30px;
+  color: #727272;
+  text-align: center;
+  text-transform: uppercase;
+}
 .default-breadcrumbs {
   padding: 32px 0 24px;
 }
@@ -2343,6 +2353,84 @@ body.compensate-for-scrollbar {
   object-fit: contain;
   object-position: center;
 }
+.experience__items {
+  display: flex;
+  flex-direction: column;
+}
+.experience__items:before {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 4px;
+  height: 100%;
+  background: white;
+}
+.experience__item {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  background: white;
+  border: 1px solid #e8e8e8;
+}
+.experience__item:after {
+  position: absolute;
+  top: -5px;
+  left: -25px;
+  width: 10px;
+  height: 10px;
+  background: #f8bb10;
+  border-radius: 50%;
+}
+.experience__item .item-picture-link {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
+@media (max-width: 767px) {
+  .experience__item .item-picture-link {
+    width: 120px;
+  }
+}
+.experience__item .item-desc {
+  padding: 20px;
+  border-left: 1px solid #e8e8e8;
+}
+.experience__item .item-title {
+  margin-bottom: 20px;
+}
+.experience__item .item-time {
+  margin-top: 10px;
+}
+.experience__item .item-position {
+  margin-right: 5px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.experience__item .item-company {
+  display: inline;
+  font-weight: 500;
+  color: #f8bb10;
+  text-transform: uppercase;
+}
+.experience__item .item-picture {
+  width: 200px;
+}
+.experience__item .item-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+.experience .subitems {
+  margin-bottom: 10px;
+}
+.experience .subitem {
+  padding-left: 10px;
+  color: #727272;
+  list-style: decimal inside;
+}
 .intro {
   width: 100%;
   min-height: 100vh;
@@ -2552,7 +2640,7 @@ body.compensate-for-scrollbar {
   border-right-color: #f8bb10;
 }
 .skills__item .item-title-text {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;

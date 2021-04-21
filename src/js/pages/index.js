@@ -1,3 +1,9 @@
+//document.addEventListener("DOMContentLoaded", function(){
+//	debugger;
+//	console.log("hello");
+//});
+
+
 $(document).ready(function () {
 	/* ------------- scroll ------------ */
 
