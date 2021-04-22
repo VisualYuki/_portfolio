@@ -12,4 +12,5 @@ $(document).ready(function () {
 		$("html, body").animate({ scrollTop: $(_href).offset().top - 100 + "px" });
 		return false;
 	});
+
 });

@@ -26,6 +26,6 @@ module.exports = function include_pug2html() {
 		//	this.end();
       //})
       //.pipe(prettier({}))
-      .pipe(htmlValidator())
+      //.pipe(htmlValidator())
       .pipe(gulp.dest(config.out.html));
 };
