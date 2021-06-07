@@ -20,6 +20,9 @@ block page-content
 						each letter in ['F','R','O','N','T','E','N','D' ]
 							li.intro__letter-inner
 								span.intro__letter-text=letter
+						//each letter in ['R','E','A','C','T']
+							li.intro__letter-inner
+								span.intro__letter-text=letter
 					ul.intro__symbol-wrapper.intro__third-word-wrapper
 						each letter in ['Р','А','З','Р','А','Б','О','Т','Ч','И','К']
 							li.intro__letter-inner
@@ -38,30 +41,34 @@ block page-content
 					.about__about-me
 						| Я всей душой полюбил веб разрботку, и не жалею времени на постоянное развитие в этой области.
 						<br>
-						| Развиваюсь в сторону web-приложений (Vue.js, React.js), а также WordPress.
+						| Развиваюсь в сторону web-приложений (React.js, Vue.js), а также WordPress.
+						<br>
+						| Нравится JavaScript и все что с ним связано: node.js, express, react, vue, three.js, canvas, ...
+						<br>
+						| Заинтересован в интересных проектах, которые будут развивать меня как js разработчика.
 					ul.about__text-items
 						li.about__text-item.item
-							p.item__title Опыт в веб-разработке
-							p.item__text 1.5 года
+							p.item__title Опыт в веб-разработке:
+							p.item__text 1.5 года + опыт работы на фрилансе.
 						li.about__text-item.item
-							p.item__title Возраст
+							p.item__title Возраст:
 							p.item__text 23 года
 						li.about__text-item.item
-							p.item__title Почта
+							p.item__title Почта:
 							p.item__text
 								a.default-link(href="mailto:disant1998@yandex.ru") disant1998@yandex.ru
 						li.about__text-item.item
-							p.item__title Телефон
+							p.item__title Телефон:
 							p.item__text
 								a.default-link(href="tel:+89635508754") 89635508754
 						li.about__text-item.item
-							p.item__title Телеграмм
+							p.item__title Телеграмм:
 							p.item__text @denis_moshkin
 						li.about__text-item.item
-							p.item__title Образование
+							p.item__title Образование:
 							p.item__text "ВятГУ" по направлению "Фундаментальная информатика и информационные технологии" 3 курса.
 						li.about__text-item.item
-							p.item__title Медиа
+							p.item__title Медиа:
 							.item__text
 								ul.item__link-items
 									li.item__link-item
@@ -71,17 +78,64 @@ block page-content
 										a.item__link-item(href="https://vk.com/moshkin_denis" target="_blank")
 											img.item__link-item-img(src="../svg/vk.svg" alt="")
 						li.about__text-item.item
-							.item__title Исходники резюме
+							.item__title Исходники резюме:
 							a.default-link(href="https://github.com/VisualYuki/portfolio" target="_blank") Ссылка на репозиторий
 	section#skill.skills.section-margin
 		.container
 			h2.section-title Навыки
-			ul.skills__items
+			h3.l-subtitle Frontend
+			ul.skills__items(style="margin-bottom: 40px")
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/react.svg" alt="")
+						span.item__title REACT
+					p.item__text Изучил REACT - js библиотеку для создания UI. Научился работать с JSX, events, conditions, forms, hooks, refs. А также постепенно смотрю, что лежит под капотом react, так как там 3000 строк кода и сразу все не понять. Изучение reactDom отложил в долгий ящик, так как там 30 000 строк кода))
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/redux.svg" alt="")
+						span.item__title REDUX
+					p.item__text Изучил REACT - контейнер состояния JS APP. Научился работать: reducers, createStore, action, combineReducers. Полностью прошелся по js коду redux и есть целостное понимание, что лежит под капотом. (Благо там всего 800 строк js кода, без учета JSDoc там получается всегд 500 строк)
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/js.svg" alt="")
+						span.item__title Javascript
+					p.item__text Изучил язык программирования - Javascript. Научился использовать: промисы, замыкание,символы, модули, strict mode, функции, классы, встроенные объекты, работать с DOM моделью сайта и работой с браузерными объектами (location)
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/js.svg" alt="")
+						span.item__title JSDoc
+					p.item__text Изучил JSDoc - продвинутые js комментарии. Научился комментировать функции. Люблю хорошо документированные проекты, поэтому уделяю большое внимание докуменатции к проектам.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/tp.svg" alt="")
+						span.item__title TypeScript
+					p.item__text Изучил TypeScript - типизированный js. В процессе изучения. Есть опыт в C#, поэтому процесс идет быстро.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/ajax.svg" alt="")
+						span.item__title AJAX
+					p.item__text Изучил AJAX - асинхронный JavaScript и XML. Научился работать с сервером: отправлять, получать запросы и обрабатывать их на странице.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/webpack.svg" alt="")
+						span.item__title Webpack
+					p.item__text
+						| Изучил сборщик проектов webpack
+						a.default-link(href="https://github.com/VisualYuki/webpack-config" target="_blank")  Ссылка на репозиторий с конфигом.
+						<br>
+						| Пытаюсь понять как работает webpack под капотом в браузере (особенно импорты и экпорты). В дальшейшем есть планы посмотреть процесс компиляции на node.js webpack'а.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/english-language.svg" alt="")
+						span.item__title Англ. язык
+					p.item__text Научился читать и понимать английские тексты: чтение документаций к плагинам, редакторам кода, ЯП, а также понимание интерфейса программ. Стараюсь читать все в оригинале.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/vue-js.svg" alt="")
 						span.item__title Vue.js
 					p.item__text Изучил прогрессивный JavaScript-фреймворк. Научился использовать работать с классами, события, директивами, компонентами.
+			h3.l-subtitle Верстка
+			ul.skills__items
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/wordpress.svg" alt="")
@@ -89,19 +143,9 @@ block page-content
 					p.item__text Изучил CMS систему управления контентом. Научился работать со стандартными классами и методами, владеть бызовыми знаниями в php, работать с админкой и связывать админку с версткой.
 				li.skills__item.item
 					.item__title-wrap
-						img.item__icon(src="../svg/js.svg" alt="")
-						span.item__title Javascript
-					p.item__text Изучил язык программирования - Javascript. Научился использовать функции, классы, встроенные объекты а также работать с DOM моделью сайта.
-				li.skills__item.item
-					.item__title-wrap
 						img.item__icon(src="../svg/web.svg" alt="")
 						span.item__title Верстка
 					p.item__text Изучил верстку страниц сайта по PSD, Figma макету. Научился верстать адаптивно и кроссбраузерно с применением медиа запросов. Использование семантической верстки для улучшения качества кода.
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/ajax.svg" alt="")
-						span.item__title AJAX
-					p.item__text Изучил AJAX - асинхронный JavaScript и XML. Научился работать с сервером: отправлять, получать запросы и обрабатывать их на странице.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/gulp.svg" alt="")
@@ -119,15 +163,6 @@ block page-content
 						img.item__icon(src="../svg/git.svg" alt="")
 						span.item__title Git / Github
 					p.item__text Изучил систему контроля версий. Научился пользоваться git bush для локальной работы с проектом и github для хранния проекта на удаленном сервере, а также коммитить, пушить, мержить, работать с ветками, стэшить и изучил pull request и fetch. Использую gitlab и github
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/webpack.svg" alt="")
-						span.item__title Webpack
-					p.item__text
-					| Изучил сборщик проектов webpack
-					//. Научился настраивать конфиг под проекты с фреймворком Vue.js
-					a.default-link(href="https://github.com/VisualYuki/webpack-config" target="_blank")  Ссылка на репозиторий с конфигом.
-
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/jquery.svg" alt="")
@@ -158,11 +193,7 @@ block page-content
 						img.item__icon(src="../svg/yandex.svg" alt="")
 						span.item__title БЭМ
 					p.item__text Изучил методологию верстки - BAM-naming. Научился стандартному наименованию классов и разделению ответственности между блоками, а также конецпции блок, элемент, модификатор.
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/english-language.svg" alt="")
-						span.item__title Англ. язык
-					p.item__text Научился читать и понимать английские тексты: чтение документаций к плагинам, редакторам кода, ЯП, а также понимание интерфейса программ. Стараюсь читать все в оригинале.
+
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/email.svg" alt="")
@@ -205,13 +236,13 @@ block page-content
 			h2.section-title Опыт работы
 			ul.experience__items
 				li.experience__item.item
-					a.item__picture-link(href="https://palax.info" target="_blank")
+					//a.item__picture-link(href="https://palax.info" target="_blank")
 						img.item__picture.lazyload( data-src="../svg/palax-logo.svg", alt="" style="background: black; padding: 10px;")
 					.item__desc
 						.item__title
 							span.item__position Верстальщик, front-end разработчик
 							a.item__company(href="https://palax.info/" target="_blank") / PALAX
-							p.item__time Время работы: 01.20 - 04.20 (4 месяца)
+							p.item__time Время работы: 01.20 - 05.20 (5 месяца)
 						.item__subtitle Рабочие обязанности:
 							ul.item__subitems
 								li.item__subitem Верстка лэндингов и многостраничных сайтов.
@@ -232,8 +263,8 @@ block page-content
 								li.item__subitem Нарушение всяких правил разработки (смена разработчиков на середине создания сайта, выполнение работы неквалифицированными людьми, что приводило к провалу или к низкому качеству проекта)
 								li.item__subitem Отсутствие документаций к проектам, проекты без git'а по ftp, при условии создания сайта в 2021.
 								li.item__subitem Неудобная работа в palax.cms, что приводило к тому, что любую задачу нужно было допытывать у менеджера и низкий уровень составления задач ПМ-ми.
-				//li.experience__item.item
-					a.item__picture-link(href="https://rootmedia.ru" target="_blank")
+				li.experience__item.item
+					//a.item__picture-link(href="https://rootmedia.ru" target="_blank")
 						picture.item__picture
 							source.lazyload(data-srcset="../webp-img/experience/rootmedia-logo.webp" type="image/webp")
 							img.lazyload(data-src="../min-img/experience/rootmedia-logo.png" alt="")
@@ -286,7 +317,7 @@ block page-content
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/index.webp" type="image/webp" class="lazyload")
 								img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/index.png", alt="" class="lazyload")
 						li.item__subitem
-							a.item__subitem-title.default-link(href="https://visualyuki.github.io/instrument/frontend-dist/pages/cart.html" target="_blank") Корзина
+							a.item__subitem-title.default-link(href="https://visualyuki.github.io/instrument/frontend-dist/pages/cart" target="_blank") Корзина
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/cart.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/cart.png", alt="" class="lazyload")
@@ -531,11 +562,39 @@ block page-content
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/studio-comforta/projects.png", alt="" class="lazyload")
 				li.portfolio__site-item.item
 					.item__title-wrap
+						a.item__title(href="https://visualyuki.github.io/react-social-network/dist/index" target="_blank") Клон VK.com
+						//img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../svg/studio-comforta-logo.svg" alt="" style="width: 80px")
+					.item__desc
+						ul
+							li Использовалось: webpack, react, redux, react-router, react-redux. Находится в стадии работы.
+							li Общий state приложения. При переходе по ссылкам, предыдущие действия остаются. (Пр. введеное сообщение в поле, удаленный диалог)
+							li Ссылки сбиты из-за github pages, поэтому не все переходы по ним будут корректны.
+							li
+								a.default-link(href="https://github.com/VisualYuki/react-social-network" style="display: inline" target="_blank") Ссылка на исходники
+					ul.item__subitems
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://visualyuki.github.io/react-social-network/dist/index.html" target="_blank") Главная страница
+							picture.item__subitem-picture
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/react-vk/profile.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/react-vk/profile.png", alt="" class="lazyload")
+						li.item__subitem
+							.item__subitem-title.default-link() Авторизация
+							picture.item__subitem-picture
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/react-vk/auth.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/react-vk/auth.png", alt="" class="lazyload")
+						li.item__subitem
+							.item__subitem-title.default-link() Диалоги
+							picture.item__subitem-picture
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/react-vk/dialogs.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/react-vk/dialogs.png", alt="" class="lazyload")
+				li.portfolio__site-item.item
+					.item__title-wrap
 						a.item__title(href="https://visualyuki.github.io/snake/dist/index" target="_blank") Игра "Змейка"
 						//img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../svg/studio-comforta-logo.svg" alt="" style="width: 80px")
 					.item__desc
 						ul
 							li Использовалось: webpack, MVC паттерн, классы.
+
 							li
 								a.default-link(href="https://github.com/VisualYuki/snake/tree/master" style="display: inline" target="_blank") Ссылка на исходники
 					ul.item__subitems

@@ -2642,6 +2642,13 @@ body.compensate-for-scrollbar {
   width: 50px;
   height: 50px;
 }
+.skills .l-subtitle {
+  margin-bottom: 15px;
+  font-size: 23px;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
 .skills__items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
