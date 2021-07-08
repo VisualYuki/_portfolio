@@ -303,13 +303,15 @@ block page-content
 						a.item__title(href="https://newlk.vdkanal.ru/" target="_blank") Собственный jQuery
 					.item__desc
 						ul
-							li Реализация частоиспользуемых методов в библиотеке jQuery нативным js
+							li Реализация частоиспользуемых методов в библиотеке jQuery нативным js (typescript)
 							li Реализованные методы: <br>
 								code
 									| addClass, removeClass, toggleClass, hasClass, each, on, attr, data, removeData, removeAttr, hide, show, css, val, append, closest, sliblings
 							li Есть сгенерированная документация при помощи tsdoc <br>
 								| Посмотреть можно тут:
 								<a class="default-link" href="https://visualyuki.github.io/custom-jquery/docs/classes/jq.html" target="_blank"> ссылка на сайт </a>
+							li Код проекта можно посмотреть тут:
+								<a class="default-link" href="https://github.com/VisualYuki/custom-jquery" target="_blank"> ссылка на гит </a>
 							li Протестировать можно в консоли тут:
 								<a class="default-link" href="https://visualyuki.github.io/custom-jquery/dist/index" target="_blank"> ссылка на сайт </a>
 								| <br> Например ввести в консоли: $(".text").removeClass("text")
@@ -324,10 +326,10 @@ block page-content
 								code $(".text").removeClass(".text").find(".child")
 					ul.item__subitems
 						li.item__subitem
-							a.item__subitem-title.default-link(href="https://visualyuki.github.io/instrument/frontend-dist/pages/index.html" target="_blank") Главная страница
+							a.item__subitem-title.default-link(href="https://visualyuki.github.io/custom-jquery/dist/index" target="_blank") Главная страница
 							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/index.webp" type="image/webp" class="lazyload")
-								img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/index.png", alt="" class="lazyload")
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/custom-jquery/index.webp" type="image/webp" class="lazyload")
+								img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/custom-jquery/index.png", alt="" class="lazyload")
 				li.portfolio__site-item.item#instrument
 					.item__title-wrap
 						a.item__title(href="https://newlk.vdkanal.ru/" target="_blank") Инструмент
@@ -343,42 +345,37 @@ block page-content
 							li Часть контента на страницах отсутсвует, так как будет добавляться через ajax.
 					ul.item__subitems
 						li.item__subitem
-							a.item__subitem-title.default-link(href="https://visualyuki.github.io/instrument/frontend-dist/pages/index.html" target="_blank") Главная страница
+							a.item__subitem-title.default-link(href="https://instrument.ms/" target="_blank") Главная страница
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/index.webp" type="image/webp" class="lazyload")
 								img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/index.png", alt="" class="lazyload")
 						li.item__subitem
-							a.item__subitem-title.default-link(href="https://visualyuki.github.io/instrument/frontend-dist/pages/cart" target="_blank") Корзина
+							a.item__subitem-title.default-link(href="https://instrument.ms/checkout" target="_blank") Корзина
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/cart.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/cart.png", alt="" class="lazyload")
 						li.item__subitem
-							a.item__subitem-title.default-link(href="https://visualyuki.github.io/instrument/frontend-dist/pages/category.html" target="_blank") Категории
+							a.item__subitem-title.default-link(href="https://instrument.ms/transportnye-sredstva" target="_blank") Категории
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/category.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/category.png", alt="" class="lazyload")
 						li.item__subitem
-							a.item__subitem-title.default-link(href="https://visualyuki.github.io/instrument/frontend-dist/pages/compare.html" target="_blank") Сравнение
+							a.item__subitem-title.default-link(href="https://instrument.ms/compare/list" target="_blank") Сравнение
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/compare.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/compare.png", alt="" class="lazyload")
 						li.item__subitem
-							a.item__subitem-title.default-link(href="https://visualyuki.github.io/instrument/frontend-dist/pages/order-lk.html" target="_blank") Лк заказ
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/order-lk.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/order-lk.png", alt="" class="lazyload")
-						li.item__subitem
-							a.item__subitem-title.default-link(href="https://visualyuki.github.io/instrument/frontend-dist/pages/product.html" target="_blank") Карточка товара
+							a.item__subitem-title.default-link(href="https://instrument.ms/transportnye-sredstva/kvadrotsikly/tm-irbis/kvadrocikl-irbis-atv-125" target="_blank") Карточка товара
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/product.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/product.png", alt="" class="lazyload")
 						li.item__subitem
-							a.item__subitem-title.default-link(href="https://visualyuki.github.io/instrument/frontend-dist/pages/storage.html" target="_blank") Пункты выдачи
+							a.item__subitem-title.default-link(href="https://instrument.ms/services/moskva/abac" target="_blank") Пункты выдачи
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/storage.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/storage.png", alt="" class="lazyload")
 						li.item__subitem
-							a.item__subitem-title.default-link(href="https://visualyuki.github.io/instrument/frontend-dist/pages/shop-reviews.html" target="_blank") Отзывы о магазине
+							a.item__subitem-title.default-link(href="https://instrument.ms/reviews" target="_blank") Отзывы о магазине
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/shop-reviews.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/shop-reviews.png", alt="" class="lazyload")
