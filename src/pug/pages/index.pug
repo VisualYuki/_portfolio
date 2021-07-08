@@ -336,13 +336,11 @@ block page-content
 						img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/logo.png" alt="" style="width: 130px;")
 					.item__desc
 						ul
-							li
-								| За основу был взят уже существующий сайт
-								a.default-link(href="https://instrument.ms/" style="display: inline;")   https://instrument.ms/
-							li В данное время сайт находится в процессе натяжки на back-end, поэтому ссылки только на верстку.
+							li Сайт только запущен.
 							li Главной задачей заказчика стояла быстрая загрузка сайта, поэтому все страницы находятся в зеленой зоне goggle pagespeed. Использовалась всевозжная оптимизация начиная со шрифтов и заказчивая скриптами.
 							li А также хорошая масштабируемость и легкая поддержка проекта, поэтому активно использовался бэм и максимальное количество шаблонов, чтобы не нужно было править несколько видов шаблонов.
-							li Часть контента на страницах отсутсвует, так как будет добавляться через ajax.
+							li Большое количество ajax запросов.
+							li Было потрачено на весь frontend около 350 часов (работы было очень много)
 					ul.item__subitems
 						li.item__subitem
 							a.item__subitem-title.default-link(href="https://instrument.ms/" target="_blank") Главная страница
@@ -355,7 +353,7 @@ block page-content
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/cart.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/cart.png", alt="" class="lazyload")
 						li.item__subitem
-							a.item__subitem-title.default-link(href="https://instrument.ms/transportnye-sredstva" target="_blank") Категории
+							a.item__subitem-title.default-link(href="https://instrument.ms/ruchnoi-instrument/krepezhnyi-instrument/zaklepochniki-steplery-dyrokoly" target="_blank") Категории
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/category.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/category.png", alt="" class="lazyload")
@@ -409,6 +407,50 @@ block page-content
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/123.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/123.png", alt="" class="lazyload")
+				li.portfolio__site-item.item
+					.item__title-wrap
+						a.item__title(href="https://visualyuki.github.io/react-social-network/dist/index" target="_blank") Клон VK.com на react.js (pet project)
+						//img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../svg/studio-comforta-logo.svg" alt="" style="width: 80px")
+					.item__desc
+						ul
+							li Использовалось: webpack, react, redux, react-router, react-redux. Находится в стадии работы.
+							li Общий state приложения. При переходе по ссылкам, предыдущие действия остаются. (Пр. введеное сообщение в поле, удаленный диалог)
+							li Ссылки сбиты из-за github pages, поэтому не все переходы по ним будут корректны.
+							li
+								a.default-link(href="https://github.com/VisualYuki/react-social-network" style="display: inline" target="_blank") Ссылка на исходники
+					ul.item__subitems
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://visualyuki.github.io/react-social-network/dist/index.html" target="_blank") Главная страница
+							picture.item__subitem-picture
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/react-vk/profile.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/react-vk/profile.png", alt="" class="lazyload")
+						li.item__subitem
+							.item__subitem-title.default-link() Авторизация
+							picture.item__subitem-picture
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/react-vk/auth.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/react-vk/auth.png", alt="" class="lazyload")
+						li.item__subitem
+							.item__subitem-title.default-link() Диалоги
+							picture.item__subitem-picture
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/react-vk/dialogs.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/react-vk/dialogs.png", alt="" class="lazyload")
+				li.portfolio__site-item.item
+					.item__title-wrap
+						a.item__title(href="https://visualyuki.github.io/snake/dist/index" target="_blank") Игра "Змейка" (pet project)
+						//img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../svg/studio-comforta-logo.svg" alt="" style="width: 80px")
+					.item__desc
+						ul
+							li Использовалось: webpack, MVC паттерн, классы.
+							li Написан на дивах, а не на canvas))
+
+							li
+								a.default-link(href="https://github.com/VisualYuki/snake/tree/master" style="display: inline" target="_blank") Ссылка на исходники
+					ul.item__subitems
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://visualyuki.github.io/snake/dist/index" target="_blank") Главная страница
+							picture.item__subitem-picture
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/snake/snake.webp" type="image/webp" class="lazyload")
+								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/snake/snake.png", alt="" class="lazyload")
 				li.portfolio__site-item.item
 					.item__title-wrap
 						a.item__title(href="https://newlk.vdkanal.ru/" target="_blank") Личный кабинет водоканала
@@ -588,46 +630,4 @@ block page-content
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/studio-comforta/projects.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/studio-comforta/projects.png", alt="" class="lazyload")
-				li.portfolio__site-item.item
-					.item__title-wrap
-						a.item__title(href="https://visualyuki.github.io/react-social-network/dist/index" target="_blank") Клон VK.com на react.js (pet project)
-						//img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../svg/studio-comforta-logo.svg" alt="" style="width: 80px")
-					.item__desc
-						ul
-							li Использовалось: webpack, react, redux, react-router, react-redux. Находится в стадии работы.
-							li Общий state приложения. При переходе по ссылкам, предыдущие действия остаются. (Пр. введеное сообщение в поле, удаленный диалог)
-							li Ссылки сбиты из-за github pages, поэтому не все переходы по ним будут корректны.
-							li
-								a.default-link(href="https://github.com/VisualYuki/react-social-network" style="display: inline" target="_blank") Ссылка на исходники
-					ul.item__subitems
-						li.item__subitem
-							a.item__subitem-title.default-link(href="https://visualyuki.github.io/react-social-network/dist/index.html" target="_blank") Главная страница
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/react-vk/profile.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/react-vk/profile.png", alt="" class="lazyload")
-						li.item__subitem
-							.item__subitem-title.default-link() Авторизация
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/react-vk/auth.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/react-vk/auth.png", alt="" class="lazyload")
-						li.item__subitem
-							.item__subitem-title.default-link() Диалоги
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/react-vk/dialogs.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/react-vk/dialogs.png", alt="" class="lazyload")
-				li.portfolio__site-item.item
-					.item__title-wrap
-						a.item__title(href="https://visualyuki.github.io/snake/dist/index" target="_blank") Игра "Змейка" (pet project)
-						//img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../svg/studio-comforta-logo.svg" alt="" style="width: 80px")
-					.item__desc
-						ul
-							li Использовалось: webpack, MVC паттерн, классы.
 
-							li
-								a.default-link(href="https://github.com/VisualYuki/snake/tree/master" style="display: inline" target="_blank") Ссылка на исходники
-					ul.item__subitems
-						li.item__subitem
-							a.item__subitem-title.default-link(href="https://visualyuki.github.io/snake/dist/index" target="_blank") Главная страница
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/snake/snake.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/snake/snake.png", alt="" class="lazyload")
