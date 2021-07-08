@@ -109,7 +109,7 @@ block page-content
 					.item__title-wrap
 						img.item__icon(src="../svg/tp.svg" alt="")
 						span.item__title TypeScript
-					p.item__text Изучил TypeScript - типизированный js. В процессе изучения. Есть опыт в C#, поэтому процесс идет быстро.
+					p.item__text Изучил TypeScript - типизированный js. В процессе изучения. Изучил типы, классы, модификаторы,  геттеры/сеттеры, интерфейсы.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/ajax.svg" alt="")
@@ -298,6 +298,36 @@ block page-content
 			h2.section-title Портфолио
 			p(style="text-align: center; margin-bottom: 20px;") *указаны, только самые масштабные и крутые проекты, а также pet projects.
 			ul.portfolio__site-items
+				li.portfolio__site-item.item#custom-jquery
+					.item__title-wrap
+						a.item__title(href="https://newlk.vdkanal.ru/" target="_blank") Собственный jQuery
+					.item__desc
+						ul
+							li Реализация частоиспользуемых методов в библиотеке jQuery нативным js
+							li Реализованные методы: <br>
+								code
+									| addClass, removeClass, toggleClass, hasClass, each, on, attr, data, removeData, removeAttr, hide, show, css, val, append, closest, sliblings
+							li Есть сгенерированная документация при помощи tsdoc <br>
+								| Посмотреть можно тут:
+								<a class="default-link" href="https://visualyuki.github.io/custom-jquery/docs/classes/jq.html" target="_blank"> ссылка на сайт </a>
+							li Протестировать можно в консоли тут:
+								<a class="default-link" href="https://visualyuki.github.io/custom-jquery/dist/index" target="_blank"> ссылка на сайт </a>
+								| <br> Например ввести в консоли: $(".text").removeClass("text")
+							li
+								| Код методов можно посмотреть тут:
+								<a class="default-link" href="https://github.com/VisualYuki/custom-jquery/blob/master/src/js/jquery.ts" target="_blank"> ссылка на гит </a>
+							li
+								| Реализовано тестирование методов при помощи ts-jest и jsdom <br>
+								| Код тестов можно посмотреть тут:
+								<a class="default-link" href="https://github.com/VisualYuki/custom-jquery/blob/master/src/js/jquery.test.ts" target="_blank"> ссылка на гит </a>
+							li Реализован паттерн chain of responsibility, поэтому можно писать:
+								code $(".text").removeClass(".text").find(".child")
+					ul.item__subitems
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://visualyuki.github.io/instrument/frontend-dist/pages/index.html" target="_blank") Главная страница
+							picture.item__subitem-picture
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/index.webp" type="image/webp" class="lazyload")
+								img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/index.png", alt="" class="lazyload")
 				li.portfolio__site-item.item#instrument
 					.item__title-wrap
 						a.item__title(href="https://newlk.vdkanal.ru/" target="_blank") Инструмент
