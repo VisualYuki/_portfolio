@@ -99,12 +99,17 @@ block page-content
 					.item__title-wrap
 						img.item__icon(src="../svg/js.svg" alt="")
 						span.item__title Javascript
-					p.item__text Изучил язык программирования - Javascript. Научился использовать: промисы, замыкание,символы, модули, strict mode, функции, классы, встроенные объекты, работать с DOM моделью сайта и работой с браузерными объектами (location)
+					p.item__text Изучил язык программирования - Javascript. Научился использовать: промисы, fetch, замыкание, символы, модули, strict mode, функции, классы, встроенные объекты, работать с DOM моделью сайта и работой с браузерными объектами (location, Event, localstorage)
 				li.skills__item.item
 					.item__title-wrap
-						img.item__icon(src="../svg/js.svg" alt="")
-						span.item__title JSDoc
-					p.item__text Изучил JSDoc - продвинутые js комментарии. Научился комментировать функции. Люблю хорошо документированные проекты, поэтому уделяю большое внимание докуменатции к проектам.
+						img.item__icon(src="../svg/programming.svg" alt="")
+						span.item__title Программирование
+					p.item__text Изучил паттерны проектирование. Применил skeleton, chain of responsibility. Изучил принципы программирования DRY(don't reapet yourself), KISS(keep it simple, stupid).
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/comments.svg" alt="")
+						span.item__title JSDoc/TSDoc
+					p.item__text Изучил JSDoc/TSDoc - продвинутые js комментарии. Научился комментировать функции. Люблю хорошо документированные проекты, поэтому уделяю большое внимание докуменатции к проектам. Научился создавать документацию по комментариям при помощи tsdoc.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/tp.svg" alt="")
@@ -131,10 +136,15 @@ block page-content
 					p.item__text Научился читать и понимать английские тексты: чтение документаций к плагинам, редакторам кода, ЯП, а также понимание интерфейса программ. Стараюсь читать все в оригинале.
 				li.skills__item.item
 					.item__title-wrap
+						img.item__icon(src="../svg/testing.svg" alt="")
+						span.item__title Тестирование (jest)
+					p.item__text Изучил способы тестирования кода. 1. Jest фрейморк для написания тестов, применил: jsdom - для тестирования DOM, describe, test, except. 2. Хорошо знаю режим разработчика в браузере. 3. Научился тестировать сайты через подключение к телефону(google chrome + android), если баг происходит только на мобильном устройстве.
+				li.skills__item.item
+					.item__title-wrap
 						img.item__icon(src="../svg/vue-js.svg" alt="")
 						span.item__title Vue.js
 					p.item__text Изучил прогрессивный JavaScript-фреймворк. Научился использовать работать с классами, события, директивами, компонентами.
-			h3.l-subtitle Верстка
+			h3.l-subtitle Остальное
 			ul.skills__items
 				li.skills__item.item
 					.item__title-wrap
@@ -296,7 +306,7 @@ block page-content
 	section#portfolio.portfolio.section-bottom-margin
 		.container
 			h2.section-title Портфолио
-			p(style="text-align: center; margin-bottom: 20px;") *указаны, только самые масштабные и крутые проекты, а также pet projects.
+			p(style="text-align: center; margin-bottom: 20px;") *указаны, только самые масштабные и крутые проекты, а также pet projects (сверстано около дюжины сайтов)
 			ul.portfolio__site-items
 				li.portfolio__site-item.item#custom-jquery
 					.item__title-wrap
@@ -312,9 +322,7 @@ block page-content
 								<a class="default-link" href="https://visualyuki.github.io/custom-jquery/docs/classes/jq.html" target="_blank"> ссылка на сайт </a>
 							li Код проекта можно посмотреть тут:
 								<a class="default-link" href="https://github.com/VisualYuki/custom-jquery" target="_blank"> ссылка на гит </a>
-							li Протестировать можно в консоли тут:
-								<a class="default-link" href="https://visualyuki.github.io/custom-jquery/dist/index" target="_blank"> ссылка на сайт </a>
-								| <br> Например ввести в консоли: $(".text").removeClass("text")
+							li Протестировать можно в консоли. Например ввести в консоли: $(".text").removeClass("text")
 							li
 								| Код методов можно посмотреть тут:
 								<a class="default-link" href="https://github.com/VisualYuki/custom-jquery/blob/master/src/js/jquery.ts" target="_blank"> ссылка на гит </a>
@@ -336,7 +344,7 @@ block page-content
 						img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/logo.png" alt="" style="width: 130px;")
 					.item__desc
 						ul
-							li Сайт только запущен.
+							li Задача была переписать весь frontend старого сайта, с новым дизайном.
 							li Главной задачей заказчика стояла быстрая загрузка сайта, поэтому все страницы находятся в зеленой зоне goggle pagespeed. Использовалась всевозжная оптимизация начиная со шрифтов и заказчивая скриптами.
 							li А также хорошая масштабируемость и легкая поддержка проекта, поэтому активно использовался бэм и максимальное количество шаблонов, чтобы не нужно было править несколько видов шаблонов.
 							li Большое количество ajax запросов.
@@ -409,11 +417,11 @@ block page-content
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/123.png", alt="" class="lazyload")
 				li.portfolio__site-item.item
 					.item__title-wrap
-						a.item__title(href="https://visualyuki.github.io/react-social-network/dist/index" target="_blank") Клон VK.com на react.js (pet project)
+						a.item__title(href="https://visualyuki.github.io/react-social-network/dist/index" target="_blank") Клон VK.com на react.js (pet project) Находится в стадии работы.
 						//img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../svg/studio-comforta-logo.svg" alt="" style="width: 80px")
 					.item__desc
 						ul
-							li Использовалось: webpack, react, redux, react-router, react-redux. Находится в стадии работы.
+							li Использовалось: webpack, react, redux, react-router, react-redux.
 							li Общий state приложения. При переходе по ссылкам, предыдущие действия остаются. (Пр. введеное сообщение в поле, удаленный диалог)
 							li Ссылки сбиты из-за github pages, поэтому не все переходы по ним будут корректны.
 							li
@@ -488,31 +496,31 @@ block page-content
 						img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../min-img/portfolio/ym/logo.png" alt="" style="height: 40px;")
 					ul.item__subitems
 						li.item__subitem
-							a.item__subitem-title.default-link(href="https://ym.palax.dev" target="_blank") Главная страница
+							a.item__subitem-title.default-link(href="https://yaponomaniya.com/" target="_blank") Главная страница
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/ym/index.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/ym/index.png", alt="" class="lazyload")
 						li.item__subitem
-							a.item__subitem-title.default-link(href="https://ym.palax.dev/kombo" target="_blank") Каталог
+							a.item__subitem-title.default-link(href="https://yaponomaniya.com/assorty" target="_blank") Каталог
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/ym/catalog.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/ym/catalog.png", alt="" class="lazyload")
 						li.item__subitem
-							a.item__subitem-title.default-link(href="https://ym.palax.dev/assorty/set-kupidon/pitstsa-sochnaya-25-sm-aktsiya/pitstsa-lemon-fish" target="_blank") Страница товара
+							a.item__subitem-title.default-link(href="https://yaponomaniya.com/assorty/sakura-new-" target="_blank") Страница товара
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/ym/product.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/ym/product.png", alt="" class="lazyload")
 						li.item__subitem
-							a.item__subitem-title.default-link(href="https://ym.palax.dev/reviews/" target="_blank") Отзывы
+							a.item__subitem-title.default-link(href="https://yaponomaniya.com/reviews/" target="_blank") Отзывы
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/ym/reviews.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/ym/reviews.png", alt="" class="lazyload")
 						li.item__subitem
-							a.item__subitem-title.default-link(href="https://ym.palax.dev/cart/" target="_blank") Корзина
+							a.item__subitem-title.default-link(href="https://yaponomaniya.com/cart/" target="_blank") Корзина
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/ym/cart.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/ym/cart.png", alt="" class="lazyload")
-				//li.portfolio__site-item.item#shizhma
+				li.portfolio__site-item.item#shizhma
 					.item__title-wrap
 						a.item__title(href="http://shizhma-new.shizhma.com/" target="_blank") Шижма (WordPress)
 						img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../min-img/portfolio/shizhma/logo.png" alt="" style="background: black; padding: 3px; width: 40px")
