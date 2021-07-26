@@ -107,11 +107,6 @@ block page-content
 					p.item__text Изучил паттерны проектирование. Применил skeleton, chain of responsibility. Изучил принципы программирования DRY(don't reapet yourself), KISS(keep it simple, stupid).
 				li.skills__item.item
 					.item__title-wrap
-						img.item__icon(src="../svg/comments.svg" alt="")
-						span.item__title JSDoc/TSDoc
-					p.item__text Изучил JSDoc/TSDoc - продвинутые js комментарии. Научился комментировать функции. Люблю хорошо документированные проекты, поэтому уделяю большое внимание докуменатции к проектам. Научился создавать документацию по комментариям при помощи tsdoc.
-				li.skills__item.item
-					.item__title-wrap
 						img.item__icon(src="../svg/tp.svg" alt="")
 						span.item__title TypeScript
 					p.item__text Изучил TypeScript - типизированный js. В процессе изучения. Изучил типы, классы, модификаторы,  геттеры/сеттеры, интерфейсы.
@@ -131,19 +126,29 @@ block page-content
 						| Пытаюсь понять как работает webpack под капотом в браузере (особенно импорты и экпорты). В дальшейшем есть планы посмотреть процесс компиляции на node.js webpack'а.
 				li.skills__item.item
 					.item__title-wrap
-						img.item__icon(src="../svg/english-language.svg" alt="")
-						span.item__title Англ. язык
-					p.item__text Научился читать и понимать английские тексты: чтение документаций к плагинам, редакторам кода, ЯП, а также понимание интерфейса программ. Стараюсь читать все в оригинале.
-				li.skills__item.item
-					.item__title-wrap
 						img.item__icon(src="../svg/testing.svg" alt="")
 						span.item__title Тестирование (jest)
 					p.item__text Изучил способы тестирования кода. 1. Jest фрейморк для написания тестов, применил: jsdom - для тестирования DOM, describe, test, except. 2. Хорошо знаю режим разработчика в браузере. 3. Научился тестировать сайты через подключение к телефону(google chrome + android), если баг происходит только на мобильном устройстве.
 				li.skills__item.item
 					.item__title-wrap
+						img.item__icon(src="../svg/comments.svg" alt="")
+						span.item__title JSDoc/TSDoc
+					p.item__text Изучил JSDoc/TSDoc - продвинутые js комментарии. Научился комментировать функции. Люблю хорошо документированные проекты, поэтому уделяю большое внимание докуменатции к проектам. Научился создавать документацию по комментариям при помощи tsdoc.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/english-language.svg" alt="")
+						span.item__title Англ. язык
+					p.item__text Научился читать и понимать английские тексты: чтение документаций к плагинам, редакторам кода, ЯП, а также понимание интерфейса программ. Стараюсь читать все в оригинале.
+				li.skills__item.item
+					.item__title-wrap
 						img.item__icon(src="../svg/vue-js.svg" alt="")
 						span.item__title Vue.js
 					p.item__text Изучил прогрессивный JavaScript-фреймворк. Научился использовать работать с классами, события, директивами, компонентами.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/location.svg" alt="")
+						span.item__title Yandex map api
+					p.item__text Изучил api яндекс карта для создания взаимодействия пользователя с картой.
 			h3.l-subtitle Остальное
 			ul.skills__items
 				li.skills__item.item
@@ -203,7 +208,6 @@ block page-content
 						img.item__icon(src="../svg/yandex.svg" alt="")
 						span.item__title БЭМ
 					p.item__text Изучил методологию верстки - BAM-naming. Научился стандартному наименованию классов и разделению ответственности между блоками, а также конецпции блок, элемент, модификатор.
-
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/email.svg" alt="")
@@ -252,7 +256,7 @@ block page-content
 						.item__title
 							span.item__position Верстальщик, front-end разработчик
 							a.item__company(href="https://palax.info/" target="_blank") / PALAX
-							p.item__time Время работы: 01.20 - 05.20 (5 месяца)
+							p.item__time Время работы: 01.21 - 06.21 (6 месяцев)
 						.item__subtitle Рабочие обязанности:
 							ul.item__subitems
 								li.item__subitem Верстка лэндингов и многостраничных сайтов.
@@ -348,6 +352,7 @@ block page-content
 							li Главной задачей заказчика стояла быстрая загрузка сайта, поэтому все страницы находятся в зеленой зоне goggle pagespeed. Использовалась всевозжная оптимизация начиная со шрифтов и заказчивая скриптами.
 							li А также хорошая масштабируемость и легкая поддержка проекта, поэтому активно использовался бэм и максимальное количество шаблонов, чтобы не нужно было править несколько видов шаблонов.
 							li Большое количество ajax запросов.
+							li Yandex map api на странице корзины. По выбору точки доставки (из выпадающего списка) - строиться маршрут, вычисляется цена доставки.
 							li Было потрачено на весь frontend около 350 часов (работы было очень много)
 					ul.item__subitems
 						li.item__subitem
