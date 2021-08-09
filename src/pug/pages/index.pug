@@ -41,7 +41,7 @@ block page-content
 					.about__about-me
 						| Я всей душой полюбил веб разрботку, и не жалею времени на постоянное развитие в этой области.
 						<br>
-						| Развиваюсь в сторону web-приложений (React.js, Vue.js), а также WordPress.
+						| Развиваюсь в сторону web-приложений (Vue.js, React.js), а также WordPress.
 						<br>
 						| Нравится JavaScript и все что с ним связано: node.js, express, react, vue, three.js, canvas, ...
 						<br>
@@ -87,14 +87,14 @@ block page-content
 			ul.skills__items(style="margin-bottom: 40px")
 				li.skills__item.item
 					.item__title-wrap
-						img.item__icon(src="../svg/react.svg" alt="")
-						span.item__title REACT
-					p.item__text Изучил REACT - js библиотеку для создания UI. Научился работать с JSX, events, conditions, forms, hooks, refs. А также постепенно смотрю, что лежит под капотом react, так как там 3000 строк кода и сразу все не понять. Изучение reactDom отложил в долгий ящик, так как там 30 000 строк кода))
+						img.item__icon(src="../svg/vue-js.svg" alt="")
+						span.item__title Vue
+					p.item__text Изучил прогрессивный JavaScript-фреймворк. Научился работать с классами, событиями, директивами, компонентами, двух-связной привязке к полям ввода.
 				li.skills__item.item
 					.item__title-wrap
-						img.item__icon(src="../svg/redux.svg" alt="")
-						span.item__title REDUX
-					p.item__text Изучил REACT - контейнер состояния JS APP. Научился работать: reducers, createStore, action, combineReducers. Полностью прошелся по js коду redux и есть целостное понимание, что лежит под капотом. (Благо там всего 800 строк js кода, без учета JSDoc там получается всегд 500 строк)
+						img.item__icon(src="../svg/vue-js.svg" alt="")
+						span.item__title Vuex
+					p.item__text Изучил библиотеку vuex для хранения состояния vue приложения. Изучил getters, dispatch, actions, mutations, modules, а также map helpers (mapGetters, mapActions, mapState, mapMutations) и работу с простраством имен для modules.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/js.svg" alt="")
@@ -139,16 +139,22 @@ block page-content
 						img.item__icon(src="../svg/english-language.svg" alt="")
 						span.item__title Англ. язык
 					p.item__text Научился читать и понимать английские тексты: чтение документаций к плагинам, редакторам кода, ЯП, а также понимание интерфейса программ. Стараюсь читать все в оригинале.
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/vue-js.svg" alt="")
-						span.item__title Vue.js
-					p.item__text Изучил прогрессивный JavaScript-фреймворк. Научился использовать работать с классами, события, директивами, компонентами.
+
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/location.svg" alt="")
 						span.item__title Yandex map api
 					p.item__text Изучил api яндекс карта для создания взаимодействия пользователя с картой.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/react.svg" alt="")
+						span.item__title REACT
+					p.item__text Изучил REACT - js библиотеку для создания UI. Научился работать с JSX, events, conditions, forms, hooks, refs. А также постепенно смотрю, что лежит под капотом react, так как там 3000 строк кода и сразу все не понять. Изучение reactDom отложил в долгий ящик, так как там 30 000 строк кода))
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/redux.svg" alt="")
+						span.item__title REDUX
+					p.item__text Изучил REACT - контейнер состояния JS APP. Научился работать: reducers, createStore, action, combineReducers. Полностью прошелся по js коду redux и есть целостное понимание, что лежит под капотом. (Благо там всего 800 строк js кода, без учета JSDoc там получается всегд 500 строк)
 			h3.l-subtitle Остальное
 			ul.skills__items
 				li.skills__item.item
@@ -312,9 +318,23 @@ block page-content
 			h2.section-title Портфолио
 			p(style="text-align: center; margin-bottom: 20px;") *указаны, только самые масштабные и крутые проекты, а также pet projects (сверстано около дюжины сайтов)
 			ul.portfolio__site-items
+				li.portfolio__site-item.item#minesweeper
+					.item__title-wrap
+						a.item__title(href="https://visualyuki.github.io/vue-minesweeper/dist/index.html" target="_blank") Сапер на Vue.js
+					.item__desc
+						ul
+							li Игра сапер при использовании данных технологий: vue.js, vue cli, vuex, typescript.
+							li Код проекта можно посмотреть тут:
+								<a class="default-link" href="https://github.com/VisualYuki/vue-minesweeper" target="_blank"> ссылка на гит </a>
+					ul.item__subitems
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://visualyuki.github.io/vue-minesweeper/dist/index.html" target="_blank") Главная страница
+							picture.item__subitem-picture
+								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/minesweeper/index.webp" type="image/webp" class="lazyload")
+								img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/minesweeper/index.png", alt="" class="lazyload")
 				li.portfolio__site-item.item#custom-jquery
 					.item__title-wrap
-						a.item__title(href="https://newlk.vdkanal.ru/" target="_blank") Собственный jQuery
+						a.item__title(href="https://visualyuki.github.io/custom-jquery/dist/index" target="_blank") Собственный jQuery
 					.item__desc
 						ul
 							li Реализация частоиспользуемых методов в библиотеке jQuery нативным js (typescript)
