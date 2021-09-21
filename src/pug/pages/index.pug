@@ -146,14 +146,14 @@ block page-content
 					p.item__text Изучил язык программирования - Javascript. Научился использовать: промисы, fetch, замыкание, символы, модули, strict mode, функции, классы, встроенные объекты, работать с DOM моделью сайта и работой с браузерными объектами (location, Event, localstorage)
 				li.skills__item.item
 					.item__title-wrap
-						img.item__icon(src="../svg/programming.svg" alt="")
-						span.item__title Программирование
-					p.item__text Изучил паттерны проектирование. Применил skeleton, chain of responsibility. Изучил принципы программирования DRY(don't reapet yourself), KISS(keep it simple, stupid).
-				li.skills__item.item
-					.item__title-wrap
 						img.item__icon(src="../svg/tp.svg" alt="")
 						span.item__title TypeScript
 					p.item__text Изучил TypeScript - типизированный js. В процессе изучения. Изучил типы, классы, модификаторы,  геттеры/сеттеры, интерфейсы.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/programming.svg" alt="")
+						span.item__title Программирование
+					p.item__text Изучил паттерны проектирование. Применил skeleton, chain of responsibility. Изучил принципы программирования DRY(don't reapet yourself), KISS(keep it simple, stupid).
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/ajax.svg" alt="")
@@ -299,7 +299,6 @@ block page-content
 						img.item__icon(src="../svg/schema.svg" alt="")
 						span.item__title schema.org
 					p.item__text Изучил . Научился использовать
-
 	section#portfolio.portfolio.section-bottom-margin
 		.container
 			h2.section-title Портфолио
@@ -311,7 +310,7 @@ block page-content
 					.item__desc
 						ul
 							li Технологии: vuetify, vue-router, vue-cli, typescript, vuex, sass, vue-i18n.
-							li Поддрежка авторизации польователя через localstorage. А также поддержка роутинга при условии авторизации пользователя. Поддержка авторизации польователя при открытии нового приложения, если он зарегестрирован.
+							li Поддрежка авторизации польователя через localstorage. А также поддержка роутинга при условии авторизации пользователя. При повторном открытии вкладки приложение, авторизованный пользователь сразу получит страницу профиля, иначе страница авторизации.
 							li Валидация всех форм через vueitfy.
 							li Поддержка локализации (не везде)
 							li В планах использовать node.js для хранения данных, вместо localstorage и vuex.
@@ -465,33 +464,33 @@ block page-content
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/123.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/123.png", alt="" class="lazyload")
-				li.portfolio__site-item.item
-					.item__title-wrap
-						a.item__title(href="https://visualyuki.github.io/react-social-network/dist/index" target="_blank") Клон VK.com на react.js (pet project) Находится в стадии работы.
-						//img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../svg/studio-comforta-logo.svg" alt="" style="width: 80px")
-					.item__desc
-						ul
-							li Использовалось: webpack, react, redux, react-router, react-redux.
-							li Общий state приложения. При переходе по ссылкам, предыдущие действия остаются. (Пр. введеное сообщение в поле, удаленный диалог)
-							li Ссылки сбиты из-за github pages, поэтому не все переходы по ним будут корректны.
-							li
-								a.default-link(href="https://github.com/VisualYuki/react-social-network" style="display: inline" target="_blank") Ссылка на исходники
-					ul.item__subitems
-						li.item__subitem
-							a.item__subitem-title.default-link(href="https://visualyuki.github.io/react-social-network/dist/index.html" target="_blank") Главная страница
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/react-vk/profile.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/react-vk/profile.png", alt="" class="lazyload")
-						li.item__subitem
-							.item__subitem-title.default-link() Авторизация
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/react-vk/auth.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/react-vk/auth.png", alt="" class="lazyload")
-						li.item__subitem
-							.item__subitem-title.default-link() Диалоги
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/react-vk/dialogs.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/react-vk/dialogs.png", alt="" class="lazyload")
+				//-li.portfolio__site-item.item
+				//-	.item__title-wrap
+				//-		a.item__title(href="https://visualyuki.github.io/react-social-network/dist/index" target="_blank") Клон VK.com на react.js (pet project) Находится в стадии работы.
+				//-		//img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../svg/studio-comforta-logo.svg" alt="" style="width: 80px")
+				//-	.item__desc
+				//-		ul
+				//-			li Использовалось: webpack, react, redux, react-router, react-redux.
+				//-			li Общий state приложения. При переходе по ссылкам, предыдущие действия остаются. (Пр. введеное сообщение в поле, удаленный диалог)
+				//-			li Ссылки сбиты из-за github pages, поэтому не все переходы по ним будут корректны.
+				//-			li
+				//-				a.default-link(href="https://github.com/VisualYuki/react-social-network" style="display: inline" target="_blank") Ссылка на исходники
+				//-	ul.item__subitems
+				//-		li.item__subitem
+				//-			a.item__subitem-title.default-link(href="https://visualyuki.github.io/react-social-network/dist/index.html" target="_blank") Главная страница
+				//-			picture.item__subitem-picture
+				//-				source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/react-vk/profile.webp" type="image/webp" class="lazyload")
+				//-				img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/react-vk/profile.png", alt="" class="lazyload")
+				//-		li.item__subitem
+				//-			.item__subitem-title.default-link() Авторизация
+				//-			picture.item__subitem-picture
+				//-				source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/react-vk/auth.webp" type="image/webp" class="lazyload")
+				//-				img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/react-vk/auth.png", alt="" class="lazyload")
+				//-		li.item__subitem
+				//-			.item__subitem-title.default-link() Диалоги
+				//-			picture.item__subitem-picture
+				//-				source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/react-vk/dialogs.webp" type="image/webp" class="lazyload")
+				//-				img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/react-vk/dialogs.png", alt="" class="lazyload")
 				li.portfolio__site-item.item
 					.item__title-wrap
 						a.item__title(href="https://visualyuki.github.io/snake/dist/index" target="_blank") Игра "Змейка" (pet project)
