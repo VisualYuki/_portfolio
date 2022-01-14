@@ -16,8 +16,14 @@ block page-content
 								span.intro__letter-text=letter
 					.intro__letter-inner.intro__divider-letter
 						.intro__letter-text /
-					ul.intro__symbol-wrapper.intro__second-word-wrapper
+					ul.intro__symbol-wrapper
 						each letter in ['F','R','O','N','T','E','N','D' ]
+							li.intro__letter-inner
+								span.intro__letter-text=letter
+					.intro__letter-inner.intro__divider-letter
+						.intro__letter-text /
+					ul.intro__symbol-wrapper.intro__second-word-wrapper
+						each letter in ["B", "A", "C", "K", "E", "N", "D"]
 							li.intro__letter-inner
 								span.intro__letter-text=letter
 						//each letter in ['R','E','A','C','T']
@@ -37,26 +43,23 @@ block page-content
 						img(src="../min-img/about/my-photo.jpg", alt="")
 				.about__text-wrapper
 					.about__name Мошкин Денис
-					.about__position Верстальщик / Frontend разработчик
+					.about__position Верстальщик / Frontend / Backend разработчик
 					.about__about-me
-						| Я всей душой полюбил веб разрботку, и не жалею времени на постоянное развитие в этой области.
-						<br>
-						| Развиваюсь в сторону front-end'а (Vue.js, Node.js).
-						<br>
-						| Нравится JavaScript и все что с ним связано: three.js, canvas, node.js, express, ...
-						<br>
-						| Заинтересован в интересных проектах, которые будут развивать меня как js разработчика, либо крупные проекты по верстке.
+						ul
+							li Я всей душой полюбил веб разрботку, и не жалею времени на постоянное развитие в этой области.
+							li Развиваюсь в сторону backend'а (Node.js, PHP).
+							li Заинтересован в интересных проектах, которые будут развивать меня как крутого разработчика.
 					ul.about__text-items
 						li.about__text-item.item
 							p.item__title Опыт в веб-разработке:
-							p.item__text 1.5 года + опыт работы на фрилансе.
+							p.item__text 2 года + опыт работы на фрилансе.
 						li.about__text-item.item
 							p.item__title Возраст:
-							p.item__text 23 года
+							p.item__text 24 года
 						li.about__text-item.item
 							p.item__title Почта:
 							p.item__text
-								a.default-link(href="mailto:disant1998@yandex.ru") disant1998@yandex.ru
+								a.default-link(href="mailto:moshkin.denis.007@yandex.ru") moshkin.denis.007@yandex.ru
 						li.about__text-item.item
 							p.item__title Телефон:
 							p.item__text
@@ -67,7 +70,7 @@ block page-content
 						li.about__text-item.item
 							p.item__title Образование:
 							p.item__text(style="display: block")
-								|  "ВятГУ" по направлению "Фундаментальная информатика и информационные технологии" 3 курса (неоконченное высшее, отчислился по собственному желанию)
+								|  "ВятГУ" по направлению "Фундаментальная информатика и информационные технологии" 3 курса (неоконченное высшее, отчислился по собственному желанию, так как не хотел тратить впустую время)
 						li.about__text-item.item
 							p.item__title Оценки в университете:
 							p.item__text(style="display: block")
@@ -95,7 +98,7 @@ block page-content
 								<br>
 								| Архитектура вычислительных систем - хорошо
 								<br>
-								a.default-link(href="https://visualyuki.github.io/portfolio/dist/webp-img/about/university-result.webp" target="_blank" style="display: inline") Ссылка на  документ
+								a.default-link(href="https://visualyuki.github.io/portfolio/dist/webp-img/about/university-result.webp" target="_blank" style="display: inline") Ссылка на документ
 						li.about__text-item.item
 							p.item__title Медиа:
 							.item__text
@@ -106,12 +109,16 @@ block page-content
 									li.item__link-item
 										a.item__link-item(href="https://vk.com/moshkin_denis" target="_blank")
 											img.item__link-item-img(src="../svg/vk.svg" alt="")
-						//-li.about__text-item.item
-						//-	.item__title Исходники резюме:
-						//-	a.default-link(href="https://github.com/VisualYuki/portfolio" target="_blank") Ссылка на репозиторий
 	section#skill.skills.section-margin
 		.container
 			h2.section-title Навыки
+			h3.l-subtitle Backend
+			ul.skills__items(style="margin-bottom: 40px")
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/node.svg" alt="")
+						span.item__title Node.js
+					p.item__text Изучил язык программирования - Node.js. Научился использовать: path, file system (fs), es6 modules, commonjs modules.
 			h3.l-subtitle Frontend
 			ul.skills__items(style="margin-bottom: 40px")
 				li.skills__item.item
@@ -136,9 +143,14 @@ block page-content
 					p.item__text Изучил ui фреймворк для vue приложений. Изучил helper classes, sass variables, components (app, grid, btn, tables, menu, v-text-field, validation, icon, img ...)
 				li.skills__item.item
 					.item__title-wrap
+						img.item__icon(src="../min-img/skills/bootstrap-vue.png" alt="")
+						span.item__title Bootstrap-vue
+					p.item__text Изучил vue framework. Научился работать с многочисленными компонентами, иконками.
+				li.skills__item.item
+					.item__title-wrap
 						img.item__icon(src="../svg/vue-js.svg" alt="")
 						span.item__title Vue экосистема
-					p.item__text vue cli, vue-i18n,
+					p.item__text vue cli, vue-i18n, vuelidate,
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/js.svg" alt="")
@@ -149,11 +161,6 @@ block page-content
 						img.item__icon(src="../svg/tp.svg" alt="")
 						span.item__title TypeScript
 					p.item__text Изучил TypeScript - типизированный js. В процессе изучения. Изучил типы, классы, модификаторы,  геттеры/сеттеры, интерфейсы.
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/node.svg" alt="")
-						span.item__title Node.js
-					p.item__text Изучил язык программирования - Node.js. Научился использовать: path, file system (fs), es6 modules, commonjs modules.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/programming.svg" alt="")
@@ -178,6 +185,7 @@ block page-content
 						img.item__icon(src="../svg/testing.svg" alt="")
 						span.item__title Тестирование (jest)
 					p.item__text Изучил способы тестирования кода. 1. Jest фрейморк для написания тестов, применил: jsdom - для тестирования DOM, describe, test, except. 2. Хорошо знаю режим разработчика в браузере. 3. Научился тестировать сайты через подключение к телефону(google chrome + android), если баг происходит только на мобильном устройстве.
+
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/comments.svg" alt="")
@@ -193,6 +201,16 @@ block page-content
 						img.item__icon(src="../svg/location.svg" alt="")
 						span.item__title Yandex map api
 					p.item__text Изучил api яндекс карта для создания взаимодействия пользователя с картой.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../min-img/skills/nuxt.png" alt="")
+						span.item__title Nuxt.js
+					p.item__text Только в ознакомительных целях.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../min-img/skills/nuxt.png" alt="")
+						span.item__title Vue-ssr
+					p.item__text Только в ознакомительных целях.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/react.svg" alt="")
@@ -696,6 +714,30 @@ block page-content
 		.container
 			h2.section-title Опыт работы
 			ul.experience__items
+				li.experience__item.item
+					//a.item__picture-link(href="https://palax.info" target="_blank")
+						img.item__picture.lazyload( data-src="../svg/palax-logo.svg", alt="" style="background: black; padding: 10px;")
+					.item__desc
+						.item__title
+							span.item__position vue frontend разработчик
+							a.item__company(href="https://www.greymatter.ru/" target="_blank") / Grey Matter
+							p.item__time Время работы: 10.21 - по текущее вермя
+						.item__subtitle Рабочие обязанности:
+							ul.item__subitems
+								li.item__subitem Поддержка и модернизация front-end'a. Сайты: https://app.edeone.com, https://app.kursor.org/
+								li.item__subitem Поддержка проектов по верстке.
+						.item__subtitle Чему научился:
+							ul.item__subitems
+								li.item__subitem Получил нужный опыт во vue front-end
+						.item__subtitle Что понравилось:
+							ul.item__subitems
+								li.item__subitem Все.
+						.item__subtitle Причина ухода:
+							ul.item__subitems
+								li.item__subitem Ушел по собственному желанию.
+								li.item__subitem Хочеться, чтобы проекты были хороши написаны с точки зрения архитектуры.
+								li.item__subitem Хочеться работать в большой команде front-end'ов
+								li.item__subitem
 				li.experience__item.item
 					//a.item__picture-link(href="https://palax.info" target="_blank")
 						img.item__picture.lazyload( data-src="../svg/palax-logo.svg", alt="" style="background: black; padding: 10px;")
