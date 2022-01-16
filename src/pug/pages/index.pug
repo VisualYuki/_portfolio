@@ -10,19 +10,23 @@ block page-content
 			.intro__text-wrapper
 				p.intro__hello-text  Привет, меня зовут Денис и я
 				.intro__sentence-wrapper
-					ul.intro__symbol-wrapper.intro__first-word-wrapper
-						each letter in ['В','Е','Р','С','Т','А','Л','Ь','Щ','И','К' ]
+					ul.intro__symbol-wrapper.intro__second-word-wrapper
+						each letter in ['F','U', 'L','L', 'S','T','A','C','K' ]
 							li.intro__letter-inner
 								span.intro__letter-text=letter
-					.intro__letter-inner.intro__divider-letter
+					//-ul.intro__symbol-wrapper.intro__first-word-wrapper
+					//-	each letter in ['В','Е','Р','С','Т','А','Л','Ь','Щ','И','К' ]
+					//-		li.intro__letter-inner
+					//-			span.intro__letter-text=letter
+					//.intro__letter-inner.intro__divider-letter
 						.intro__letter-text /
-					ul.intro__symbol-wrapper
+					//ul.intro__symbol-wrapper
 						each letter in ['F','R','O','N','T','E','N','D' ]
 							li.intro__letter-inner
 								span.intro__letter-text=letter
-					.intro__letter-inner.intro__divider-letter
+					//.intro__letter-inner.intro__divider-letter
 						.intro__letter-text /
-					ul.intro__symbol-wrapper.intro__second-word-wrapper
+					//ul.intro__symbol-wrapper.intro__second-word-wrapper
 						each letter in ["B", "A", "C", "K", "E", "N", "D"]
 							li.intro__letter-inner
 								span.intro__letter-text=letter
@@ -43,12 +47,13 @@ block page-content
 						img(src="../min-img/about/my-photo.jpg", alt="")
 				.about__text-wrapper
 					.about__name Мошкин Денис
-					.about__position Верстальщик / Frontend / Backend разработчик
+					.about__position Верстальщик / Frontend (Vue) / Backend (Node.js) разработчик
 					.about__about-me
 						ul
 							li Я всей душой полюбил веб разрботку, и не жалею времени на постоянное развитие в этой области.
-							li Развиваюсь в сторону backend'а (Node.js, PHP).
+							li Развиваюсь в сторону backend'а ( Node.js, PHP) и по необходимости frontend(vue).
 							li Заинтересован в интересных проектах, которые будут развивать меня как крутого разработчика.
+							li Уделяю большое внимание и значение качеству кода проекта.
 					ul.about__text-items
 						li.about__text-item.item
 							p.item__title Опыт в веб-разработке:
@@ -205,17 +210,17 @@ block page-content
 					.item__title-wrap
 						img.item__icon(src="../min-img/skills/nuxt.png" alt="")
 						span.item__title Nuxt.js
-					p.item__text Только в ознакомительных целях.
+					p.item__text В ознакомительных целях.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../min-img/skills/nuxt.png" alt="")
 						span.item__title Vue-ssr
-					p.item__text Только в ознакомительных целях.
+					p.item__text В ознакомительных целях.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/react.svg" alt="")
 						span.item__title REACT
-					p.item__text Изучил REACT - js библиотеку для создания UI. Научился работать с JSX, events, conditions, forms, hooks, refs. А также постепенно смотрю, что лежит под капотом react, так как там 3000 строк кода и сразу все не понять. Изучение reactDom отложил в долгий ящик, так как там 30 000 строк кода))
+					p.item__text Изучил REACT - js библиотеку для создания UI. Научился работать с JSX, events, conditions, forms, hooks, refs. А также постепенно смотрю, что лежит под капотом react, так как там 3000 строк кода и сразу все не понять.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/redux.svg" alt="")
@@ -724,20 +729,25 @@ block page-content
 							p.item__time Время работы: 10.21 - по текущее вермя
 						.item__subtitle Рабочие обязанности:
 							ul.item__subitems
-								li.item__subitem Поддержка и модернизация front-end'a. Сайты: https://app.edeone.com, https://app.kursor.org/
-								li.item__subitem Поддержка проектов по верстке.
+								li.item__subitem
+									| Поддержка и модернизация front-end'a. Сайты:
+									a.default-link(href="https://app.edeone.com" target="_blank") https://app.edeone.com
+									| ,
+									a.default-link(href="https://app.kursor.org/" target="_blank") https://app.kursor.org/
+								li.item__subitem Поддержка второстепенных проектов по верстке.
 						.item__subtitle Чему научился:
 							ul.item__subitems
-								li.item__subitem Получил нужный опыт во vue front-end
+								li.item__subitem Получил важный опыт во vue front-end
 						.item__subtitle Что понравилось:
 							ul.item__subitems
-								li.item__subitem Все.
+								li.item__subitem Дружественная атмосфера и компетентное руководство/коллеги.
+								li.item__subitem Пицца по пятницам и игры в настолки.
+								li.item__subitem Удобное расположение офица в центре Кирова.
 						.item__subtitle Причина ухода:
 							ul.item__subitems
+								li.item__subitem Хочеться, чтобы проекты были хороши написаны с точки зрения архитектуры и кода.
+								li.item__subitem Хочеться работать в большой команде front-end'ов, чтобы получать больше опыта.
 								li.item__subitem Ушел по собственному желанию.
-								li.item__subitem Хочеться, чтобы проекты были хороши написаны с точки зрения архитектуры.
-								li.item__subitem Хочеться работать в большой команде front-end'ов
-								li.item__subitem
 				li.experience__item.item
 					//a.item__picture-link(href="https://palax.info" target="_blank")
 						img.item__picture.lazyload( data-src="../svg/palax-logo.svg", alt="" style="background: black; padding: 10px;")
