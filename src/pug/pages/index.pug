@@ -378,29 +378,34 @@ block page-content
 							li Реализована страница корзины с добавленными туда пиццами и оформлением заказа.
 							li Реализована страница заказов для каждого пользователя. Идентификация храниться на backaend (db) и на frontend (localstorage)
 							li Админка с продуктами, которые можно редактировать и добавлять.
+							li Изображение кликабельны (откроется модалка)
 							li
 								<a class="default-link" href="https://github.com/VisualYuki/pizza-site" target="_blank"> ссылка на гит </a>
 					ul.item__subitems
 						li.item__subitem
-							a.item__subitem-title.default-link(href="" target="_blank") Главная страница
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/pizza-site/home.webp" type="image/webp" class="lazyload")
-								img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/pizza-site/home.png", alt="" class="lazyload")
+							a.item__subitem-title.default-link(href="#" ) Главная страница
+							a(href="../min-img/portfolio/pizza-site/home.png" data-fancybox="images1")
+								picture.item__subitem-picture
+									source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/pizza-site/home.webp" type="image/webp" class="lazyload")
+									img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/pizza-site/home.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="" target="_blank") Корзина
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/pizza-site/cart.webp" type="image/webp" class="lazyload")
-								img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/pizza-site/cart.png", alt="" class="lazyload")
+							a(href="../min-img/portfolio/pizza-site/cart.png" data-fancybox="images2")
+								picture.item__subitem-picture
+									source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/pizza-site/cart.webp" type="image/webp" class="lazyload")
+									img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/pizza-site/cart.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="" target="_blank") Заказы
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/pizza-site/order.webp" type="image/webp" class="lazyload")
-								img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/pizza-site/order.png", alt="" class="lazyload")
+							a(href="../min-img/portfolio/pizza-site/order.png" data-fancybox="images3")
+								picture.item__subitem-picture
+									source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/pizza-site/order.webp" type="image/webp" class="lazyload")
+									img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/pizza-site/order.png", alt="" class="lazyload")
 						li.item__subitem
 							a.item__subitem-title.default-link(href="" target="_blank") Админка с продуктами
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/pizza-site/admin-products.webp" type="image/webp" class="lazyload")
-								img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/pizza-site/admin-products.png", alt="" class="lazyload")
+							a(href="../min-img/portfolio/pizza-site/admin-products.png" data-fancybox="images4")
+								picture.item__subitem-picture
+									source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/pizza-site/admin-products.webp" type="image/webp" class="lazyload")
+									img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/pizza-site/admin-products.png", alt="" class="lazyload")
 				li.portfolio__site-item.item#vue-social-network
 					.item__title-wrap
 						a.item__title(href="https://visualyuki.github.io/vue-social-network/dist/index.html" target="_blank") Социальная сеть на vue.js (pet project).

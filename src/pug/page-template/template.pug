@@ -21,10 +21,14 @@ html(lang="ru")
       meta(name="theme-color" content="#ffffff")
 
       link(rel="stylesheet", href="../css/site-main.css")
+
    body.reg-user
       // unreg-user - если юзер не зарегистрирован
       // reg-user - если юзер зарегистрирован
       include ../page-layout/header.pug
       block page-content
+
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
       script(async src="../js/site-main.js")
+
+      script(src="../include-libs/jquery.fancybox.min.js")
