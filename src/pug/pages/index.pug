@@ -55,7 +55,9 @@ block page-content
 							li Заинтересован в интересных проектах, которые будут развивать меня как крутого разработчика.
 							li Интересны технологии: графика(canvas, webgl), node (express, next), php (laravel)
 							li Уделяю большое внимание и значение качеству кода проекта.
-							li Тут более дюжины правил для дизайнера
+							li
+								| Тут более дюжины правил для дизайнера
+								<br>
 								a.default-link(href="https://disk.yandex.ru/i/R90ShMP3xcYBJw") Ссылка на док файл в яндекс диске.
 					ul.about__text-items
 						li.about__text-item.item
@@ -416,6 +418,21 @@ block page-content
 								picture.item__subitem-picture
 									source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/pizza-site/admin-product-edit.webp" type="image/webp" class="lazyload")
 									img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/pizza-site/admin-product-edit.png", alt="" class="lazyload")
+				li.portfolio__site-item.item#vue-social-network
+					.item__title-wrap
+						a.item__title(href="https://visualyuki.github.io/canvas-paint/dist/" target="_blank") Canvas paint (в процессе)
+					.item__desc
+						ul
+							li Технологии: canvas, typescript, vite, mvc, svg.
+							li
+								<a class="default-link" href="https://github.com/VisualYuki/canvas-paint" target="_blank"> ссылка на гит </a>
+					ul.item__subitems
+						li.item__subitem
+							a.item__subitem-title.default-link(href="https://visualyuki.github.io/canvas-paint/dist/" ) Главная страница
+							a(href="../min-img/portfolio/paint/home.png" data-fancybox="images10")
+								picture.item__subitem-picture
+									source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/paint/home.webp" type="image/webp" class="lazyload")
+									img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/paint/home.png", alt="" class="lazyload")
 				li.portfolio__site-item.item#vue-social-network
 					.item__title-wrap
 						a.item__title(href="https://visualyuki.github.io/vue-social-network/dist/index.html" target="_blank") Социальная сеть на vue.js (pet project).
