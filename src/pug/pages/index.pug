@@ -47,14 +47,14 @@ block page-content
 						img(src="../min-img/about/my-photo.jpg", alt="")
 				.about__text-wrapper
 					.about__name Мошкин Денис
-					.about__position Frontend (js, Vue, Canvas) / Backend (php, Laravel) разработчик
+					.about__position Frontend (js, Vue, Canvas, WebGL) / Backend (php, Laravel) разработчик
 					.about__about-me
 						ul
-							li Я всей душой полюбил веб разрботку, и не жалею времени на постоянное развитие в этой области.
 							li Рассматриваю свое развитие в сторону руководства, помощи начинающим сотрудникам.
 							li Заинтересован в интересных проектах, которые будут развивать меня как крутого разработчика.
 							li Интересны технологии: frontend(vue), графика(canvas, webgl), node (express, next), php (laravel)
 							li Уделяю большое внимание и значение качеству кода проекта.
+							li Я всей душой полюбил веб разрботку, и не жалею времени на постоянное развитие в этой области.
 							li Больше хочется работать с новыми проектами, либо создавать с нуля.
 							li
 								| Тут более дюжины правил для дизайнера
@@ -191,12 +191,12 @@ block page-content
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/vue-js.svg" alt="")
-						span.item__title Vue
-					p.item__text Изучил прогрессивный JavaScript-фреймворк. Научился работать с классами, событиями, директивами, слотами, миксинами, компонентами, двух-связной привязке к полям ввода.
+						span.item__title Vue2, Vue3
+					p.item__text Изучил прогрессивный JavaScript-фреймворк. Научился работать с классами, событиями, директивами, слотами, миксинами, компонентами, двух-связной привязке к полям ввода. А также composition api, proxy, typescript в vue3.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/vue-js.svg" alt="")
-						span.item__title Vuex
+						span.item__title Vuex, Pinia
 					p.item__text Изучил библиотеку vuex для хранения состояния vue приложения. Изучил getters, dispatch, actions, mutations, modules, а также map helpers (mapGetters, mapActions, mapState, mapMutations) и работу с простраством имен для modules.
 				li.skills__item.item
 					.item__title-wrap
@@ -210,6 +210,11 @@ block page-content
 					p.item__text Изучил ui фреймворк для vue приложений. Изучил helper classes, sass variables, components (app, grid, btn, tables, menu, v-text-field, validation, icon, img ...)
 				li.skills__item.item
 					.item__title-wrap
+						img.item__icon(src="../svg/element-plus.svg" alt="")
+						span.item__title Element-plus
+					p.item__text Изучил ui фреймворк для vue приложений. Изучил components, config, css-vars, подключение только нужных компонентов.
+				li.skills__item.item
+					.item__title-wrap
 						img.item__icon(src="../min-img/skills/bootstrap-vue.png" alt="")
 						span.item__title Bootstrap-vue
 					p.item__text Изучил vue framework. Научился работать с многочисленными компонентами, иконками.
@@ -217,7 +222,7 @@ block page-content
 					.item__title-wrap
 						img.item__icon(src="../svg/vue-js.svg" alt="")
 						span.item__title Vue экосистема
-					p.item__text vue cli, vue-i18n, vuelidate,
+					p.item__text vite, nuxt, vue cli, vue-i18n, vuelidate, vueuse,
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/js.svg" alt="")
@@ -227,7 +232,7 @@ block page-content
 					.item__title-wrap
 						img.item__icon(src="../svg/tp.svg" alt="")
 						span.item__title TypeScript
-					p.item__text Изучил TypeScript - типизированный js.  Изучил типы, классы, модификаторы,  геттеры/сеттеры, интерфейсы.
+					p.item__text Изучил TypeScript - типизированный js.  Изучил типы, классы, модификаторы, геттеры/сеттеры, интерфейсы.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/ajax.svg" alt="")
@@ -244,9 +249,19 @@ block page-content
 						| Пытаюсь понять как работает webpack под капотом в браузере (особенно импорты и экпорты). В дальшейшем есть планы посмотреть процесс компиляции на node.js webpack'а.
 				li.skills__item.item
 					.item__title-wrap
+						img.item__icon(src="../min-img/skills/cypress.png" alt="")
+						span.item__title Cypress
+					p.item__text Изучил способы end2end тестирования кода. Генерация событий(click), поиск элементов (get), проверка api запросов (intercept), обработка загрузки файлов (cypress-file-upload), переход по урлам.
+				li.skills__item.item
+					.item__title-wrap
 						img.item__icon(src="../svg/testing.svg" alt="")
-						span.item__title Тестирование (jest)
-					p.item__text Изучил способы тестирования кода. 1. Jest фрейморк для написания тестов, применил: jsdom - для тестирования DOM, describe, test, except. 2. Хорошо знаю режим разработчика в браузере. 3. Научился тестировать сайты через подключение к телефону(google chrome + android), если баг происходит только на мобильном устройстве.
+						span.item__title Тестирование.
+					p.item__text Изучил способы тестирования unit кода. 1. Jest фрейморк для написания тестов, применил: jsdom - для тестирования DOM, describe, test, except. 2. Хорошо знаю режим разработчика в браузере. 3. Научился тестировать сайты через подключение к телефону(google chrome + android), если баг происходит только на мобильном устройстве.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../min-img/skills/linters.png" alt="")
+						span.item__title Linters
+					p.item__text Научился настраивать проверку кода pug - puglint, ts - eslint, editorconfig - общие настройки, husky - для проверки при коммите, а также структурирование коммитов с помощью Conventional Commits.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/comments.svg" alt="")
