@@ -47,12 +47,12 @@ block page-content
 						img(src="../min-img/about/my-photo.jpg", alt="")
 				.about__text-wrapper
 					.about__name Мошкин Денис
-					.about__position Frontend (js, Vue, Canvas, WebGL) / Backend (php, Laravel) разработчик
+					.about__position Frontend (js, Vue, Canvas, WebGL) / Backend (node, php, Laravel) разработчик
 					.about__about-me
 						ul
 							li Рассматриваю свое развитие в сторону руководства, помощи начинающим сотрудникам.
 							li Заинтересован в интересных проектах, которые будут развивать меня как крутого разработчика.
-							li Интересны технологии: frontend(vue), графика(canvas, webgl), node (express, next), php (laravel)
+							li Интересны технологии: frontend(vue), графика(canvas, webgl), node (express, next).
 							li Уделяю большое внимание и значение качеству кода проекта.
 							li Я всей душой полюбил веб разрботку, и не жалею времени на постоянное развитие в этой области.
 							li Больше хочется работать с новыми проектами, либо создавать с нуля.
@@ -232,12 +232,12 @@ block page-content
 					.item__title-wrap
 						img.item__icon(src="../svg/tp.svg" alt="")
 						span.item__title TypeScript
-					p.item__text Изучил TypeScript - типизированный js.  Изучил типы, классы, модификаторы, геттеры/сеттеры, интерфейсы.
+					p.item__text Изучил TypeScript - типизированный js.  Изучил типы (type), классы (class), generics (T), множества (enums), tsconfig (libs, options), интерфейсы (interface), а также пользоваться типами библиотек и изменять их.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/ajax.svg" alt="")
-						span.item__title AJAX
-					p.item__text Изучил AJAX - асинхронный JavaScript и XML. Научился работать с сервером: отправлять, получать запросы и обрабатывать их на странице. А также пользоваться библиотекой AXIOS.
+						span.item__title AJAX, Websockets
+					p.item__text Изучил AJAX - асинхронный JavaScript и XML. Научился работать с сервером: отправлять, получать запросы и обрабатывать их на странице. А также пользоваться библиотекой AXIOS. Изучил websockets для постонного соеденинения с сервером.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/webpack.svg" alt="")
@@ -251,7 +251,7 @@ block page-content
 					.item__title-wrap
 						img.item__icon(src="../min-img/skills/cypress.png" alt="")
 						span.item__title Cypress
-					p.item__text Изучил способы end2end тестирования кода. Генерация событий(click), поиск элементов (get), проверка api запросов (intercept), обработка загрузки файлов (cypress-file-upload), переход по урлам.
+					p.item__text Изучил способы end2end тестирования кода. Генерация событий(click), поиск элементов (get), проверка api запросов (intercept, wait), обработка загрузки файлов (cypress-file-upload), переход по урлам, fixtures.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/testing.svg" alt="")
@@ -267,11 +267,6 @@ block page-content
 						img.item__icon(src="../svg/comments.svg" alt="")
 						span.item__title JSDoc/TSDoc
 					p.item__text Изучил JSDoc/TSDoc - продвинутые js комментарии. Научился комментировать функции. Люблю хорошо документированные проекты, поэтому уделяю большое внимание докуменатции к проектам. Научился создавать документацию по комментариям при помощи tsdoc.
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/location.svg" alt="")
-						span.item__title Yandex map api
-					p.item__text Изучил api яндекс карта для создания взаимодействия пользователя с картой.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../min-img/skills/nuxt.png" alt="")
@@ -330,7 +325,7 @@ block page-content
 					.item__title-wrap
 						img.item__icon(src="../svg/html-5.svg" alt="")
 						span.item__title HTML5
-					p.item__text Изучил язык гипертекстовой разметки текста - HTML. Научился делать качественную разметку веб-страницы, используя всевозможные тэги и атрибуты.
+					p.item__text Изучил язык гипертекстовой разметки текста - HTML. Научился делать качественную разметку веб-страницы, используя всевозможные тэги и атрибуты. Поддержка accessibility - для доступности проекта всеми людьми.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/css.svg" alt="")
@@ -356,12 +351,11 @@ block page-content
 						img.item__icon(src="../svg/email.svg" alt="")
 						span.item__title MJML
 					p.item__text Изучил фреймворк для верстки писем. Научился использовать тэгами и стилями.
-					//Понимаю как верстать письма без фреймворков.
-				//li.skills__item.item
-					.item-title
-						img.item__icon(src="../svg/schema.svg" alt="")
-						span.item__title schema.org
-					p.item__text Изучил . Научился использовать
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/location.svg" alt="")
+						span.item__title Yandex map api
+					p.item__text Изучил api яндекс карта для создания взаимодействия пользователя с картой.
 			h3.l-subtitle Остальное
 			ul.skills__items
 				li.skills__item.item
