@@ -18,15 +18,15 @@ block page-content
 					//-	each letter in ['В','Е','Р','С','Т','А','Л','Ь','Щ','И','К' ]
 					//-		li.intro__letter-inner
 					//-			span.intro__letter-text=letter
-					//.intro__letter-inner.intro__divider-letter
+					//-.intro__letter-inner.intro__divider-letter
 						.intro__letter-text /
-					//ul.intro__symbol-wrapper
+					//-ul.intro__symbol-wrapper
 						each letter in ['F','R','O','N','T','E','N','D' ]
 							li.intro__letter-inner
 								span.intro__letter-text=letter
-					//.intro__letter-inner.intro__divider-letter
+					//-.intro__letter-inner.intro__divider-letter
 						.intro__letter-text /
-					//ul.intro__symbol-wrapper.intro__second-word-wrapper
+					//-ul.intro__symbol-wrapper.intro__second-word-wrapper
 						each letter in ["B", "A", "C", "K", "E", "N", "D"]
 							li.intro__letter-inner
 								span.intro__letter-text=letter
@@ -63,7 +63,7 @@ block page-content
 					ul.about__text-items
 						li.about__text-item.item
 							p.item__title Опыт в веб-разработке:
-							p.item__text 2 года + опыт работы на фрилансе.
+							p.item__text 3 года + опыт работы на фрилансе.
 						li.about__text-item.item
 							p.item__title Возраст:
 							p.item__text 24 года
@@ -175,7 +175,7 @@ block page-content
 						img.item__icon(src="../svg/wordpress.svg" alt="")
 						span.item__title Wordpress
 					p.item__text Изучил CMS систему управления контентом. Научился работать со стандартными классами и методами, владеть бызовыми знаниями в php, работать с админкой и связывать админку с версткой.
-				//li.skills__item.item
+				//-li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/twig.svg" alt="")
 						span.item__title Twig
@@ -269,16 +269,6 @@ block page-content
 					p.item__text Изучил JSDoc/TSDoc - продвинутые js комментарии. Научился комментировать функции. Люблю хорошо документированные проекты, поэтому уделяю большое внимание докуменатции к проектам. Научился создавать документацию по комментариям при помощи tsdoc.
 				li.skills__item.item
 					.item__title-wrap
-						img.item__icon(src="../min-img/skills/nuxt.png" alt="")
-						span.item__title Nuxt.js
-					p.item__text В ознакомительных целях.
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../min-img/skills/nuxt.png" alt="")
-						span.item__title Vue-ssr
-					p.item__text В ознакомительных целях.
-				li.skills__item.item
-					.item__title-wrap
 						img.item__icon(src="../svg/js.svg" alt="")
 						span.item__title Canvas
 					p.item__text Изучил html элемент для создания графики с помощью JS. Научился рисовать изображения на холсте, импортировать холс в виде картинки, а также с контекстом элемента canvas.
@@ -286,7 +276,7 @@ block page-content
 					.item__title-wrap
 						img.item__icon(src="../svg/chrome.svg" alt="")
 						span.item__title Chrome extensions
-					p.item__text Изучил chrome api для создания расширений. А также таких модулей как: chrome.runtime, chrome.tabs, manifest.json, chrome.storage.local, popup.
+					p.item__text Изучил chrome api для создания расширений. А также таких модулей как: chrome.runtime, chrome.tabs, chrome.storage.local, popup, manifest.json.
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/react.svg" alt="")
@@ -297,6 +287,16 @@ block page-content
 						img.item__icon(src="../svg/redux.svg" alt="")
 						span.item__title REDUX
 					p.item__text Изучил REACT - контейнер состояния JS APP. Научился работать: reducers, createStore, action, combineReducers.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../min-img/skills/nuxt.png" alt="")
+						span.item__title Nuxt.js
+					p.item__text В ознакомительных целях.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../min-img/skills/nuxt.png" alt="")
+						span.item__title Vue-ssr
+					p.item__text В ознакомительных целях.
 			h3.l-subtitle Верстка
 			ul.skills__items(style="margin-bottom: 40px")
 				li.skills__item.item
@@ -401,7 +401,7 @@ block page-content
 	section#portfolio.portfolio.section-bottom-margin
 		.container
 			h2.section-title Портфолио
-			p(style="text-align: center; margin-bottom: 20px;") *указаны, только самые масштабные и крутые проекты, а также pet projects (сверстано около дюжины сайтов)
+			p(style="text-align: center; margin-bottom: 20px;") *указаны, только самые масштабные и крутые проекты, а также pet projects.
 			ul.portfolio__site-items
 				li.portfolio__site-item.item#vue-social-network
 					.item__title-wrap
@@ -475,7 +475,7 @@ block page-content
 									img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/chrome-extension/nested-posts.png", alt="" class="lazyload")
 				li.portfolio__site-item.item#vue-social-network
 					.item__title-wrap
-						a.item__title(href="https://visualyuki.github.io/vue-social-network/dist/index.html" target="_blank") Сайт по продаже пиццы на Laravel + Vue.js (pet project).
+						a.item__title(href="https://visualyuki.github.io/vue-social-network/dist/index.html" target="_blank") Сайт по продаже пиццы на Laravel + Vue.js.
 					.item__desc
 						ul
 							li Технологии: laravel, apache, mysql, php, vue, vue-router.
@@ -552,7 +552,7 @@ block page-content
 									img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/paint/home.png", alt="" class="lazyload")
 				li.portfolio__site-item.item#vue-social-network
 					.item__title-wrap
-						a.item__title(href="https://visualyuki.github.io/vue-social-network/dist/index.html" target="_blank") Социальная сеть на vue.js (pet project).
+						a.item__title(href="https://visualyuki.github.io/vue-social-network/dist/index.html" target="_blank") Социальная сеть на vue.js.
 					.item__desc
 						ul
 							li Технологии: vuetify, vue-router, vue-cli, typescript, vuex, sass, vue-i18n.
@@ -680,67 +680,10 @@ block page-content
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/shop-reviews.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/shop-reviews.png", alt="" class="lazyload")
-						//li.item__subitem
-							a.item__subitem-title.default-link(href="123" target="_blank") 123
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/123.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/123.png", alt="" class="lazyload")
-						//li.item__subitem
-							a.item__subitem-title.default-link(href="123" target="_blank") 123
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/123.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/123.png", alt="" class="lazyload")
-						//li.item__subitem
-							a.item__subitem-title.default-link(href="123" target="_blank") 123
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/123.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/123.png", alt="" class="lazyload")
-						//li.item__subitem
-							a.item__subitem-title.default-link(href="123" target="_blank") 123
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/123.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/123.png", alt="" class="lazyload")
-						//li.item__subitem
-							a.item__subitem-title.default-link(href="123" target="_blank") 123
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/123.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/123.png", alt="" class="lazyload")
-						//li.item__subitem
-							a.item__subitem-title.default-link(href="123" target="_blank") 123
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/instrument/123.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/instrument/123.png", alt="" class="lazyload")
-				//-li.portfolio__site-item.item
-				//-	.item__title-wrap
-				//-		a.item__title(href="https://visualyuki.github.io/react-social-network/dist/index" target="_blank") Клон VK.com на react.js (pet project) Находится в стадии работы.
-				//-		//img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../svg/studio-comforta-logo.svg" alt="" style="width: 80px")
-				//-	.item__desc
-				//-		ul
-				//-			li Использовалось: webpack, react, redux, react-router, react-redux.
-				//-			li Общий state приложения. При переходе по ссылкам, предыдущие действия остаются. (Пр. введеное сообщение в поле, удаленный диалог)
-				//-			li Ссылки сбиты из-за github pages, поэтому не все переходы по ним будут корректны.
-				//-			li
-				//-				a.default-link(href="https://github.com/VisualYuki/react-social-network" style="display: inline" target="_blank") Ссылка на исходники
-				//-	ul.item__subitems
-				//-		li.item__subitem
-				//-			a.item__subitem-title.default-link(href="https://visualyuki.github.io/react-social-network/dist/index.html" target="_blank") Главная страница
-				//-			picture.item__subitem-picture
-				//-				source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/react-vk/profile.webp" type="image/webp" class="lazyload")
-				//-				img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/react-vk/profile.png", alt="" class="lazyload")
-				//-		li.item__subitem
-				//-			.item__subitem-title.default-link() Авторизация
-				//-			picture.item__subitem-picture
-				//-				source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/react-vk/auth.webp" type="image/webp" class="lazyload")
-				//-				img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/react-vk/auth.png", alt="" class="lazyload")
-				//-		li.item__subitem
-				//-			.item__subitem-title.default-link() Диалоги
-				//-			picture.item__subitem-picture
-				//-				source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/react-vk/dialogs.webp" type="image/webp" class="lazyload")
-				//-				img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/react-vk/dialogs.png", alt="" class="lazyload")
 				li.portfolio__site-item.item
 					.item__title-wrap
-						a.item__title(href="https://visualyuki.github.io/snake/dist/index" target="_blank") Игра "Змейка" (pet project)
-						//img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../svg/studio-comforta-logo.svg" alt="" style="width: 80px")
+						a.item__title(href="https://visualyuki.github.io/snake/dist/index" target="_blank") Игра "Змейка"
+						//-img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../svg/studio-comforta-logo.svg" alt="" style="width: 80px")
 					.item__desc
 						ul
 							li Использовалось: webpack, MVC паттерн, классы.
@@ -863,77 +806,7 @@ block page-content
 							picture.item__subitem-picture
 								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/shizhma/summer-event.webp" type="image/webp" class="lazyload")
 								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/shizhma/summer-event.png", alt="" class="lazyload")
-				//li.portfolio__site-item.item
-					.item__title-wrap
-						a.item__title(href="https://агросоюз43.рф" target="_blank") Агросоюз
-						img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../svg/agrosouz-logo.svg" alt="" style="background: black; padding: 3px; width: 80px")
-					ul.item__subitems
-						li.item__subitem
-							a.item__subitem-title.default-link(href="https://агросоюз43.рф/" target="_blank") Главная страница
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/agro-souz/intro.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/agro-souz/intro.png", alt="" class="lazyload")
-						li.item__subitem
-							a.item__subitem-title.default-link(href="https://агросоюз43.рф/search" target="_blank") Поиск продукта
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/agro-souz/catalog.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/agro-souz/catalog.png", alt="" class="lazyload")
-						li.item__subitem
-							a.item__subitem-title.default-link(href="https://агросоюз43.рф/catalog/selskokhozjajjstvennye-traktory/selskokhozjajjstvennye-traktory/traktor-ant-4135f" target="_blank") Карточка товара
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/agro-souz/card-project.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/agro-souz/card-project.png", alt="" class="lazyload")
-						li.item__subitem
-							a.item__subitem-title.default-link(href="https://агросоюз43.рф/contacts" target="_blank") Карта
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/agro-souz/map.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/agro-souz/map.png", alt="" class="lazyload")
-						li.item__subitem
-							a.item__subitem-title.default-link(href="https://агросоюз43.рф/about" target="_blank") О компании
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/agro-souz/about.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/agro-souz/about.png", alt="" class="lazyload")
-						li.item__subitem
-							a.item__subitem-title.default-link(href="https://агросоюз43.рф/catalog" target="_blank") Каталог товаров
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/agro-souz/predcatalog.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/agro-souz/predcatalog.png", alt="" class="lazyload")
-				//li.portfolio__site-item.item
-					.item__title-wrap
-						a.item__title(href="https://studio-comforta.ru" target="_blank") Студия комфорта
-						img.item__logo.lazyload(src="../gifs/preloader.gif" data-src="../svg/studio-comforta-logo.svg" alt="" style="width: 80px")
-					ul.item__subitems
-						li.item__subitem
-							a.item__subitem-title.default-link(href="https://studio-comforta.ru" target="_blank") Главная страница
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/studio-comforta/intro.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/studio-comforta/intro.png", alt="" class="lazyload")
-						li.item__subitem
-							a.item__subitem-title.default-link(href="https://studio-comforta.ru" target="_blank") Главная страница
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/studio-comforta/middle.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/studio-comforta/middle.png", alt="" class="lazyload")
-						li.item__subitem
-							a.item__subitem-title.default-link(href="https://studio-comforta.ru" target="_blank") Форма выбора потолка
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/studio-comforta/form.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/studio-comforta/form.png", alt="" class="lazyload")
-						li.item__subitem
-							a.item__subitem-title.default-link(href="https://studio-comforta.ru/feedbacks" target="_blank") Отзывы
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/studio-comforta/reviews.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/studio-comforta/reviews.png", alt="" class="lazyload")
-						li.item__subitem
-							a.item__subitem-title.default-link(href="https://studio-comforta.ru/contacts" target="_blank") Карта местоположения
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/studio-comforta/map.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/studio-comforta/map.png", alt="" class="lazyload")
-						li.item__subitem
-							a.item__subitem-title.default-link(href="https://studio-comforta.ru/projects" target="_blank") Проекты
-							picture.item__subitem-picture
-								source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/studio-comforta/projects.webp" type="image/webp" class="lazyload")
-								img(src="../gifs/preloader.gif" data-src="../min-img/portfolio/studio-comforta/projects.png", alt="" class="lazyload")
-	//section#experience.experience.section-margin
+	//-section#experience.experience.section-margin
 		.container
 			h2.section-title Опыт работы
 			ul.experience__items
