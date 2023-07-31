@@ -519,6 +519,21 @@ block page-content
 									img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/pizza-site/admin-product-edit.png", alt="" class="lazyload")
 				li.portfolio__site-item.item#vue-social-network
 					.item__title-wrap
+						a.item__title(href="https://visualyuki.github.io/vue-social-network/dist/index.html" target="_blank") Клон маски ввода (maska)
+					.item__desc
+						ul
+							li Технологии: vue3, ts, vite, jest, vitest,
+							li За основу взят плагин maska и адаптировал под себя
+								<a class="default-link" href="https://www.npmjs.com/package/maska" target="_blank"> ссылка на плагин</a>
+							li Реализованы 3 класса: directive.ts - класс для работы с vue директивой, mask-input.ts - класс для работы с HTMLInputElement и mask.ts - класс для работы с маской по входному значению.
+							li Добавлены unit тесты для класса mask (jest)
+								<a class="default-link" href="https://github.com/VisualYuki/my-mask/blob/main/test/mask.test.ts" target="_blank"> ссылка на файл</a>
+							li Добавлены интеграционные тесты для класса mask-input (vitest, testing-library, jsdom)
+								<a class="default-link" href="https://github.com/VisualYuki/my-mask/blob/main/test/mask-input.test.ts" target="_blank"> ссылка на файл</a>
+							li Репозиторий с проектом.
+								<a class="default-link" href="https://github.com/VisualYuki/my-mask/tree/main" target="_blank">ссылка на гит </a>
+				li.portfolio__site-item.item#vue-social-network
+					.item__title-wrap
 						a.item__title(href="https://visualyuki.github.io/custom-vue3-datepicker/dist/" target="_blank") Кастомный datepicker на vue3
 					.item__desc
 						ul
