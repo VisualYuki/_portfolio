@@ -14,25 +14,6 @@ block page-content
 						each letter in ['F','R', 'O','N', 'T','E','N','D' ]
 							li.intro__letter-inner
 								span.intro__letter-text=letter
-					//-ul.intro__symbol-wrapper.intro__first-word-wrapper
-					//-	each letter in ['В','Е','Р','С','Т','А','Л','Ь','Щ','И','К' ]
-					//-		li.intro__letter-inner
-					//-			span.intro__letter-text=letter
-					//-.intro__letter-inner.intro__divider-letter
-						.intro__letter-text /
-					//-ul.intro__symbol-wrapper
-						each letter in ['F','R','O','N','T','E','N','D' ]
-							li.intro__letter-inner
-								span.intro__letter-text=letter
-					//-.intro__letter-inner.intro__divider-letter
-						.intro__letter-text /
-					//-ul.intro__symbol-wrapper.intro__second-word-wrapper
-						each letter in ["B", "A", "C", "K", "E", "N", "D"]
-							li.intro__letter-inner
-								span.intro__letter-text=letter
-						each letter in ['R','E','A','C','T']
-							li.intro__letter-inner
-								span.intro__letter-text=letter
 					ul.intro__symbol-wrapper.intro__third-word-wrapper
 						each letter in ['Р','А','З','Р','А','Б','О','Т','Ч','И','К']
 							li.intro__letter-inner
@@ -120,67 +101,8 @@ block page-content
 	section#skill.skills.section-margin
 		.container
 			h2.section-title Навыки
-			h3.l-subtitle Backend
-			ul.skills__items(style="margin-bottom: 40px")
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/laravel.svg" alt="")
-						span.item__title Laravel
-					p.item__text Изучил фреймфорк для PHP. Научился инициализировать стартовый проект. Работать с controllers, models, views, routes, artisan, database migration, query builder.
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/php.svg" alt="")
-						span.item__title PHP
-					p.item__text Изучил язык программирования PHP. Научился настраивать php.ini.
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/mysql.svg" alt="")
-						span.item__title MySQL
-					p.item__text Изучил реляционную систему управления базами данных MySQL. Научился разворачивать mysql сервер. Научился пользоваться MySQL Workbench и создавать модели.
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/apache.svg" alt="")
-						span.item__title Apache
-					p.item__text Изучил кроссплатформенный веб-сервер (apache house for windows). Научился настраивать виртуальные хосты, использовать многочисленные директивы. Просматривать логи, добавлять дополнительные модули (php, mysql).
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/composer.svg" alt="")
-						span.item__title Composer
-					p.item__text Изучил мендеждер зависимостей для PHP. Научился устанавливать composer и работать с пакетами.
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/xdebug.svg" alt="")
-						span.item__title XDebug
-					p.item__text Изучил средство отладки PHP скриптов. Научился подключать xdebug к PHP и запускать пошаговую отдалку в PHPStorm и VS Code.
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/sql-server.svg" alt="")
-						span.item__title SQL
-					p.item__text Изучил язык структурированых запросов SQL. Знаю на уровне запросов: insert, select, join, update, delete, а также нормальные формы Бойса-Кодда.
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/linux.svg" alt="")
-						span.item__title Linux
-					p.item__text Изучил операционную систему Linux . Научился пользоваться терминалом, настраивать LAMP сервер.
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/phpstorm.svg" alt="")
-						span.item__title PHPStorm
-					p.item__text Изучил мощный редактор кода для PHP.
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/wordpress.svg" alt="")
-						span.item__title Wordpress
-					p.item__text Изучил CMS систему управления контентом. Научился работать со стандартными классами и методами, владеть бызовыми знаниями в php, работать с админкой и связывать админку с версткой.
-				//-li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/twig.svg" alt="")
-						span.item__title Twig
-					p.item__text
-						| Изучил препроцессор twig. Научился использовать циклы, условия, layout, extends, include, loop.
 			h3.l-subtitle Frontend
 			ul.skills__items(style="margin-bottom: 40px")
-
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../svg/vue-js.svg" alt="")
@@ -280,22 +202,74 @@ block page-content
 						img.item__icon(src="../svg/chrome.svg" alt="")
 						span.item__title Chrome extensions
 					p.item__text Изучил chrome api для создания расширений. А также таких модулей как: chrome.runtime, chrome.tabs, chrome.storage.local, popup, manifest.json.
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/react.svg" alt="")
-						span.item__title REACT
-					p.item__text Изучил REACT - js библиотеку для создания UI. Научился работать с JSX, events, conditions, forms, hooks, refs.
-				li.skills__item.item
-					.item__title-wrap
-						img.item__icon(src="../svg/redux.svg" alt="")
-						span.item__title REDUX
-					p.item__text Изучил REACT - контейнер состояния JS APP. Научился работать: reducers, createStore, action, combineReducers.
+				//-li.skills__item.item
+				//-	.item__title-wrap
+				//-		img.item__icon(src="../svg/react.svg" alt="")
+				//-		span.item__title REACT
+				//-	p.item__text Изучил REACT - js библиотеку для создания UI. Научился работать с JSX, events, conditions, forms, hooks, refs.
+				//-li.skills__item.item
+				//-	.item__title-wrap
+				//-		img.item__icon(src="../svg/redux.svg" alt="")
+				//-		span.item__title REDUX
+				//-	p.item__text Изучил REACT - контейнер состояния JS APP. Научился работать: reducers, createStore, action, combineReducers.
 
 				li.skills__item.item
 					.item__title-wrap
 						img.item__icon(src="../min-img/skills/nuxt.png" alt="")
 						span.item__title Vue-ssr
 					p.item__text В ознакомительных целях.
+			h3.l-subtitle Backend
+			ul.skills__items(style="margin-bottom: 40px")
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/laravel.svg" alt="")
+						span.item__title Laravel
+					p.item__text Изучил фреймфорк для PHP. Научился инициализировать стартовый проект. Работать с controllers, models, views, routes, artisan, database migration, query builder.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/php.svg" alt="")
+						span.item__title PHP
+					p.item__text Изучил язык программирования PHP. Научился настраивать php.ini.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/mysql.svg" alt="")
+						span.item__title MySQL
+					p.item__text Изучил реляционную систему управления базами данных MySQL. Научился разворачивать mysql сервер. Научился пользоваться MySQL Workbench и создавать модели.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/apache.svg" alt="")
+						span.item__title Apache
+					p.item__text Изучил кроссплатформенный веб-сервер (apache house for windows). Научился настраивать виртуальные хосты, использовать многочисленные директивы. Просматривать логи, добавлять дополнительные модули (php, mysql).
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/composer.svg" alt="")
+						span.item__title Composer
+					p.item__text Изучил мендеждер зависимостей для PHP. Научился устанавливать composer и работать с пакетами.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/xdebug.svg" alt="")
+						span.item__title XDebug
+					p.item__text Изучил средство отладки PHP скриптов. Научился подключать xdebug к PHP и запускать пошаговую отдалку в PHPStorm и VS Code.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/sql-server.svg" alt="")
+						span.item__title SQL
+					p.item__text Изучил язык структурированых запросов SQL. Знаю на уровне запросов: insert, select, join, update, delete, а также нормальные формы Бойса-Кодда.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/linux.svg" alt="")
+						span.item__title Linux
+					p.item__text Изучил операционную систему Linux . Научился пользоваться терминалом, настраивать LAMP сервер.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/phpstorm.svg" alt="")
+						span.item__title PHPStorm
+					p.item__text Изучил мощный редактор кода для PHP.
+				li.skills__item.item
+					.item__title-wrap
+						img.item__icon(src="../svg/wordpress.svg" alt="")
+						span.item__title Wordpress
+					p.item__text Изучил CMS систему управления контентом. Научился работать со стандартными классами и методами, владеть бызовыми знаниями в php, работать с админкой и связывать админку с версткой.
 			h3.l-subtitle Верстка
 			ul.skills__items(style="margin-bottom: 40px")
 				li.skills__item.item
@@ -402,6 +376,26 @@ block page-content
 			h2.section-title Портфолио
 			p(style="text-align: center; margin-bottom: 20px;") *указаны, только самые масштабные и крутые проекты, а также pet projects.
 			ul.portfolio__site-items
+				li.portfolio__site-item.item#vue-social-network
+					.item__title-wrap
+						a.item__title(href="https://visualyuki.github.io/custom-vue3-datepicker/dist/" target="_blank") Плагин для валидации полей формы.
+					.item__desc
+						ul
+							li В планах: создать библиотеку через vite и выложить ее в npm, создать документацию на vuepress,
+							li Технологии:  ts, jsdom, vitest, vite,
+							li
+								<a class="default-link" href="https://github.com/VisualYuki/input-validation-next" target="_blank"> ссылка на гит </a>
+							li
+								| За основу взят jquery-validation
+								<a class="default-link" href="https://jqueryvalidation.org/documentation/" target="_blank"> ссылка на документацию </a>
+
+					ul.item__subitems
+						li.item__subitem
+							a.item__subitem-title.default-link() Форма
+							a(href="../min-img/portfolio/input-validation-next/1.png" data-fancybox="input-validation-1")
+								picture.item__subitem-picture
+									source(srcset="../gifs/preloader.gif" data-srcset="../webp-img/portfolio/input-validation-next/1.webp" type="image/webp" class="lazyload")
+									img( srcset="../gifs/preloader.gif" data-src="../min-img/portfolio/input-validation-next/1.png", alt="" class="lazyload")
 				li.portfolio__site-item.item#vue-social-network
 					.item__title-wrap
 						a.item__title(href="https://visualyuki.github.io/custom-vue3-datepicker/dist/" target="_blank") Браузереное расширение - блокировщик рекламы во вконтакте.
@@ -573,7 +567,6 @@ block page-content
 							li Поддержка авторизации польователя через localstorage. А также поддержка роутинга при условии авторизации пользователя. При повторном открытии вкладки приложение, авторизованный пользователь сразу получит страницу профиля, иначе страница авторизации.
 							li Валидация всех форм через vueitfy.
 							li Поддержка локализации (не везде)
-							li В планах использовать node.js для хранения данных, вместо localstorage и vuex.
 							li Код проекта можно посмотреть тут:
 								<a class="default-link" href="https://github.com/VisualYuki/vue-social-network" target="_blank"> ссылка на гит </a>
 					ul.item__subitems
