@@ -2040,6 +2040,9 @@ body.compensate-for-scrollbar {
   text-align: center;
   text-transform: uppercase;
 }
+.item__desc li {
+  margin-bottom: 10px;
+}
 .default-breadcrumbs {
   padding: 32px 0 24px;
 }
